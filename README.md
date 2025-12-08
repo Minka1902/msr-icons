@@ -1,10 +1,9 @@
 # msr-icons
-
-A lightweight, production-ready React SVG icon library with 100+ pre-built icons. Perfect for modern web applications.
+A lightweight, production-ready React SVG icon library with **380+ pre-built icons**. Perfect for modern web applications.
 
 ## Features
 
-- ✨ **100+ SVG Icons** – Social media, tech stack, UI, utilities, and custom icons
+- ✨ **380+ SVG Icons** – Files, UI, brands, social, tech stack, utilities, and more
 - 🎨 **Customizable** – Control color, size, and styling via props
 - 📦 **Tree-shakeable** – Import only what you need
 - ⚡ **Optimized** – Built with Vite for fast dev/build
@@ -28,21 +27,35 @@ pnpm add msr-icons
 import { Icon } from 'msr-icons';
 
 export default function App() {
-  return <Icon name="SvgFacebook" size={32} color="#286bc2" />;
+  return <Icon name="Facebook" size={32} color="#286bc2" />;
 }
+```
+
+### Listing All Icon Names
+
+If you want to inspect all available icon component names (for docs, autocomplete hints, or dynamic selection), you can list the exported keys:
+
+```jsx
+import * as Icons from 'msr-icons';
+
+const iconNames = Object
+  .keys(Icons)
+  .filter((key) => key !== 'Icon'); // omit the wrapper if you only need raw icons
+
+console.log(iconNames);
 ```
 
 ### Importing Individual Icons
 
 ```jsx
-import { SvgFacebook, SvgGithub, SvgTwitter } from 'msr-icons';
+import { Facebook, Github, Twitter } from 'msr-icons';
 
 export default function App() {
   return (
     <div>
-      <SvgFacebook fillColor="#286bc2" onClick={() => alert('Facebook')} />
-      <SvgGithub fillColor="#000" />
-      <SvgTwitter fillColor="#1DA1F2" isColored />
+      <Facebook fillColor="#286bc2" onClick={() => alert('Facebook')} />
+      <Github fillColor="#000" />
+      <Twitter fillColor="#1DA1F2" isColored />
     </div>
   );
 }
@@ -62,27 +75,27 @@ export default function App() {
 
 ### Icon-Specific Props
 
-- **`SvgWIFI`** – `isDot` (boolean), `is4` (boolean), `strokeWidth` (string)
-- **`SvgSnapchat`** – `backgroundColor` (string)
-- **`SvgLogin/SvgLogout`** – `lineWidth` (string)
-- **`SvgReload`** – `lineWidth` (string)
-- **`SvgEditBox`** – `strokeWidth` (string)
+- **`WIFI`** – `isDot` (boolean), `is4Lines` (boolean), `strokeWidth` (string)
+- **`Snapchat`** – `backgroundColor` (string)
+- **`Login/Logout`** – `lineWidth` (string)
+- **`Reload`** – `lineWidth` (string)
+- **`EditBox`** – `strokeWidth` (string)
 
 ### Usage Examples
 
 ```jsx
 // Basic usage with custom color
-<SvgFacebook fillColor="#286bc2" />
+<Facebook fillColor="#286bc2" />
 
 // With event handlers
-<SvgTwitter 
+<Twitter 
   fillColor="#1DA1F2" 
   onClick={() => console.log('clicked')}
   onHover={() => console.log('hovered')}
 />
 
 // With styling
-<SvgGithub 
+<Github 
   fillColor="#000" 
   backgroundColor="#f0f0f0"
   style={{ padding: '10px', borderRadius: '4px' }}
@@ -90,32 +103,35 @@ export default function App() {
 />
 
 // With custom colors and brand colors
-<SvgInstagram isColored fillColor="#E1306C" />  // Custom color
-<SvgInstagram isColored />  // Brand color (default #cc39a4)
-<SvgInstagram />  // Default currentColor
+<Instagram isColored fillColor="#E1306C" />  // Custom color
+<Instagram isColored />  // Brand color (default #cc39a4)
+<Instagram />  // Default currentColor
 ```
 
 ## Available Icons
 
-**Social Media:** Facebook, Twitter, Instagram, LinkedIn, GitHub, TikTok, Snapchat, WhatsApp, Telegram, Discord, Reddit, Pinterest, Viber, Vine
+**Files & Formats:** File, Folder variants, CSV, JSON, XML, Markdown, Excel, PowerPoint, Config, DB, RAR, SVG, WEBP, YAML, TOML
 
-**Tech Stack:** JavaScript, React, NodeJS, Python, Java, PHP, Docker, AWS, Azure, Google Cloud
+**UI Components:** Settings, Search, Menu, Trash, Edit, Download/Upload, Refresh/Reload, Send, Bell, Alerts, Charts, Toggles, Inputs, Layouts, Themes, Accessibility
 
-**UI Components:** Settings, Search, Menu, Trash, Edit, Download, Upload, Refresh, Reload, Send, Bell, Search, and more
+**Brands & Platforms:** OpenAI, Perplexity, Claude, Gemini, Hugging Face, MongoDB, PostgreSQL, Elasticsearch, RabbitMQ, Redis, Solana, Ethereum, Bitcoin, MetaMask, Twilio, Sendgrid, Mailchimp, Intercom, StatusPage, PagerDuty, Facebook, Twitter, Instagram, GitHub, LinkedIn, Discord, Slack, Figma, Google, AWS, Azure, Docker, and more
 
-**Utilities:** Mail, Phone, Map, Location, Printer, Shield, Globe, Internet, Disk
+**Utilities:** Mail, Phone, Map, Location, Printer, Shield, Globe, Internet, Disk, Lock/Unlock, Key, Clipboard, QR/Barcode, Scanner, Flip/Rotate, Zoom
 
-... and **100+ more icons**!
+... and **380+ icons in total**.
 
 ## Project Structure
 
 ```
 src/
-├── SvgComponents.jsx   # All 127+ icon components
-├── Icon.jsx            # Icon wrapper component
-├── Icon.css            # Icon styling
-├── index.js            # Main entry point
-└── main.jsx            # Dev entry point
+├── icons/
+│   ├── files.jsx      # File & format icons
+│   ├── ui.jsx         # UI & controls
+│   └── brands.jsx     # Brand & platform icons
+├── Icon.jsx           # Icon wrapper component
+├── Icon.css           # Icon styling
+├── index.js           # Library entry
+└── main.jsx           # Dev entry
 ```
 
 ### Self-Explaining Props
@@ -128,7 +144,7 @@ All props use clear, descriptive names:
 ### Styling Support
 Each icon supports comprehensive styling:
 ```jsx
-<SvgFacebook
+<Facebook
   fillColor="#286bc2"
   backgroundColor="rgba(255,255,255,0.1)"
   style={{ 
@@ -145,8 +161,8 @@ Each icon supports comprehensive styling:
 Import only the icons you need - unused icons are automatically removed during build:
 
 ```jsx
-// Only SvgFacebook and SvgGithub are bundled
-import { SvgFacebook, SvgGithub } from 'msr-icons';
+// Only Facebook and Github are bundled
+import { Facebook, Github } from 'msr-icons';
 ```
 
 ### ESM and CommonJS Support
