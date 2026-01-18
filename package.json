@@ -1,7 +1,7 @@
 {
   "name": "msr-icons",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A lightweight, production-ready React SVG icon library with 300+ pre-built icons.",
   "keywords": [
@@ -10,6 +10,8 @@
     "svg",
     "component",
     "library",
+    "brands",
+    "files",
     "ui"
   ],
   "author": "Michael Scharff",
