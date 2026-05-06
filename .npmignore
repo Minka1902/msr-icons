@@ -1,5 +1,6 @@
 src/
 public/
+.claude
 index.html
 vite.config.js
 eslint.config.js

@@ -12,11 +12,12 @@ export default defineConfig({
     react(),
     dts({
       include: ['src'],
-      exclude: ['src/**/*.test.*', 'src/**/*.spec.*'],
+      exclude: ['src/**/*.test.*', 'src/**/*.spec.*', 'src/main.jsx'],
       rollupTypes: false,
       insertTypesEntry: true,
     }),
   ],
+  publicDir: false,
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -39,6 +40,6 @@ export default defineConfig({
       },
     },
     minify: 'esbuild',
-    sourcemap: true,
+    sourcemap: false,
   },
 });
