@@ -1,8 +1,8 @@
-import * as Icons from './SvgComponents';
+import * as Icons from './icons';
 import './icon.css';
 
 // Generic icon wrapper for npm consumers. Usage:
-// <Icon name="SvgFacebook" size={32} color="#333" onClick={...} />
+// <Icon name="Facebook" size={32} color="#333" onClick={...} />
 export function Icon({ name, size = 24, color, isColored = true, onClick, className = '', style = {}, ...rest }) {
     const IconComponent = Icons[name];
     if (!IconComponent) return null;
@@ -12,7 +12,7 @@ export function Icon({ name, size = 24, color, isColored = true, onClick, classN
 
     return (
         <span className={wrapperClass} style={wrapperStyle}>
-                <IconComponent fillColor={color} isColored={isColored} onClick={onClick} {...rest} />
+            <IconComponent fillColor={color} isColored={isColored} onClick={onClick} {...rest} />
         </span>
     );
 }

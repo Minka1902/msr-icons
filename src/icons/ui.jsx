@@ -1,153 +1,153 @@
 export function WIFI({ fillColor = '#000', isDot = true, is4Lines = false, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill='transparent' d="M15.582 14.557a5.39 5.39 0 0 0-10.162 0"></path>
             <path fill='transparent' d="M18.444 11.7a9.434 9.434 0 0 0-15.887 0"></path>
             <path fill='transparent' d="M20.987 8.535a13.5 13.5 0 0 0-20.973 0"></path>
             {is4Lines ? <path fill='transparent' d="M22.987 4.535a12.5 5.5 0 0 0-25.973 0"></path> : <></>}
             {isDot ? <path fill={fillColor} strokeLinecap="round" strokeWidth={strokeWidth || "0.5"} d="M10.3 17.8a1 1 0 1 1 0-2 1.5 1.5 0 0 1 0 3Z"></path> : <></>}
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function DoubleCheck({ fillColor = '#00B1FF', isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : 'currentColor'} fillRule="evenodd" d="m19.9 7-8.19 8.191-3.236-3.228-1.092 1.091 4.328 4.328L21 8.092 19.9 7Zm-3.282 1.092L15.526 7l-4.908 4.908L11.71 13l4.908-4.908Zm-9.29 9.29L3 13.054l1.1-1.091 4.32 4.327-1.092 1.092Z" clipRule="evenodd"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function EditBox({ fillColor = '#000', onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill='transparent' d="M18 10.5v8.625A1.875 1.875 0 0 1 16.125 21H4.875A1.875 1.875 0 0 1 3 19.125V7.875A1.875 1.875 0 0 1 4.875 6h7.85"></path>
             <path fill={fillColor} stroke="none" d="M21.56 2.496a.754.754 0 0 0-1.09-.026l-.579.577a.375.375 0 0 0 0 .53l.532.53a.374.374 0 0 0 .531 0l.565-.562a.762.762 0 0 0 .04-1.049Z"></path>
             <path fill={fillColor} stroke="none" d="m18.72 4.217-8.463 8.447a.42.42 0 0 0-.108.184l-.391 1.166a.183.183 0 0 0 .227.228l1.165-.392a.422.422 0 0 0 .184-.108l8.447-8.463a.422.422 0 0 0 0-.593l-.466-.47a.422.422 0 0 0-.596 0Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function EX({ fillColor, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg fill={fillColor} onClick={onClick} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={fillColor} onClick={onClick} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="m18.75 6.82-1.57-1.57L12 10.43 6.82 5.25 5.25 6.82 10.43 12l-5.18 5.18 1.57 1.57L12 13.57l5.18 5.18 1.57-1.57L13.57 12l5.18-5.18Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Eye({ fillColor = '#000', onClick, className, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} fill={fillColor} onClick={onClick} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} fill={fillColor} onClick={onClick} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
             <path d="M23.01 11.184c-1.241-1.918-2.85-3.547-4.654-4.712C16.36 5.182 14.157 4.5 11.985 4.5c-1.993 0-3.953.57-5.825 1.693-1.91 1.145-3.64 2.818-5.141 4.972a1.496 1.496 0 0 0-.03 1.666c1.238 1.937 2.83 3.569 4.606 4.718 2 1.295 4.151 1.951 6.39 1.951 2.19 0 4.397-.676 6.384-1.956 1.803-1.16 3.41-2.796 4.645-4.73a1.51 1.51 0 0 0-.005-1.63ZM12 16.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function HTML({ fillColor = '#E44D26', isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg onClick={onClick} fill={isColored ? fillColor : 'currentColor'} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon onClick={onClick} fill={isColored ? fillColor : 'currentColor'} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path path fill={isColored ? fillColor : 'currentColor'} d="m3 1.5 1.638 18.9 7.351 2.1 7.37-2.102L21 1.5H3Zm14.438 6.188H8.813L9 10.078h8.25l-.633 7.096L12 18.491 7.374 17.18l-.317-3.632h2.262l.16 1.842 2.521.69 2.504-.699.262-3.007H6.937l-.59-7.012h11.287l-.197 2.324Z" ></path >
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Login({ fillColor = '#000', lineWidth = '1.5', onClick, backgroundColor, onHover, style, }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={lineWidth} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={lineWidth} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill='transparent' d="M9 8.25V6.375A1.875 1.875 0 0 1 10.875 4.5h7.5a1.875 1.875 0 0 1 1.875 1.875v11.25a1.875 1.875 0 0 1-1.875 1.875H11.25c-1.036 0-2.25-.84-2.25-1.875V15.75"></path>
             <path fill='transparent' d="M13.5 15.75 17.25 12 13.5 8.25"></path>
             <path d="M3.75 12H16.5"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Logout({ fillColor, lineWidth = '1.5', onClick, backgroundColor, onHover, style, }) {
     return (
-        <svg fill={fillColor} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={lineWidth} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={fillColor} stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={lineWidth} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill='transparent' d="M14.25 15.75v1.875a1.875 1.875 0 0 1-1.875 1.875h-7.5A1.875 1.875 0 0 1 3 17.625V6.375A1.875 1.875 0 0 1 4.875 4.5H12c1.036 0 2.25.84 2.25 1.875V8.25"></path>
             <path fill='transparent' d="M17.25 15.75 21 12l-3.75-3.75"></path>
             <path d="M8.25 12h12"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function NotEye({ fillColor, onClick, className, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M4.031 3 3 4.031l16.969 16.97L21 19.968 4.031 3Z"></path>
             <path d="m12.156 9.008 2.84 2.839a3.004 3.004 0 0 0-2.84-2.84Z"></path>
             <path d="m11.843 14.995-2.84-2.839a3.003 3.003 0 0 0 2.84 2.84Z"></path>
             <path d="M12 16.496a4.5 4.5 0 0 1-4.34-5.688L4.421 7.57C3.099 8.782 1.839 10.362.75 11.996c1.238 2.063 2.933 4.183 4.697 5.4 2.024 1.393 4.225 2.1 6.542 2.1a10.935 10.935 0 0 0 3.714-.647l-2.513-2.512c-.388.106-.788.16-1.19.16Z"></path>
             <path d="M12 7.5a4.5 4.5 0 0 1 4.34 5.688l3.312 3.312c1.367-1.23 2.629-2.886 3.598-4.5-1.237-2.036-2.949-4.151-4.743-5.382-2.05-1.405-4.243-2.118-6.519-2.118a10.45 10.45 0 0 0-3.666.67l2.49 2.49c.387-.107.786-.16 1.188-.16Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Reload({ fillColor = '#000', lineWidth = '2', isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={isColored ? fillColor : 'currentColor'} strokeLinecap="round" strokeWidth={lineWidth} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={isColored ? fillColor : 'currentColor'} strokeLinecap="round" strokeWidth={lineWidth} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill='transparent' d="m18.75 6.938-.99-1.152A8.973 8.973 0 0 0 11.25 3c-4.969 0-9 4.031-9 9s4.031 9 9 9a9.004 9.004 0 0 0 8.488-6"></path>
             <path fill={isColored ? fillColor : 'currentColor'} stroke="none" d="M21.75 4.565v5.183a.75.75 0 0 1-.75.75h-5.184a.75.75 0 0 1-.53-1.28l5.184-5.184a.75.75 0 0 1 1.28.53Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Refresh({ fillColor = '#00AAA0', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg stroke={fillColor} fill={fillColor} viewBox="0 0 512 512" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} fill={fillColor} viewBox="0 0 512 512" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path stroke={fillColor} fill={fillColor} d="M403.925,108.102c-27.595-27.595-62.899-47.558-102.459-56.29L304.182,0L201.946,53.867l-27.306,14.454 l-5.066,2.654l8.076,4.331l38.16,20.542l81.029,43.602l2.277-42.859c28.265,7.546,53.438,22.53,73.623,42.638 c29.94,29.939,48.358,71.119,48.358,116.776c0,23.407-4.843,45.58-13.575,65.687l40.37,17.532 c11.076-25.463,17.242-53.637,17.242-83.219C465.212,198.306,441.727,145.904,403.925,108.102z"></path>
             <path stroke={fillColor} fill={fillColor} d="M296.256,416.151l-81.101-43.612l-2.272,42.869c-28.26-7.555-53.51-22.53-73.618-42.636 c-29.945-29.95-48.364-71.12-48.364-116.767c0-23.427,4.844-45.522,13.576-65.697l-40.37-17.531 c-11.076,25.53-17.242,53.723-17.242,83.228c0,57.679,23.407,110.157,61.21,147.893c27.595,27.594,62.899,47.548,102.453,56.202 l-2.716,51.9l102.169-53.878l27.455-14.454l4.988-2.643l-7.999-4.332L296.256,416.151z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Send({ fillColor = '#000', isColored = false, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg fill={isColored ? fillColor : 'currentColor'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={isColored ? fillColor : 'currentColor'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M.75 21.75 23.25 12 .75 2.25v7.5l15 2.25-15 2.25v7.5Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Trash({ fillColor, backgroundColor, onClick, onHover, style, strokeWidth }) {
     return (
-        <svg fill={backgroundColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={backgroundColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={backgroundColor} d="m5.25 5.25.938 15c.044.867.675 1.5 1.5 1.5h8.625c.828 0 1.447-.633 1.5-1.5l.937-15"></path>
             <path fill={backgroundColor} d="M3.75 5.25h16.5"></path>
             <path fill={backgroundColor} d="M9 5.25V3.375a1.122 1.122 0 0 1 1.125-1.125h3.75A1.121 1.121 0 0 1 15 3.375V5.25"></path>
             <path fill={backgroundColor} d="M12 8.25v10.5"></path>
             <path fill={backgroundColor} d="M8.625 8.25 9 18.75"></path>
             <path fill={backgroundColor} d="M15.375 8.25 15 18.75"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function TrashBig({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M20.979 4.5H15.75V2.25A.75.75 0 0 0 15 1.5H9a.75.75 0 0 0-.75.75V4.5H3.021L3 6.375h1.547l.942 14.719A1.5 1.5 0 0 0 6.984 22.5h10.032a1.5 1.5 0 0 0 1.496-1.404l.941-14.721H21L20.979 4.5ZM8.25 19.5l-.422-12h1.547l.422 12H8.25Zm4.5 0h-1.5v-12h1.5v12Zm1.125-15h-3.75V3.187A.188.188 0 0 1 10.313 3h3.374a.188.188 0 0 1 .188.188V4.5Zm1.875 15h-1.547l.422-12h1.547l-.422 12Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Settings({ fillColor = '#6C767F', isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : 'currentColor'} fillRule="evenodd" d="M18.941 12.252c0 .315-.027.611-.064.907l1.952 1.527a.467.467 0 0 1 .11.592l-1.85 3.201a.458.458 0 0 1-.397.232.525.525 0 0 1-.167-.028l-2.304-.925c-.481.36-1 .675-1.563.906l-.352 2.452a.451.451 0 0 1-.454.389h-3.7a.451.451 0 0 1-.454-.389l-.351-2.452a6.76 6.76 0 0 1-1.564-.906l-2.304.925a.462.462 0 0 1-.564-.204l-1.85-3.201a.467.467 0 0 1 .11-.592l1.952-1.527a7.338 7.338 0 0 1-.064-.907c0-.305.027-.61.064-.906L3.175 9.819a.456.456 0 0 1-.11-.592l1.85-3.201a.458.458 0 0 1 .397-.232c.056 0 .112.01.167.028l2.304.925c.481-.36 1-.675 1.564-.906l.351-2.452A.451.451 0 0 1 10.152 3h3.7c.232 0 .426.167.454.389l.352 2.452a6.762 6.762 0 0 1 1.563.906l2.304-.925a.462.462 0 0 1 .564.204l1.85 3.2a.467.467 0 0 1-.11.593l-1.952 1.527c.037.296.064.592.064.906Zm-1.85 0c0-.194-.01-.388-.046-.675l-.13-1.046.824-.647.99-.787-.648-1.12-1.175.473-.98.398-.843-.648a5.25 5.25 0 0 0-1.138-.657l-.98-.398-.325-2.294h-1.286L11.17 6.1l-.148 1.045-.98.398c-.38.157-.76.38-1.157.675l-.833.63-.962-.389-1.175-.472-.648 1.12 1 .777.823.647-.13 1.046c-.027.278-.046.49-.046.675 0 .185.019.398.046.685l.13 1.046-.823.647-1 .778.648 1.12 1.175-.473.98-.398.843.648c.37.278.74.49 1.138.657l.98.398.324 2.294h1.296l.185-1.249.148-1.045.98-.398c.38-.157.76-.38 1.157-.675l.833-.63.962.389 1.175.472.648-1.12-1-.777-.823-.648.13-1.045c.027-.278.046-.481.046-.676Zm-5.089-3.7a3.7 3.7 0 0 0-3.701 3.7 3.7 3.7 0 0 0 3.701 3.701 3.7 3.7 0 0 0 3.701-3.7 3.7 3.7 0 0 0-3.701-3.702Zm-1.85 3.7c0 1.018.832 1.851 1.85 1.851 1.018 0 1.85-.833 1.85-1.85a1.856 1.856 0 0 0-1.85-1.851c-1.018 0-1.85.833-1.85 1.85Z" clipRule="evenodd"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function More({ fillColor = '#000', onClick, className, children, backgroundColor, onHover, style }) {
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <svg onClick={onClick} className={className} id='more-button' onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+            <BaseIcon onClick={onClick} className={className} id='more-button' onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
                 <path stroke={fillColor} fill={fillColor} fillRule="evenodd" d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" clipRule="evenodd"></path>
                 <path stroke={fillColor} fill={fillColor} fillRule="evenodd" d="M12 9a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" clipRule="evenodd"></path>
                 <path stroke={fillColor} fill={fillColor} fillRule="evenodd" d="M12 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" clipRule="evenodd"></path>
-            </svg>
+            </BaseIcon>
             {children}
         </div>
     );
@@ -155,132 +155,132 @@ export function More({ fillColor = '#000', onClick, className, children, backgro
 
 export function SignOut({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 18 16" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 18 16" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fillRule="evenodd" clipRule="evenodd" d="M6 2L2 2L2 14H6V16H2C0.89543 16 0 15.1046 0 14V2C0 0.89543 0.895432 0 2 0H6V2ZM13.5856 9.00002L9.29274 13.1339L10.707 14.4958L17.4141 8.03706L10.707 1.57837L9.29274 2.9402L13.5856 7.0741H4V9.00002H13.5856Z" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Phone({ fillColor = '#4e4e4e', title = 'Phone', onClick, backgroundColor, onHover, style }) {
     return (
         <div title={title} onClick={onClick}>
-            <svg fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+            <BaseIcon fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
                 <path fill={fillColor} stroke='transparent' d="M16.57 22.002a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59 7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-2.7 2.72A2 2 0 0 0 2 7.432a15.28 15.28 0 0 0 4.3 10.27 15.28 15.28 0 0 0 10.27 4.3ZM6 5.412l2.59 2.59-1.29 1.29a1 1 0 0 0-.3.91 10.12 10.12 0 0 0 2.3 4.5 10.08 10.08 0 0 0 4.5 2.3 1 1 0 0 0 .91-.27l1.29-1.32 2.59 2.59-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.412l2-2Zm14 5.59h2a8.809 8.809 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7Z"></path>
                 <path fill={fillColor} stroke='transparent' d="M13 8c2.1 0 3 .9 3 3h2c0-3.22-1.78-5-5-5v2Z"></path>
-            </svg>
+            </BaseIcon>
         </div>
     );
 };
 
 export function Drive({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg fill={fillColor} stroke='transparent' viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={fillColor} stroke='transparent' viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="m7.94 4.15 3.482 6.03-5.94 10.292L2 14.443 7.94 4.15Zm2.176 10.293H22l-3.482 6.03H6.635l3.481-6.03Zm4.343-1L8.518 3.148h6.964l5.94 10.295h-6.963Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Earth({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm6.355-6.048v-.105c0-.922 0-1.343-.652-1.716a7.368 7.368 0 0 0-.645-.325c-.367-.167-.61-.276-.938-.756a6.47 6.47 0 0 1-.116-.172c-.345-.525-.594-.903-1.542-.753-1.865.296-2.003.624-2.085 1.178l-.013.091c-.121.81-.143 1.082.195 1.437 1.265 1.327 2.023 2.284 2.253 2.844.112.273.4 1.1.202 1.918a8.185 8.185 0 0 0 3.151-2.237c.11-.374.19-.84.19-1.404ZM12 3.833c-2.317 0-4.41.966-5.896 2.516.177.123.331.296.437.534.204.457.204.928.204 1.345 0 .328 0 .64.105.865.144.308.766.44 1.315.554.197.042.399.084.583.135.506.14.898.595 1.211.96.13.151.323.374.42.43.05-.036.211-.211.29-.498.062-.22.044-.414-.045-.52-.56-.66-.529-1.93-.356-2.399.272-.739 1.122-.684 1.744-.644.232.015.45.03.614.009.622-.078.814-1.025.949-1.21.292-.4 1.186-1.003 1.74-1.375A8.138 8.138 0 0 0 12 3.833Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Shuffle({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M18 17.883V16l5 3-5 3v-2.09a9 9 0 0 1-6.997-5.365L11 14.54l-.003.006A9 9 0 0 1 2.725 20H2v-2h.725a7 7 0 0 0 6.434-4.243L9.912 12l-.753-1.757A7 7 0 0 0 2.725 6H2V4h.725a9 9 0 0 1 8.272 5.455L11 9.46l.003-.006A9 9 0 0 1 18 4.09V2l5 3-5 3V6.117a7 7 0 0 0-5.159 4.126L12.088 12l.753 1.757A7 7 0 0 0 18 17.883Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Usb({ fillColor = '#00AAA0', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="m12 1 3 5h-2v7.381l3-1.499-.001-.882H15V7h4v4h-1.001L18 13.118l-5 2.5v1.553a3 3 0 1 1-2.31.129L6 14l-.001-2.268a2 2 0 1 1 2.001 0V13l3 2.086V6H9l3-5Zm0 18a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function AttachFile({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M16 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 0 1 5 0v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H9.5v9.5a2.5 2.5 0 0 0 5 0V5c0-2.21-1.79-4-4-4s-4 1.79-4 4v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6H16Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Edit({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} fill-rule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8 16 3.586 17.586 2Zm-3 3-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5Z" clip-rule="evenodd"></path>
             <path fill={fillColor} fill-rule="evenodd" d="M2 16a3 3 0 0 1 3-3h1a1 1 0 1 1 0 2H5a1 1 0 1 0 0 2h14a3 3 0 1 1 0 6h-4a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2H5a3 3 0 0 1-3-3Z" clip-rule="evenodd"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Cannabis({ fillColor = '#008A37', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M21 14.077v-1.916l-1.406-.193c-.07-.009-.938-.091-1.934-.097 1.081-2.03 1.5-3.811 1.503-3.832l.235-1.02-.877-.57-.052-.033-.744-.49-.786.423c-.187.1-1.35.738-2.516 1.752-.22-1.97-.727-3.619-.935-4.149L13.116 3h-2.185l-.384.92c-.044.102-.946 2.28-1.17 4.87-1.235-1.009-3.33-2.166-3.33-2.166L4.465 7.857l.152.777c.161.762.973 2.616.973 2.616-.841 0-2.59.296-2.59.296v1.98s1.406 1.193 3.026 2.051l-.134.132-.704.604.208.805.223.856.864.252c.126.032.93.193 1.808.193.621 0 1.207-.08 1.746-.237.056-.015.111-.03.167-.047.158.905.352 1.626.387 1.76L10.896 21h4.854c-.97-.999-1.635-2.564-1.635-2.564-.009-.008-.014-.02-.023-.032.595.252 1.377.346 2.103.364l1.023-.065.41-.67.401-.69s-.343-.81-.732-1.162c1.154-.425 2.54-1.055 3.129-1.615l.574-.489Zm-4.875.911c-.437.126-1.702.3-2.17.358 0 0 1.81 1.046 2.106 1.828 0 .009.005.017.005.026-.017 0-.035-.011-.052-.009-1.407.109-3.618-1.127-3.87-1.344.052.802.34 2.677 1.016 3.63l-.02.023h-1.102s-.82-2.197-.765-3.727c-.383.329-.829.75-1.655.97a4.801 4.801 0 0 1-1.327.176 7.394 7.394 0 0 1-1.436-.146l-.005-.03s1.066-.984 2.44-1.312c.164-.053.331-.109.495-.109-.55-.108-1.098-.216-1.705-.436-1.805-.665-3.351-1.846-3.498-1.992l-.003-.033s.574-.029 1.01-.029c.71 0 1.87.082 3.095.521.33.112.662.22.937.384-.457-.401-2.73-2.3-3.404-5.156 0 0 3.299 1.7 5.018 4.418-.252-1.187-.404-2.479-.404-3.097 0-2.78 1.099-5.402 1.099-5.402h.164c.258.66.934 2.997.934 5.402 0 .815-.228 2.704-.272 3.07.12-.292.58-1.195 1.204-2.144 1.198-1.825 3.688-3.158 3.688-3.158l.053.035c-.085.375-.668 2.479-1.977 4.5-.326.504-1.342 1.462-1.43 1.532.155-.038.685-.246 2.256-.337a19.134 19.134 0 0 1 2.839.053l.003.027c-.46.436-1.949 1.13-3.267 1.508Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Capsules({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M6.375 3.75A4.13 4.13 0 0 0 2.25 7.875v8.25a4.13 4.13 0 0 0 4.125 4.125 4.13 4.13 0 0 0 4.125-4.125v-3.822l4.541 6.25a4.123 4.123 0 0 0 3.343 1.7 4.11 4.11 0 0 0 2.42-.787v-.001a4.13 4.13 0 0 0 .91-5.761l-4.848-6.676a4.128 4.128 0 0 0-5.761-.91 4.1 4.1 0 0 0-.746.705A4.13 4.13 0 0 0 6.375 3.75Zm0 1.5A2.628 2.628 0 0 1 9 7.875v3.375H3.75V7.875A2.628 2.628 0 0 1 6.375 5.25Zm7.151 1.58c.813 0 1.614.374 2.127 1.08l1.984 2.73-4.247 3.087-1.985-2.73a2.628 2.628 0 0 1 2.121-4.168Zm4.993 5.022 1.984 2.732a2.63 2.63 0 0 1-.581 3.668 2.627 2.627 0 0 1-3.667-.582l-1.983-2.73 4.247-3.088ZM3.75 12.75H9v3.375a2.628 2.628 0 0 1-2.625 2.625 2.628 2.628 0 0 1-2.625-2.625V12.75Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Peace({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75S17.376 2.25 12 2.25Zm-.75 1.538v7.85L5.1 16.512A8.198 8.198 0 0 1 3.75 12c0-4.296 3.302-7.831 7.5-8.212Zm1.5 0c4.198.38 7.5 3.916 7.5 8.212a8.2 8.2 0 0 1-1.352 4.513l-6.148-4.875v-7.85Zm-1.5 9.765v6.659a8.223 8.223 0 0 1-5.212-2.527l5.212-4.132Zm1.5 0 5.212 4.132a8.223 8.223 0 0 1-5.212 2.527v-6.66Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Om({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M21.75 14.343c0 1.564-.633 5.59-4.058 5.59-3.264 0-4.453-2.883-4.227-3.926.187.32.782 1.963 3.993 1.963 3.293 0 3.328-3.66 3.328-3.66s-.056-2.595-2.063-2.595c-2.449 0-2.53 3.893-4.992 3.893-1.233 0-1.646-.653-1.895-.832.53 1.647-.097 5.476-4.128 5.476-5.754 0-5.455-6.208-5.455-6.208s.964 3.826 5.355 3.826c2.678 0 3.03-1.53 3.03-2.23 0-.697-.534-1.927-2.93-1.927l-.525-2.487s.71.231 1.585.231c1.155 0 1.418-.77 1.418-1.403 0-.63-.618-1.269-1.749-1.269-1.752 0-3.158 1.799-3.158 1.799L3.917 8.056s1.265-1.632 3.829-1.632c2.56 0 3.723 2.097 3.723 3.328 0 1.23-.574 2.25-1.664 2.827 1.471.691 1.026 1.198 1.963 1.198 1.553 0 1.764-1.268 2.493-2.42.674-1.057 1.632-2.003 3.329-2.003 3.395 0 4.16 3.427 4.16 4.989Zm-6.621-5.356c1.725 0 3.061-.999 3.061-.999L16.757 5.46s-.996 1.397-2.926 1.397c-1.93 0-3.528-1.763-3.528-1.763s.733 3.893 4.826 3.893Zm.266-4.025L13.963 3.43l-1.597 1.397 1.433 1.632 1.596-1.497Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function YinYang({ fillColor = '#000', backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M12 3c-4.963 0-9 4.037-9 9s4.037 9 9 9h.188c.064.003.122 0 .187 0v-.023C17.162 20.777 21 16.834 21 12c0-4.406-3.193-8.068-7.383-8.836A4.83 4.83 0 0 0 12.375 3v.023C12.249 3.018 12.126 3 12 3Zm0 1.5c.26 0 .521.02.773.047.094.012.19.006.282.023.023.003.047.02.07.024a3.354 3.354 0 0 1 2.625 3.281 3.365 3.365 0 0 1-3.375 3.375A4.886 4.886 0 0 0 7.5 16.125c0 .803.193 1.559.54 2.227A7.457 7.457 0 0 1 4.5 12c0-4.151 3.349-7.5 7.5-7.5Zm5.04 1.969C18.544 7.839 19.5 9.797 19.5 12a7.472 7.472 0 0 1-7.266 7.477C10.43 19.4 9 17.95 9 16.125a3.365 3.365 0 0 1 3.375-3.375 4.886 4.886 0 0 0 4.875-4.875c0-.486-.076-.96-.21-1.406Zm-4.665.281a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm0 8.25a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Play({ fillColor = '#000', backgroundColor, onHover, style }) {
     return (
-        <svg width="20" height="20" fill={fillColor} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width="20" height="20" fill={fillColor} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M6.234 20.625c-.287 0-.57-.076-.82-.219a1.843 1.843 0 0 1-.912-1.609V5.203c0-.673.35-1.29.912-1.609a1.647 1.647 0 0 1 1.677.021l11.618 6.954a1.686 1.686 0 0 1 0 2.86l-11.62 6.956a1.664 1.664 0 0 1-.855.24Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Pause({ fillColor = '#000', backgroundColor, onHover, style }) {
     return (
-        <svg width="20" height="20" fill={fillColor} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width="20" height="20" fill={fillColor} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M10.5 20.25H6.75V3.75h3.75v16.5Z"></path>
             <path d="M17.25 20.25H13.5V3.75h3.75v16.5Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function DrillingWell({ fillColor = '#000000', backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 589 588" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 589 588" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} opacity="1" stroke={fillColor}
                 d="
 M323.531342,0.999998 
@@ -509,38 +509,38 @@ C230.075150,264.650970 229.855469,264.726257 229.740387,264.781006
 C229.729355,264.580994 229.718323,264.381012 229.835022,264.072021 
 C229.962753,263.963074 229.907516,263.932465 229.879944,263.917114 
 z"/>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Check({ fillColor = '#00B1FF', onClick, checkColor = '#fff', backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg onClick={onClick} width="40" height="40" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon onClick={onClick} width="40" height="40" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M18.75 3H5.25A2.25 2.25 0 0 0 3 5.25v13.5A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V5.25A2.25 2.25 0 0 0 18.75 3Z"></path>
             <path stroke={checkColor} strokeWidth={2} d="m16.5 8.25-6.3 7.5-2.7-3"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Menu({ fillColor = '#00B1FF', onClick, backgroundColor, onHover, style }) {
     return (
-        <svg width="40" height="40" fill="#000000" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width="40" height="40" fill="#000000" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} d="M3 18h18v-2H3v2Zm0-5h18v-2H3v2Zm0-7v2h18V6H3Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Map({ fillColor, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg width="40" height="40" fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width="40" height="40" fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="m21.447 6.106-6-3a1 1 0 0 0-.895 0L9 5.883 3.447 3.106A1 1 0 0 0 2 4v13c0 .379.214.725.553.895l6 3a1 1 0 0 0 .895 0L15 18.119l5.553 2.776a.993.993 0 0 0 .972-.043c.295-.183.475-.504.475-.851V7a1 1 0 0 0-.553-.895ZM10 7.619l4-2v10.764l-4 2V7.619Zm-6-2 4 2v10.764l-4-2V5.619Zm16 12.764-4-2V5.619l4 2v10.764Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Location({ fillColor = '#fff', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <g>
                     <path d="M256,0C156.748,0,76,80.748,76,180c0,33.534,9.289,66.26,26.869,94.652l142.885,230.257    c2.737,4.411,7.559,7.091,12.745,7.091c0.04,0,0.079,0,0.119,0c5.231-0.041,10.063-2.804,12.75-7.292L410.611,272.22    C427.221,244.428,436,212.539,436,180C436,80.748,355.252,0,256,0z M384.866,256.818L258.272,468.186l-129.905-209.34    C113.734,235.214,105.8,207.95,105.8,180c0-82.71,67.49-150.2,150.2-150.2S406.1,97.29,406.1,180    C406.1,207.121,398.689,233.688,384.866,256.818z"></path>
@@ -551,35 +551,35 @@ export function Location({ fillColor = '#fff', className, onClick, backgroundCol
                     <path d="M256,90c-49.626,0-90,40.374-90,90c0,49.309,39.717,90,90,90c50.903,0,90-41.233,90-90C346,130.374,305.626,90,256,90z     M256,240.2c-33.257,0-60.2-27.033-60.2-60.2c0-33.084,27.116-60.2,60.2-60.2s60.1,27.116,60.1,60.2    C316.1,212.683,289.784,240.2,256,240.2z"></path>
                 </g>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Printer({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <path d="m467 211h-76v-105c0-41.355-33.645-75-75-75h-180c-8.284 0-15 6.716-15 15v165h-76c-24.813 0-45 20.187-45 45v90c0 24.813 20.187 45 45 45h76v75c0 8.284 6.716 15 15 15h240c8.284 0 15-6.716 15-15v-75h76c24.813 0 45-20.187 45-45v-90c0-24.813-20.187-45-45-45zm-108.58-120h-27.42v-27.42c12.764 4.527 22.893 14.656 27.42 27.42zm-207.42-30h150v45c0 8.284 6.716 15 15 15h45v90h-210zm210 390h-210v-90h210zm121-105c0 8.271-6.729 15-15 15h-76v-15c0-8.284-6.716-15-15-15h-240c-8.284 0-15 6.716-15 15v15h-76c-8.271 0-15-6.729-15-15v-90c0-8.271 6.729-15 15-15h422c8.271 0 15 6.729 15 15z"></path>
                 <circle cx="376" cy="286" r="15"></circle>
                 <circle cx="316" cy="286" r="15"></circle>
                 <path d="m316 391h-120c-8.284 0-15 6.716-15 15s6.716 15 15 15h120c8.284 0 15-6.716 15-15s-6.716-15-15-15z"></path>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Search({ className, fillColor = '#000', onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} width="30" height="30" stroke={fillColor} fill='transparent' onClick={onClick} strokeLinecap="round" strokeWidth={strokeWidth || "2.5"} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} width="30" height="30" stroke={fillColor} fill='transparent' onClick={onClick} strokeLinecap="round" strokeWidth={strokeWidth || "2.5"} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M10.364 3a7.364 7.364 0 1 0 0 14.727 7.364 7.364 0 0 0 0-14.727v0Z"></path>
             <path style={{ backgroundColor: 'green' }} d="M15.857 15.86 21 21.001"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Engineer({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} stroke={fillColor} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} stroke={fillColor} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <g>
                     <path d="m481.319 421.323s-389.33-.159-389.406-.157c-7.662-.101-11.8.481-21.998 5.036l-63.037 28.131c-4.225 1.87-6.848 5.874-6.844 10.449.004 4.527 2.695 8.637 6.814 10.451 20.674 9.254 63.064 28.171 63.064 28.171 9.544 4.262 13.681 4.739 20.462 4.739l152.604.141c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5c0 0-142.722.004-143.34.009v-20.99h331.385v20.981h-150.804c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h201.101c16.917 0 30.681-13.74 30.681-30.628v-25.705c-.001-16.888-13.765-30.628-30.682-30.628zm-437.765 33.069v20.813c-7.77-3.47-15.532-6.932-23.31-10.411zm15 27.512v-34.206s23.852-10.495 26.084-11.008v56.228c-2.232-.513-20.609-8.57-26.084-11.014zm41.085-24.6v-20.99c.618.005 1.254.009 1.929.009h329.456v20.981zm397.361 20.352c0 8.618-7.034 15.628-15.681 15.628h-35.296v-56.962h35.296c8.646 0 15.681 7.011 15.681 15.628z"></path>
@@ -587,38 +587,38 @@ export function Engineer({ fillColor = '#000', className, onClick, backgroundCol
                     <path d="m124.468 268.99h83.095c3.131 0 8.96 0 11.192-5.395 2.195-5.307-1.637-9.13-4.436-11.922l-82.261-82.078c-2.794-2.81-6.622-6.657-11.936-4.465-5.4 2.229-5.4 8.053-5.4 11.182v82.938c.001 5.917 3.826 9.74 9.746 9.74zm5.255-80.537 65.683 65.537h-65.683z"></path>
                 </g>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function QA({ fillColor, className, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} stroke={fillColor} fill={fillColor} strokeWidth={.1} onClick={onClick} viewBox="0 0 64 64" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} stroke={fillColor} fill={fillColor} strokeWidth={.1} onClick={onClick} viewBox="0 0 64 64" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <path d="M45.8,42.39a23,23,0,1,0-27.6,0L6.29,54.29a1,1,0,0,0-.19,1.14,1,1,0,0,0,1,.56L15,55.12V62a1,1,0,0,0,.62.92A.84.84,0,0,0,16,63a1,1,0,0,0,.71-.29L32,47.41l15.29,15.3A1,1,0,0,0,48,63a.84.84,0,0,0,.38-.08A1,1,0,0,0,49,62V55.12l7.89.87a1,1,0,0,0,1-.56,1,1,0,0,0-.19-1.14ZM11,24A21,21,0,1,1,32,45,21,21,0,0,1,11,24Zm5.67,29.25a1,1,0,0,0-.78-.24l-6.17.68L19.88,43.53a22.62,22.62,0,0,0,9.82,3.35L17,59.59V54A1,1,0,0,0,16.67,53.25ZM48.11,53a1,1,0,0,0-.78.24A1,1,0,0,0,47,54v5.59L34.3,46.88a22.62,22.62,0,0,0,9.82-3.35L54.28,53.69Z"></path>
                 <path d="M51,24A19,19,0,1,0,32,43,19,19,0,0,0,51,24ZM15.75,19H26a1,1,0,0,0,.71-.29l4-4A1,1,0,0,0,31,14V11a2,2,0,0,1,2,2v5a1,1,0,0,0,1,1h9v2H35v2h8v2H35v2h8v2H35v2h8v1a1,1,0,0,1-1,1H30.24l-3.79-1.89A1,1,0,0,0,26,31H16.53A16.74,16.74,0,0,1,15,24,17.19,17.19,0,0,1,15.75,19ZM17.6,33h8.16l3.79,1.89A1,1,0,0,0,30,35H42a3,3,0,0,0,3-3V18a1,1,0,0,0-1-1H35V13a4,4,0,0,0-4-4H30a1,1,0,0,0-1,1v3.59L25.59,17H16.53A17,17,0,1,1,17.6,33Z"></path>
                 <path d="M9,11a1,1,0,0,0,1-1.27L9.15,6.86l1.44-1.05a1,1,0,0,0,.39-1A1,1,0,0,0,10.24,4L7.91,3.44l-1-1.91a1,1,0,0,0-1.76,0l-1,1.91L1.76,4A1,1,0,0,0,1,4.81a1,1,0,0,0,.39,1L2.85,6.86,2,9.73a1,1,0,0,0,.39,1.09,1,1,0,0,0,1.16,0L6,9l2.41,1.77A1,1,0,0,0,9,11ZM7.41,5.66A1,1,0,0,0,7,6.74l.21.74L6.59,7A1,1,0,0,0,5.41,7l-.66.48L5,6.74a1,1,0,0,0-.37-1.08L4.3,5.45,5,5.27a1,1,0,0,0,.63-.49L6,4.12l.36.66A1,1,0,0,0,7,5.27l.71.18Z"></path>
                 <path d="M63,4.81A1,1,0,0,0,62.24,4l-2.33-.59-1-1.91a1,1,0,0,0-1.76,0l-1,1.91L53.76,4a1,1,0,0,0-.74.78,1,1,0,0,0,.39,1l1.44,1.05L54,9.73a1,1,0,0,0,.39,1.09,1,1,0,0,0,1.16,0L58,9l2.41,1.77A1,1,0,0,0,61,11a1,1,0,0,0,1-1.27l-.81-2.87,1.44-1.05A1,1,0,0,0,63,4.81Zm-3.57.85A1,1,0,0,0,59,6.74l.21.74L58.59,7a1,1,0,0,0-1.18,0l-.66.48L57,6.74a1,1,0,0,0-.37-1.08l-.29-.21L57,5.27a1,1,0,0,0,.63-.49L58,4.12l.36.66a1,1,0,0,0,.63.49l.71.18Z"></path>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Worker({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} onClick={onClick} stroke={fillColor} fill={fillColor} viewBox="0 0 64 64" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} stroke={fillColor} fill={fillColor} viewBox="0 0 64 64" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <path d="m52 33.256v-2.563l.862-.323c4.27-1.601 7.138-5.74 7.138-10.3v-5.07c1.103 0 2-.897 2-2v-2c0-1.103-.897-2-2-2h-.059c-.5-4.493-4.317-8-8.941-8h-8c-4.624 0-8.442 3.507-8.941 8h-.059c-1.103 0-2 .897-2 2v2c0 1.103.897 2 2 2h2v1.697l-1.487 2.229c-.336.505-.513 1.092-.513 1.697 0 1.23.684 2.336 1.785 2.888l.215.107v2.382c0 2.757 2.243 5 5 5h3v2.124l-1.178.157c-5.679.758-10.447 4.459-12.613 9.719h-5.209v-13h6v-8h-14v3h-2v-3h-6v-6h6v-10h-14v10h6v6h-6v8h14v-3h2v3h6v13h-4v-8h-5c-2.757 0-5 2.243-5 5v18c0 2.757 2.243 5 5 5h29v-4h9.402c5.844 0 10.598-4.755 10.598-10.599 0-6.905-4.486-13.025-11-15.145zm-49-25.256h10v6h-10zm10 20h-10v-4h10zm6-4h10v4h-10zm39-3.93c0 3.73-2.347 7.117-5.84 8.427l-.16.06v-2.057l2.267-1.7c1.085-.815 1.733-2.111 1.733-3.467 0-2.277-1.766-4.149-4-4.32v-2.013h6zm-15-17.07h8c3.519 0 6.432 2.614 6.92 6h-21.84c.488-3.386 3.401-6 6.92-6zm-9 8h26v2h-26zm7 18c-1.654 0-3-1.346-3-3v-3.618l-1.32-.66c-.42-.21-.68-.631-.68-1.099 0-.21.062-.413.177-.587l1.823-2.733v-2.303h12v4h1.667c1.286 0 2.333 1.047 2.333 2.333 0 .73-.349 1.429-.934 1.867l-3.066 2.3v8.5c0 1.103-.897 2-2 2s-2-.897-2-2v-5zm-27 8h3v6h-3c-1.654 0-3-1.346-3-3s1.346-3 3-3zm27 24h-27c-1.654 0-3-1.346-3-3v-14.026c.838.635 1.87 1.026 3 1.026h27v4c-2.206 0-4 1.794-4 4v2c0 2.206 1.794 4 4 4zm4-4h-4c-1.103 0-2-.897-2-2v-2c0-1.103.897-2 2-2h1.757c.534 0 1.036.208 1.415.586l.828.828zm7.402 0h-5.402v-4h3.879c1.634 0 3.171-.637 4.328-1.793 1.156-1.155 1.793-2.692 1.793-4.328v-2.879h-2v2.879c0 1.102-.429 2.136-1.207 2.914-.768.767-1.83 1.207-2.914 1.207h-4.465l-.828-.828c-.698-.698-1.61-1.089-2.586-1.148v-6.024h-10.602c2.026-4.193 6.001-7.111 10.689-7.736l1.092-.145c.487 1.659 2.006 2.881 3.821 2.881 1.751 0 3.226-1.138 3.767-2.707 5.486 1.966 9.233 7.209 9.233 13.108 0 4.742-3.857 8.599-8.598 8.599z"></path>
                 <path d="m5 10h6v2h-6z"></path>
                 <path d="m49 42h4v2h-4z"></path>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CNC({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} onClick={onClick} fill={fillColor} stroke={fillColor} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} fill={fillColor} stroke={fillColor} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <g>
                     <path d="M408.307,448.903H103.692c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h304.613c4.142,0,7.5-3.358,7.5-7.5    C415.806,452.261,412.449,448.903,408.307,448.903z"></path>
@@ -629,13 +629,13 @@ export function CNC({ fillColor = '#000', className, onClick, backgroundColor, o
                     <path d="M456.403,497h-8.532V23.532C447.871,10.557,437.314,0,424.339,0H87.661C74.685,0,64.129,10.557,64.129,23.532V497h-8.532    c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h400.807c4.142,0,7.5-3.358,7.5-7.5    C463.904,500.358,460.545,497,456.403,497z M432.871,497H79.129v-65.161h40.6c4.142,0,7.5-3.358,7.5-7.5    c0-4.142-3.358-7.5-7.5-7.5h-8.536v-97.226h65.162v29.304c0,6.718,3.612,12.983,9.426,16.349l60.754,35.173    c2.919,1.69,6.192,2.535,9.465,2.535c3.273,0,6.546-0.845,9.465-2.535l60.754-35.173c5.814-3.366,9.426-9.631,9.426-16.349    v-29.304h65.162v97.226H151.793c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h281.078V497z M400.806,64.129H111.192    V47.064h289.613V64.129z M247.468,96.193V79.129h17.064v17.064H247.468z M264.532,111.193v14.778l-8.532,17.065l-8.532-17.065    v-14.778H264.532z M255.999,287.548c4.142,0,7.5-3.358,7.5-7.5v-36.86l49.676,28.76l-55.226,31.973    c-1.203,0.696-2.698,0.696-3.9,0l-55.227-31.973l49.676-28.76v36.86C248.499,284.19,251.858,287.548,255.999,287.548z     M284.306,338.781l28.862,16.709L263.5,384.245v-66.361c0.669-0.289,1.327-0.611,1.965-0.98l55.18-31.946v57.528l-28.823-16.687    c-3.583-2.075-8.173-0.852-10.249,2.733C279.497,332.117,280.721,336.705,284.306,338.781z M246.533,316.903    c0.638,0.37,1.296,0.691,1.965,0.98v66.361l-49.668-28.755l28.862-16.709c3.585-2.075,4.808-6.664,2.733-10.249    c-2.075-3.585-6.665-4.809-10.249-2.733l-28.823,16.687v-57.528L246.533,316.903z M432.871,416.839h-17.064V119.726    c0-4.142-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.358-7.5,7.5v184.887h-65.162v-26.097c0-6.717-3.611-12.982-9.426-16.349    l-60.754-35.173c-5.838-3.38-13.091-3.38-18.93,0l-60.755,35.174c-5.813,3.367-9.425,9.631-9.425,16.349v26.097h-65.162V79.129    h121.274v48.613c0,1.165,0.271,2.313,0.792,3.354l15.24,30.481v38.311c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5    v-38.311l15.24-30.481c0.521-1.042,0.792-2.189,0.792-3.354V79.129h121.274v8.526c0,4.142,3.358,7.5,7.5,7.5    c4.142,0,7.5-3.358,7.5-7.5V39.564c0-4.142-3.358-7.5-7.5-7.5H103.692c-4.142,0-7.5,3.358-7.5,7.5v377.274H79.129V23.532    c0-4.704,3.828-8.532,8.532-8.532h336.678c4.705,0,8.532,3.828,8.532,8.532V416.839z"></path>
                 </g>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Assembly({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} onClick={onClick} fill={fillColor} stroke={fillColor} viewBox="0 0 511.997 511.997" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} fill={fillColor} stroke={fillColor} viewBox="0 0 511.997 511.997" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <g>
                     <circle cx="366.436" cy="147.111" r="8.245"></circle>
@@ -670,13 +670,13 @@ export function Assembly({ fillColor = '#000', className, onClick, backgroundCol
                     <path d="M351.208,378.753c-20.031,0-36.327,16.297-36.327,36.327s16.297,36.327,36.327,36.327s36.327-16.297,36.327-36.327    S371.239,378.753,351.208,378.753z M351.208,436.479c-11.799,0-21.398-9.599-21.398-21.398s9.599-21.398,21.398-21.398    s21.398,9.599,21.398,21.398S363.007,436.479,351.208,436.479z"></path>
                 </g>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Truck({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg className={className} onClick={onClick} fill={fillColor} stroke={fillColor} viewBox="0 0 128 128" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} fill={fillColor} stroke={fillColor} viewBox="0 0 128 128" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
                 <path d="M122.041,58.128,109.82,55.65,97.388,34.528a1.751,1.751,0,0,0-1.508-.862H89.913V27.554a1.749,1.749,0,0,0-1.75-1.75h-6.1a1.75,1.75,0,0,0-1.75,1.75v6.112H75.736V27.554a1.749,1.749,0,0,0-1.75-1.75H6.307a1.749,1.749,0,0,0-1.75,1.75V93.06a1.75,1.75,0,0,0,1.75,1.75H16.813a15.216,15.216,0,0,0,26.093,0H85.094a15.216,15.216,0,0,0,26.093,0h10.506a1.75,1.75,0,0,0,1.75-1.75V59.844A1.751,1.751,0,0,0,122.041,58.128Zm-2.1,12.842H115.13V67.729h4.813Zm-14.3-15.51H83.813V44.618H99.265ZM83.813,29.3h2.6v4.362h-2.6Zm11.066,7.862,2.326,3.952H82.063a1.75,1.75,0,0,0-1.75,1.75V57.21a1.75,1.75,0,0,0,1.75,1.75h26.471l11.409,2.314v2.955H113.38a1.75,1.75,0,0,0-1.75,1.75V72.72a1.749,1.749,0,0,0,1.75,1.75h6.563v4.647H111.22a15.217,15.217,0,0,0-26.159,0H75.736V37.166ZM72.236,29.3V79.117h-29.3a15.217,15.217,0,0,0-26.159,0H8.057V29.3ZM8.057,91.31V82.617h7.175a15.1,15.1,0,0,0,.014,8.693Zm21.8,7.386a11.76,11.76,0,1,1,11.76-11.759A11.772,11.772,0,0,1,29.859,98.7ZM44.473,91.31a15.1,15.1,0,0,0,.014-8.693H83.513a15.1,15.1,0,0,0,.014,8.693ZM98.141,98.7A11.76,11.76,0,1,1,109.9,86.937,11.772,11.772,0,0,1,98.141,98.7Zm21.8-7.386h-7.189a15.1,15.1,0,0,0,.014-8.693h7.175Z"></path>
                 <path d="M29.859,80.158a6.778,6.778,0,1,0,6.779,6.779A6.786,6.786,0,0,0,29.859,80.158Zm0,10.056a3.278,3.278,0,1,1,3.279-3.277A3.281,3.281,0,0,1,29.859,90.214Z"></path><path d="M98.141,80.158a6.778,6.778,0,1,0,6.778,6.779A6.787,6.787,0,0,0,98.141,80.158Zm0,10.056a3.278,3.278,0,1,1,3.278-3.277A3.282,3.282,0,0,1,98.141,90.214Z"></path>
@@ -684,13 +684,13 @@ export function Truck({ fillColor = '#000', className, onClick, backgroundColor,
                 <path d="M46.678,54.4a1.751,1.751,0,0,0-1.75,1.75v7H35.365v-7a1.75,1.75,0,0,0-3.5,0V64.9a1.749,1.749,0,0,0,1.75,1.75H46.678a1.749,1.749,0,0,0,1.75-1.75V56.15A1.75,1.75,0,0,0,46.678,54.4Z"></path>
                 <path d="M30.526,54.5l9.62-9.62,9.621,9.62a1.75,1.75,0,0,0,2.475-2.475l-3.814-3.813V42.688a1.75,1.75,0,0,0-3.5,0v2.028l-3.544-3.545a1.751,1.751,0,0,0-2.475,0L28.051,52.029A1.75,1.75,0,0,0,30.526,54.5Z"></path>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Cpu({ fillColor, className, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="4" y="4" width="16" height="16" rx="2"></rect>
             <rect x="9" y="9" width="6" height="6"></rect>
             <path d="M15 2v2"></path>
@@ -701,792 +701,792 @@ export function Cpu({ fillColor, className, onClick, backgroundColor, onHover, s
             <path d="M20 9h2"></path>
             <path d="M9 2v2"></path>
             <path d="M9 20v2"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Globe({ fillColor, className, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
             <path d="M7 3.34V5a3 3 0 0 0 3 3v0a2 2 0 0 1 2 2v0c0 1.1.9 2 2 2v0a2 2 0 0 0 2-2v0c0-1.1.9-2 2-2h3.17"></path>
             <path d="M11 21.95V18a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
             <circle cx="12" cy="12" r="10"></circle>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Disk({ fillColor, className, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <line x1="22" x2="2" y1="12" y2="12"></line>
             <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
             <line x1="6" x2="6.01" y1="16" y2="16"></line>
             <line x1="10" x2="10.01" y1="16" y2="16"></line>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Internet({ fillColor, className, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="16" y="16" width="6" height="6" rx="1"></rect>
             <rect x="2" y="16" width="6" height="6" rx="1"></rect>
             <rect x="9" y="2" width="6" height="6" rx="1"></rect>
             <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
             <path d="M12 12V8"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Shield({ fillColor, className, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon className={className} onClick={onClick} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={fillColor} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M6.5 12l6-6m-6 6l6 6m0-6H20" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M17.5 12l-6-6m6 6l-6 6m0-6H4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowUp({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M12 6.5l-6 6m6-6l6 6m0 0H6m6 0v16" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowDown({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M12 17.5l-6-6m6 6l6-6m0 0H6m6 0V1.5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowTopLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M6.5 6.5v8.25m0-8.25h8.25" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowTopRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M17.5 6.5v8.25m0-8.25h-8.25" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowBottomLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M6.5 17.5v-8.25m0 8.25h8.25" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ArrowBottomRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M17.5 17.5v-8.25m0 8.25h-8.25" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ChevronLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M15.5 6.5l-6 5.5 6 5.5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ChevronRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M8.5 6.5l6 5.5-6 5.5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ChevronUp({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M6.5 15.5l5.5-6 5.5 6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ChevronDown({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M6.5 8.5l5.5 6 5.5-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function User({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="8" r="3.5" fill={isColored ? fillColor : "currentColor"} />
             <path fill={isColored ? fillColor : "currentColor"} d="M4 20.5c0-2.5 3.58-4.5 8-4.5s8 2 8 4.5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function UserPlus({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="11" cy="8" r="3" fill={isColored ? fillColor : "currentColor"} />
             <path fill={isColored ? fillColor : "currentColor"} d="M4 20.5c0-2.5 3-4.5 7-4.5s7 2 7 4.5" />
             <path fill={isColored ? fillColor : "currentColor"} d="M18 12v4m2-2h-4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function UserMinus({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="11" cy="8" r="3" fill={isColored ? fillColor : "currentColor"} />
             <path fill={isColored ? fillColor : "currentColor"} d="M4 20.5c0-2.5 3-4.5 7-4.5s7 2 7 4.5" />
             <path fill={isColored ? fillColor : "currentColor"} d="M18 13h4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Users({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="9" cy="8" r="2.5" fill={isColored ? fillColor : "currentColor"} />
             <circle cx="15" cy="9" r="2.5" fill={isColored ? fillColor : "currentColor"} />
             <path fill={isColored ? fillColor : "currentColor"} d="M4 20.5c0-2 2.5-3.5 5-3.5s5 1.5 5 3.5" />
             <path fill={isColored ? fillColor : "currentColor"} d="M12 19c0-2 2.5-3.5 5-3.5s5 1.5 5 3.5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function UsersGroup({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="8" cy="7.5" r="2" fill={isColored ? fillColor : "currentColor"} />
             <circle cx="12" cy="5.5" r="2" fill={isColored ? fillColor : "currentColor"} />
             <circle cx="16" cy="7.5" r="2" fill={isColored ? fillColor : "currentColor"} />
             <path fill={isColored ? fillColor : "currentColor"} d="M3 21c0-2.5 2-4 5-4s5 1.5 5 4m6-4c0-2.5 1.5-4 3.5-4s3.5 1.5 3.5 4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Profile({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="9" r="3.5" fill={isColored ? fillColor : "currentColor"} />
             <rect x="3" y="15" width="18" height="6" rx="1" fill={isColored ? fillColor : "currentColor"} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ShoppingCart({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="8.5" cy="19" r="1" fill={isColored ? fillColor : "currentColor"} />
             <circle cx="16.5" cy="19" r="1" fill={isColored ? fillColor : "currentColor"} />
             <path fill={isColored ? fillColor : "currentColor"} d="M2 3h2l3 15h12l3-11H7" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ShoppingBag({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="6" y="3" width="12" height="3" rx="1" fill="transparent" stroke={fillColor} />
             <path fill={isColored ? fillColor : "currentColor"} d="M6 6v11c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CreditCard({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="5" width="20" height="14" rx="2" fill="transparent" stroke={fillColor} />
             <line x1="2" y1="10" x2="22" y2="10" stroke={fillColor} />
             <rect x="4" y="15" width="4" height="2" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function DollarSign({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M12 2v20m-4-5c0 2.2 1.8 4 4 4s4-1.8 4-4-1.8-4-4-4-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function PoundSign({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M5 18h14m-2-2c1-2 2-5 2-7 0-3-2-5-5-5-3 0-5 2-5 5v3H5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function EuroSign({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M14 5c-3 0-5 2-5 5s2 5 5 5h5m-5-10c3 0 5 2 5 5s-2 5-5 5h-5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Star({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function StarFilled({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Heart({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M20.5 5.5c-1.5-1.5-3.5-2.5-6-2.5-2.5 0-4.5 1-6 2.5-1.5-1.5-3.5-2.5-6-2.5-4 0-7 3-7 7 0 6 11 12 12 12s12-6 12-12c0-4-3-7-7-7Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function HeartFilled({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M20.5 5.5c-1.5-1.5-3.5-2.5-6-2.5-2.5 0-4.5 1-6 2.5-1.5-1.5-3.5-2.5-6-2.5-4 0-7 3-7 7 0 6 11 12 12 12s12-6 12-12c0-4-3-7-7-7Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Lock({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="5" y="9" width="14" height="10" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M9 9V6c0-2 1-3 3-3s3 1 3 3v3" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Unlock({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="5" y="9" width="14" height="10" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M9 9V6c0-2 1-3 3-3s3 1 3 3v1h4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Key({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="7" cy="12" r="4" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M11 12h8m-3-3v6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function EyeOff({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M17.5 6.5L6.5 17.5m-3-6c-2-3-3-5-3-5s3-4 9-4 9 4 9 4" />
             <circle cx="12" cy="12" r="3" fill="transparent" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Bell({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M8 15a4 4 0 008 0m-8-3v-3a4 4 0 118 0v3m-2 6v1c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-1" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function BellOff({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M17.5 6.5L6.5 17.5M8 15a4 4 0 008 0m-8-3v-3a4 4 0 014-4" />
             <line x1="10.5" y1="10.5" x2="13.5" y2="13.5" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function AlertCircle({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <line x1="12" y1="8" x2="12" y2="12" stroke={fillColor} />
             <circle cx="12" cy="16" r="0.5" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function AlertTriangle({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M12 2l10 17H2l10-17Z" />
             <line x1="12" y1="9" x2="12" y2="13" stroke={fillColor} />
             <circle cx="12" cy="17" r="0.5" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function AlertSquare({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="2" width="20" height="20" rx="2" fill="transparent" stroke={fillColor} />
             <line x1="12" y1="9" x2="12" y2="13" stroke={fillColor} />
             <circle cx="12" cy="17" r="0.5" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CheckCircle({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M8 12l2 2 4-4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function XCircle({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M8 8l8 8M16 8l-8 8" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function InfoCircle({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <circle cx="12" cy="8" r="0.5" fill={fillColor} />
             <line x1="12" y1="11" x2="12" y2="16" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Calendar({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="4" width="18" height="16" rx="2" fill="transparent" stroke={fillColor} />
             <line x1="3" y1="9" x2="21" y2="9" stroke={fillColor} />
             <line x1="9" y1="2" x2="9" y2="6" stroke={fillColor} />
             <line x1="15" y1="2" x2="15" y2="6" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Clock({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <line x1="12" y1="6" x2="12" y2="12" stroke={fillColor} />
             <line x1="12" y1="12" x2="15" y2="15" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Timer({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="13" r="9" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M9 3h6M12 8v5l3 2" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Hourglass({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M5 2h14v5c0 3-3 5-7 5s-7-2-7-5V2Zm0 20h14v-5c0-3-3-5-7-5s-7 2-7 5v5Zm7-9h0" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function BarChart({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="12" width="3" height="9" fill={isColored ? fillColor : "currentColor"} />
             <rect x="10" y="5" width="3" height="16" fill={isColored ? fillColor : "currentColor"} />
             <rect x="17" y="8" width="3" height="13" fill={isColored ? fillColor : "currentColor"} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function LineChart({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="3 20 6 16 9 13 12 16 15 10 18 14 21 4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function PieChart({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <path fill={fillColor} d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function TrendingUp({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="23 6 13 16 8 11 1 18" />
             <polyline fill="transparent" stroke={fillColor} points="17 6 23 6 23 12" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function TrendingDown({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="23 18 13 8 8 13 1 6" />
             <polyline fill="transparent" stroke={fillColor} points="17 18 23 18 23 12" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Database({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <ellipse cx="12" cy="5" rx="7" ry="3" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M5 5v6c0 2 3 3 7 3s7-1 7-3V5" />
             <path fill="transparent" stroke={fillColor} d="M5 11v6c0 2 3 3 7 3s7-1 7-3v-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Cloud({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M19 13a3 3 0 0 0-3-3 4 4 0 0 0-4 4H7a4 4 0 0 0 0 8h12a3 3 0 0 0 3-3z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CloudUpload({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M19 13a3 3 0 0 0-3-3 4 4 0 0 0-4 4H7a4 4 0 0 0 0 8h12a3 3 0 0 0 3-3z" />
             <path fill="transparent" stroke={fillColor} d="M12 10v6m-2-2l2-2 2 2" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CloudDownload({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M19 13a3 3 0 0 0-3-3 4 4 0 0 0-4 4H7a4 4 0 0 0 0 8h12a3 3 0 0 0 3-3z" />
             <path fill="transparent" stroke={fillColor} d="M12 14v6m-2-2l2 2 2-2" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgHardDrive({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconHardDrive({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="4" width="20" height="14" rx="2" fill="transparent" stroke={fillColor} />
             <circle cx="6" cy="11" r="1" fill={fillColor} />
             <circle cx="18" cy="11" r="1" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgZap({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconZap({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M13 2L3 14h8l-2 8 10-12h-8l2-8Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgHome({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconHome({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M3 10l9-8 9 8v8c0 1-1 2-2 2h-14c-1 0-2-1-2-2v-8Zm9-5v10m-4-4h8" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgFlag({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconFlag({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M4 2v18l8-5 7 5V2h-6l-1-2h-8Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgBookmark({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconBookmark({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M6 2h12c1 0 2 1 2 2v17l-8-5-8 5V4c0-1 1-2 2-2Z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgLink({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconLink({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
             <path fill="transparent" stroke={fillColor} d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgShare({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconShare({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="18" cy="5" r="3" fill="transparent" stroke={fillColor} />
             <circle cx="6" cy="12" r="3" fill="transparent" stroke={fillColor} />
             <circle cx="18" cy="19" r="3" fill="transparent" stroke={fillColor} />
             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke={fillColor} />
             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgDownload({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconDownload({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
             <polyline fill="transparent" stroke={fillColor} points="7 10 12 15 17 10" />
             <line x1="12" y1="15" x2="12" y2="3" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgUpload({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconUpload({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
             <polyline fill="transparent" stroke={fillColor} points="17 14 12 9 7 14" />
             <line x1="12" y1="9" x2="12" y2="21" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgCode({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconCode({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgTerminal({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconTerminal({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="3" width="20" height="18" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M7 10l3 3-3 3m6 0h4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgGear({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconGear({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="3" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M12 1v2m0 12v2" />
             <path fill="transparent" stroke={fillColor} d="M4.22 4.22l1.41 1.41m8.74 8.74l1.41 1.41" />
             <path fill="transparent" stroke={fillColor} d="M1 12h2m12 0h2" />
             <path fill="transparent" stroke={fillColor} d="M4.22 19.78l1.41-1.41m8.74-8.74l1.41-1.41" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMoreVertical({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
+export function BaseIconMoreVertical({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="5" r="1" fill={fillColor} />
             <circle cx="12" cy="12" r="1" fill={fillColor} />
             <circle cx="12" cy="19" r="1" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMoreHorizontal({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
+export function BaseIconMoreHorizontal({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="5" cy="12" r="1" fill={fillColor} />
             <circle cx="12" cy="12" r="1" fill={fillColor} />
             <circle cx="19" cy="12" r="1" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMinusSign({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMinusSign({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <line x1="5" y1="12" x2="19" y2="12" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgPlusSign({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconPlusSign({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <line x1="12" y1="5" x2="12" y2="19" stroke={fillColor} />
             <line x1="5" y1="12" x2="19" y2="12" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgCheckBox({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconCheckBox({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="3" width="18" height="18" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M7 12l3 3 6-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgRadio({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
+export function BaseIconRadio({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill="transparent" stroke={fillColor} />
             <circle cx="12" cy="12" r="5" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgToggle({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconToggle({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="5" width="20" height="14" rx="7" fill={isColored ? fillColor : "currentColor"} />
             <circle cx="17" cy="12" r="5" fill="white" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgEqual({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconEqual({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <line x1="6" y1="9" x2="18" y2="9" stroke={fillColor} />
             <line x1="6" y1="15" x2="18" y2="15" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSkipForward({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSkipForward({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="15 5 3 12 15 19" />
             <line x1="18" y1="5" x2="18" y2="19" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSkipBack({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSkipBack({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="9 5 21 12 9 19" />
             <line x1="6" y1="5" x2="6" y2="19" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgVolume({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconVolume({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="11 5 6 9 2 9 2 15 6 15 11 19" />
             <path fill="transparent" stroke={fillColor} d="M15.54 8.46a5 5 0 0 1 0 7.07" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgVolumeOff({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconVolumeOff({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="11 5 6 9 2 9 2 15 6 15 11 19" />
             <line x1="23" y1="9" x2="17" y2="15" stroke={fillColor} />
             <line x1="17" y1="9" x2="23" y2="15" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgImage({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconImage({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="3" width="18" height="18" rx="2" fill="transparent" stroke={fillColor} />
             <circle cx="8.5" cy="8.5" r="1.5" fill={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M21 15l-5-5L5 21" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgVideo({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconVideo({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="23 7 16 12 23 17" />
             <rect x="1" y="5" width="15" height="14" rx="2" fill="transparent" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgX({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconX({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "currentColor"} d="M18 6L6 18M6 6l12 12" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgXSquare({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconXSquare({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="3" width="18" height="18" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M9 9l6 6M15 9l-6 6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgFilter({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconFilter({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSliders({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
+export function BaseIconSliders({ fillColor = "#000", onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <line x1="4" y1="9" x2="4" y2="5" stroke={fillColor} />
             <line x1="4" y1="15" x2="4" y2="19" stroke={fillColor} />
             <line x1="12" y1="9" x2="12" y2="3" stroke={fillColor} />
@@ -1496,475 +1496,474 @@ export function SvgSliders({ fillColor = "#000", onClick, backgroundColor, onHov
             <circle cx="4" cy="12" r="2" fill={fillColor} />
             <circle cx="12" cy="12" r="2" fill={fillColor} />
             <circle cx="20" cy="12" r="2" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMaximize({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMaximize({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMinimize({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMinimize({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 0-2-2H3m18 0h-3a2 2 0 0 0-2 2v3" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgLoader({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconLoader({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M12 2a10 10 0 1 0 10 10" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSpinner({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSpinner({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M12 2c5.5 0 10 4.5 10 10" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgRepeat({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconRepeat({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="17 2 21 6 17 10" />
             <path fill="transparent" stroke={fillColor} d="M21 6H5a4 4 0 0 0 0 8h16" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgShare2({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconShare2({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="18" cy="5" r="3" fill="transparent" stroke={fillColor} />
             <circle cx="6" cy="12" r="3" fill="transparent" stroke={fillColor} />
             <circle cx="18" cy="19" r="3" fill="transparent" stroke={fillColor} />
             <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" stroke={fillColor} />
             <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgEye2({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconEye2({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" stroke={fillColor} d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
             <circle cx="12" cy="12" r="3" fill="transparent" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgChevronsLeft({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconChevronsLeft({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="11 17 6 12 11 7" />
             <polyline fill="transparent" stroke={fillColor} points="18 17 13 12 18 7" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgChevronsRight({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconChevronsRight({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="13 17 18 12 13 7" />
             <polyline fill="transparent" stroke={fillColor} points="6 17 11 12 6 7" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgChevronsUp({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconChevronsUp({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="17 11 12 6 7 11" />
             <polyline fill="transparent" stroke={fillColor} points="17 18 12 13 7 18" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgChevronsDown({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconChevronsDown({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline fill="transparent" stroke={fillColor} points="7 13 12 18 17 13" />
             <polyline fill="transparent" stroke={fillColor} points="7 6 12 11 17 6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSkipToStart({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSkipToStart({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="19 5 9 12 19 19" />
             <line x1="5" y1="5" x2="5" y2="19" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSkipToEnd({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSkipToEnd({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polygon fill={isColored ? fillColor : "currentColor"} points="5 5 15 12 5 19" />
             <line x1="19" y1="5" x2="19" y2="19" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgAlert({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconAlert({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M12 2L2 20h20L12 2M12 9v4M12 17h0.01" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMic({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMic({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z" />
             <path fill="transparent" d="M7 11a6 6 0 0 0 5 5.917V20h2v-3.083A6 6 0 0 0 17 11" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgCamera({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconCamera({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M14 5H10L8 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4l-2-2Z" />
             <circle cx="12" cy="13" r="3.5" fill="transparent" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgPaste({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconPaste({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
             <rect x="9" y="2" width="6" height="3" rx="1" fill="transparent" />
             <path fill="transparent" d="M9 13h6M9 17h6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgCheckCircleFilled({ fillColor = "#00B1FF", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconCheckCircleFilled({ fillColor = "#00B1FF", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill={isColored ? fillColor : "currentColor"} />
             <path fill="#fff" fillRule="evenodd" d="M16.707 8.707a1 1 0 0 0-1.414-1.414L10 13.586l-2.293-2.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l7-7Z" clipRule="evenodd" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgXCircleFilled({ fillColor = "#FF4444", isColored = true, onClick, backgroundColor, onHover, style }) {
+export function BaseIconXCircleFilled({ fillColor = "#FF4444", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="10" fill={isColored ? fillColor : "currentColor"} />
             <path fill="#fff" fillRule="evenodd" d="M8.293 8.293a1 1 0 0 1 1.414 0L12 10.586l2.293-2.293a1 1 0 1 1 1.414 1.414L13.414 12l2.293 2.293a1 1 0 0 1-1.414 1.414L12 13.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L10.586 12 8.293 9.707a1 1 0 0 1 0-1.414Z" clipRule="evenodd" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgBack({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconBack({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M19 12H5M9 18l-6-6 6-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgForward({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconForward({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M5 12h14M15 18l6-6-6-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSort({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSort({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 6h18M3 12h18M3 18h18" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgHeadphones({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconHeadphones({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 12c0-4.418 3.582-8 8-8s8 3.582 8 8v3c0 .552.448 1 1 1s1-.448 1-1v-3c0-5.523-4.477-10-10-10S2 6.477 2 12v3c0 .552.448 1 1 1s1-.448 1-1v-3Z" />
             <rect x="2" y="14" width="3" height="5" rx="1" fill="transparent" />
             <rect x="19" y="14" width="3" height="5" rx="1" fill="transparent" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgSpeaker({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconSpeaker({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M4 9v6a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4h-8a4 4 0 0 0-4 4Z" />
             <circle cx="12" cy="12" r="1.5" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgEye3({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconEye3({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M12 4.5C6.5 4.5 3 8.5 1 12c2 3.5 5.5 7.5 11 7.5s9-4 11-7.5c-2-3.5-5.5-7.5-11-7.5Z" />
             <circle cx="12" cy="12" r="3" fill="transparent" />
             <circle cx="12" cy="12" r="1" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgEye4({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconEye4({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M1 12s2 6 11 6 11-6 11-6-2-6-11-6-11 6-11 6Z" />
             <circle cx="12" cy="12" r="4" fill="transparent" />
             <circle cx="12" cy="12" r="2" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMenu2({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMenu2({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 5h18M3 12h18M3 19h18" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMenu3({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMenu3({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="5" r="1" fill={fillColor} />
             <circle cx="12" cy="12" r="1" fill={fillColor} />
             <circle cx="12" cy="19" r="1" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 // Mail-related icons
-export function SvgMail({ isColored = true, title = 'Email', onClick, backgroundColor, onHover, style }) {
+export function BaseIconMail({ isColored = true, title = 'Email', onClick, backgroundColor, onHover, style }) {
     return (
         <div title={title} onClick={onClick}>
-            <svg viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+            <BaseIcon viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
                 <path fill={isColored ? '#FC3F1D' : 'currentColor'} stroke='transparent' d="M5.856 6.84a.75.75 0 0 0-1.106.66V17a.75.75 0 0 0 1.5 0V8.756l5.394 2.904c.222.12.49.12.712 0l5.394-2.904V17a.75.75 0 0 0 1.5 0V7.5a.75.75 0 0 0-1.106-.66L12 10.148 5.856 6.84Z"></path>
                 <path fill={isColored ? '#4e4e4e' : 'currentColor'} stroke='transparent' fillRule="evenodd" d="M17.31 3.722a59.632 59.632 0 0 0-10.62 0l-1.518.135a3.53 3.53 0 0 0-3.179 3.006 35.508 35.508 0 0 0 0 10.274 3.53 3.53 0 0 0 3.18 3.005l1.516.136c3.534.316 7.088.316 10.622 0l1.517-.136a3.53 3.53 0 0 0 3.179-3.005 35.508 35.508 0 0 0 0-10.274 3.53 3.53 0 0 0-3.18-3.006l-1.516-.135ZM6.824 5.216a58.133 58.133 0 0 1 10.354 0l1.517.136a2.03 2.03 0 0 1 1.829 1.728 34.005 34.005 0 0 1 0 9.84 2.03 2.03 0 0 1-1.829 1.728l-1.517.136c-3.444.308-6.91.308-10.354 0l-1.517-.136a2.03 2.03 0 0 1-1.829-1.728 34.008 34.008 0 0 1 0-9.84 2.03 2.03 0 0 1 1.829-1.728l1.517-.136Z" clipRule="evenodd"></path>
-            </svg>
+            </BaseIcon>
         </div>
     );
 };
 
-export function SvgMailOpen({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMailOpen({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 7h18M3 7l9 6 9-6M3 7v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V7" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMailRead({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMailRead({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" />
             <path fill="transparent" d="M3 5l9 6 9-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgMailUnread({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconMailUnread({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="19" cy="5" r="3" fill={fillColor} />
             <path fill="transparent" d="M3 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" />
             <path fill="transparent" d="M3 5l7 5 9-6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 // Archive-related icons
-export function SvgInbox({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconInbox({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="4" width="20" height="16" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M2 8h20M7 8v2c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgArchive({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconArchive({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="2" y="5" width="20" height="14" rx="2" fill="transparent" stroke={fillColor} />
             <path fill="transparent" stroke={fillColor} d="M2 10h20" />
             <path fill="transparent" stroke={fillColor} d="M9 14h6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgArchiveAdd({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconArchiveAdd({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 6h18v2H3zM5 8h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 8Z" />
             <path fill="transparent" d="M10 12h4M12 10v4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgArchiveRemove({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconArchiveRemove({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 6h18v2H3zM5 8h14l-1 11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 8Z" />
             <path fill="transparent" d="M9 12h6" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 // Clipboard and copy
-export function SvgClipboard({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconClipboard({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} fill="transparent" width={size} strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} fill="transparent" width={size} strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M15.75 3h1.5a2.25 2.25 0 0 1 2.25 2.25v15a2.25 2.25 0 0 1-2.25 2.25H6.75a2.25 2.25 0 0 1-2.25-2.25v-15A2.25 2.25 0 0 1 6.75 3h1.5"></path>
             <path d="M14.525 1.5h-5.05c-.677 0-1.225.548-1.225 1.225v.55c0 .677.548 1.225 1.225 1.225h5.05c.677 0 1.225-.548 1.225-1.225v-.55c0-.677-.548-1.225-1.225-1.225Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgCopy({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconCopy({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg width={size} height={size} fill="none" stroke={fillColor} strokeWidth={strokeWidth || "1.5"} strokeLinejoin="round" strokeLinecap="round" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width={size} height={size} fill="none" stroke={fillColor} strokeWidth={strokeWidth || "1.5"} strokeLinejoin="round" strokeLinecap="round" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M19.078 6H8.672A2.672 2.672 0 0 0 6 8.672v10.406a2.672 2.672 0 0 0 2.672 2.672h10.406a2.672 2.672 0 0 0 2.672-2.672V8.672A2.672 2.672 0 0 0 19.078 6Z"></path>
             <path d="M17.977 6 18 4.875a2.633 2.633 0 0 0-2.625-2.625H5.25a3.009 3.009 0 0 0-3 3v10.125A2.633 2.633 0 0 0 4.875 18H6"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 // Identity and biometric
-export function SvgID({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconID({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg width={size} height={size} fill="none" strokeWidth={strokeWidth || "1.5"} strokeLinejoin="round" strokeLinecap="round" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width={size} height={size} fill="none" strokeWidth={strokeWidth || "1.5"} strokeLinejoin="round" strokeLinecap="round" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path stroke="currentColor" d="M17.25 1.5H6.75A2.25 2.25 0 0 0 4.5 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V3.75a2.25 2.25 0 0 0-2.25-2.25Z"></path>
             <path stroke="currentColor" d="M9.75 3.75h4.5"></path>
             <path fill="currentColor" stroke="none" d="M15.632 13.337a1.856 1.856 0 0 0-1.382-.587c-.544 0-1.035.207-1.385.583-.349.376-.525.896-.484 1.453.08 1.1.918 1.996 1.87 1.996.95 0 1.787-.895 1.868-1.995a1.897 1.897 0 0 0-.487-1.45Z"></path>
             <path fill="currentColor" stroke="none" d="M17.424 21h-6.346a.565.565 0 0 1-.56-.437.609.609 0 0 1-.006-.27c.152-.823.627-1.515 1.374-2 .663-.43 1.503-.668 2.365-.668.863 0 1.703.237 2.365.668.747.485 1.221 1.177 1.374 2a.609.609 0 0 1-.13.512.563.563 0 0 1-.436.195Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgFingerprint({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style }) {
+export function BaseIconFingerprint({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg width={size} height={size} fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width={size} height={size} fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M17.815 4.47c-.08 0-.16-.02-.23-.06-1.92-.99-3.58-1.41-5.57-1.41-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2a.506.506 0 0 1 .2-.68C7.825 2.52 9.865 2 12.015 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67a.49.49 0 0 1-.44.28ZM3.505 9.72a.499.499 0 0 1-.41-.79c.99-1.4 2.25-2.5 3.75-3.27 3.14-1.62 7.16-1.63 10.31-.01 1.5.77 2.76 1.86 3.75 3.25a.5.5 0 0 1-.12.7c-.23.16-.54.11-.7-.12a9.388 9.388 0 0 0-3.39-2.94c-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21Zm6.25 12.07a.47.47 0 0 1-.35-.15c-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15Zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12ZM14.915 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1a7.297 7.297 0 0 1-2.17-5.22c0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29a11.14 11.14 0 0 1-.73-3.96c0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94-1.7 0-3.08-1.32-3.08-2.94 0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 // Version control and light
-export function SvgVersion({ fillColor = "#fff", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconVersion({ fillColor = "#fff", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} fill={fillColor} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} fill={fillColor} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M7.5 6.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"></path>
             <path d="M7.5 21.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"></path>
             <path d="M7.5 17.25V6.75"></path>
             <path d="M16.5 9.75a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"></path>
             <path d="M16.5 9.75c0 6-9 2.25-9 7.5"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgLight({ fillColor = "#F56231", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconLight({ fillColor = "#F56231", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg width={size} height={size} fill="currentColor" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width={size} height={size} fill="currentColor" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={fillColor} stroke={fillColor} d="M12 9c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3Zm0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5ZM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1Zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1ZM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1Zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1ZM5.99 4.58a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .38-.39.39-1.03 0-1.41L5.99 4.58Zm12.37 12.37a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 0 0 0-1.41l-1.06-1.06Zm1.06-10.96a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06a.996.996 0 0 0 0 1.41c.39.38 1.03.39 1.41 0l1.06-1.06ZM7.05 18.36a.996.996 0 0 0 0-1.41.996.996 0 0 0-1.41 0l-1.06 1.06a.996.996 0 0 0 0 1.41c.39.38 1.03.39 1.41 0l1.06-1.06Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
-// Location and store
-export function Location({ fillColor = "#fff", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function Location2({ fillColor = "#fff", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke="black" fill="none" width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke="black" fill="none" width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g strokeWidth={strokeWidth || 2} strokeLinecap="round" strokeLinejoin="round"></g>
             <g>
                 <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" strokeLinecap="round" strokeLinejoin="round"></path>
                 <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" strokeLinecap="round" strokeLinejoin="round"></path>
             </g>
-        </svg>
+        </BaseIcon>
     );
 };
 
-export function SvgStore({ fillColor = "#ffffff", size = 24, onClick, backgroundColor, onHover, style }) {
+export function BaseIconStore({ fillColor = "#ffffff", size = 24, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg width={size} height={size} viewBox="0 0 512 512" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon width={size} height={size} viewBox="0 0 512 512" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g strokeLinecap="round" strokeLinejoin="round"></g>
             <path fill={fillColor} d="M147.244,207.801c21.256,0,38.485-17.237,38.485-38.485l14.052-147.244h-61.569l-29.454,147.244 C108.759,190.564,125.988,207.801,147.244,207.801z"></path>
             <path fill={fillColor} d="M256.004,207.801c21.248,0,38.477-17.237,38.477-38.485l-7.689-147.244h-61.576l-7.697,147.244 C217.518,190.564,234.748,207.801,256.004,207.801z"></path>
             <path fill={fillColor} d="M364.763,207.801c21.249,0,38.478-17.237,38.478-38.485L373.794,22.071h-61.568l14.052,147.244 C326.278,190.564,343.507,207.801,364.763,207.801z"></path>
             <path fill={fillColor} d="M460.798,22.071h-61.569l35.808,147.244c0,17.988,12.391,32.972,29.075,37.188V457.73h-57.997V287.744H259.818 V457.73H47.896V206.504c16.675-4.216,29.074-19.201,29.074-37.188l35.801-147.244H51.202L0,169.316 c0,12.687,6.218,23.85,15.698,30.864v289.75H496.31v-289.75c9.471-7.014,15.69-18.177,15.69-30.864L460.798,22.071z M381.969,457.73h-98.006V311.896h98.006V457.73z"></path>
             <rect fill={fillColor} x="109.404" y="276.338" width="85.577" height="85.577"></rect>
-        </svg>
+        </BaseIcon>
     );
 };
 
 // Social/Family
 export function Family({ fillColor = "#fff", size = 24, onClick, backgroundColor, onHover, style }) {
     return (
-        <svg fill={fillColor} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fill={fillColor} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M7.125 12a3.375 3.375 0 1 0 0-6.75 3.375 3.375 0 0 0 0 6.75Z"></path>
             <path d="M10.969 13.875c-1.32-.67-2.777-.938-3.844-.938-2.09 0-6.375 1.282-6.375 3.844v1.969h7.031v-.753c0-.89.375-1.784 1.032-2.528.523-.595 1.256-1.146 2.156-1.594Z"></path>
             <path d="M15.938 13.5c-2.441 0-7.313 1.508-7.313 4.5v2.25H23.25V18c0-2.992-4.872-4.5-7.313-4.5Z"></path>
             <path d="M15.938 12a4.125 4.125 0 1 0 0-8.25 4.125 4.125 0 0 0 0 8.25Z"></path>
-        </svg>
+        </BaseIcon>
     );
 };
 
 // New UI icons
 export function RadioFilled({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="9" fill="transparent" stroke={fillColor} />
             <circle cx="12" cy="12" r="5" fill={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CheckboxFilled({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="3" width="18" height="18" rx="2" fill={fillColor} />
             <polyline points="8 12 11 15 16 9" stroke="white" fill="none" strokeWidth={strokeWidth || "2"} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function CheckboxMinus({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="3" width="18" height="18" rx="2" fill={fillColor} />
             <line x1="8" y1="12" x2="16" y2="12" stroke="white" strokeWidth={strokeWidth || "2"} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function QrCode({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 5h8v8H3V5zM13 5h8v8h-8V5zM3 15h8v8H3v-8zM14 16h2m2 0h2M14 18h7m-7 2h7" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Barcode({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <line x1="5" y1="4" x2="5" y2="20" stroke={fillColor} strokeWidth="2" />
             <line x1="8" y1="4" x2="8" y2="20" stroke={fillColor} strokeWidth="1" />
             <line x1="11" y1="4" x2="11" y2="20" stroke={fillColor} strokeWidth="3" />
@@ -1972,92 +1971,92 @@ export function Barcode({ fillColor = "#000", onClick, backgroundColor, onHover,
             <line x1="18" y1="4" x2="18" y2="20" stroke={fillColor} strokeWidth="2" />
             <line x1="21" y1="4" x2="21" y2="20" stroke={fillColor} strokeWidth="1" />
             <line x1="4" y1="22" x2="20" y2="22" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Rss({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="6.5" cy="17.5" r="1.5" fill={isColored ? fillColor : "currentColor"} />
             <path fill="transparent" d="M4 4c7.73 0 14 6.27 14 14M4 9c5.38 0 9.78 4.4 9.78 9.78" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Scanner({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M6 3h2M16 3h2M6 21h2M16 21h2M3 6v2M21 6v2M3 16v2M21 16v2" />
             <rect x="4" y="4" width="16" height="16" rx="2" fill="transparent" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Cropping({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M3 5v5h4V5M3 19v-5h4v5M21 5v5h-4V5M21 19v-5h-4v5M5 3h5v4H5M5 17h5v4H5M19 3h-5v4h5M19 17h-5v4h5" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Rotate({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M1 4v6h6M23 20v-6h-6" />
             <path fill="transparent" d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22-4l-4.64 4.36A9 9 0 0 0 3.51 15L1 10" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Flip({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M12 3v18M4 10l8-8 8 8M4 14l8 8 8-8" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ZoomIn({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="10" cy="10" r="6" fill="transparent" />
             <path fill="transparent" d="M14 14l5 5M10 8v4M8 10h4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ZoomOut({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="10" cy="10" r="6" fill="transparent" />
             <path fill="transparent" d="M14 14l5 5M8 10h4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function AspectRatio({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="5" width="18" height="14" rx="1" fill="transparent" />
             <line x1="7" y1="12" x2="17" y2="12" stroke={fillColor} />
             <line x1="12" y1="7" x2="12" y2="17" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ThemeDark({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill={isColored ? fillColor : "transparent"} d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ThemeLight({ fillColor = "#F59E0B", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="12" r="5" fill="transparent" />
             <line x1="12" y1="1" x2="12" y2="3" stroke={fillColor} />
             <line x1="12" y1="21" x2="12" y2="23" stroke={fillColor} />
@@ -2067,51 +2066,51 @@ export function ThemeLight({ fillColor = "#F59E0B", isColored = true, onClick, b
             <line x1="21" y1="12" x2="23" y2="12" stroke={fillColor} />
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke={fillColor} />
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function ThemeAuto({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Accessibility({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <circle cx="12" cy="6" r="2" fill={isColored ? fillColor : "currentColor"} />
             <path fill="transparent" d="M12 8c2.21 0 4 1.79 4 4v6m-8-6v6c0 2.21 1.79 4 4 4h0m-2-6h4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Cursors({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <polyline points="3 3 3 15 9 9 13 19 15 18 11 8 17 8" fill="transparent" />
-        </svg>
+        </BaseIcon>
     );
 };
 
 export function Layout({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
-        <svg stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect x="3" y="3" width="18" height="18" rx="1" fill="transparent" />
             <line x1="3" y1="9" x2="21" y2="9" stroke={fillColor} />
             <line x1="9" y1="9" x2="9" y2="21" stroke={fillColor} />
             <line x1="15" y1="9" x2="15" y2="21" stroke={fillColor} />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgSun = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Sun({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <circle cx="12" cy="12" r="5" />
             <line x1="12" y1="1" x2="12" y2="3" />
             <line x1="12" y1="21" x2="12" y2="23" />
@@ -2121,155 +2120,95 @@ export const SvgSun = ({ fillColor = 'currentColor', isColored = true, onClick, 
             <line x1="21" y1="12" x2="23" y2="12" />
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgMoon = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Moon({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgSearch = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Search2({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <circle cx="11" cy="11" r="8" />
             <line x1="21" y1="21" x2="16.65" y2="16.65" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgHome = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Home2({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon xmlns="http://www.w3.org/2000/BaseIcon" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
             <polyline points="9 22 9 12 15 12 15 22" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgCloud = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Cloud2({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon xmlns="http://www.w3.org/2000/BaseIcon" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgUsers = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Users2({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon xmlns="http://www.w3.org/2000/BaseIcon" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
             <circle cx="9" cy="7" r="4" />
             <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgUser = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function User2({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon xmlns="http://www.w3.org/2000/BaseIcon" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
             <circle cx="12" cy="7" r="4" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgImage = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function Image2({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon xmlns="http://www.w3.org/2000/BaseIcon" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
             <circle cx="8.5" cy="8.5" r="1.5" />
             <polyline points="21 15 16 10 5 21" />
-        </svg>
+        </BaseIcon>
     );
 };
 
-export const SvgX = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
+export function X({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) {
     const color = isColored ? fillColor : 'currentColor';
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
+        <BaseIcon xmlns="http://www.w3.org/2000/BaseIcon" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
-        </svg>
-    );
-};
-
-export const SvgDocument = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
-    const color = isColored ? fillColor : 'currentColor';
-
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <polyline points="14 2 14 8 20 8" />
-            <line x1="16" y1="13" x2="8" y2="13" />
-            <line x1="16" y1="17" x2="8" y2="17" />
-            <polyline points="10 9 9 9 8 9" />
-        </svg>
-    );
-};
-
-export const SvgFolder = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
-    const color = isColored ? fillColor : 'currentColor';
-
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
-            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
-        </svg>
-    );
-};
-
-export const SvgDocumentUpload = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
-    const color = isColored ? fillColor : 'currentColor';
-
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <polyline points="14 2 14 8 20 8" />
-            <line x1="12" y1="18" x2="12" y2="12" />
-            <polyline points="9 15 12 12 15 15" />
-        </svg>
-    );
-};
-
-export const SvgReload = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
-    const color = isColored ? fillColor : 'currentColor';
-
-    return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
-            <polyline points="23 4 23 10 17 10" />
-            <polyline points="1 20 1 14 7 14" />
-            <path d="M3.51 9a9 9 0 0 1 14.85-3.36M20.49 15a9 9 0 0 1-14.85 3.36" />
-        </svg>
-    );
-};
-
-export const SvgSettings = ({ fillColor = 'currentColor', isColored = true, onClick, backgroundColor, onHover, style, className = '', strokeWidth = 2, }) => {
-    const color = isColored ? fillColor : 'currentColor';
-
-    return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} className={className}>
-            <circle cx="12" cy="12" r="3" />
-            <path d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m3.08 3.08l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m3.08-3.08l4.24-4.24" />
-        </svg>
+        </BaseIcon>
     );
 };

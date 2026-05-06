@@ -1,9 +1,9 @@
 {
   "name": "msr-icons",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.4",
   "type": "module",
-  "description": "A lightweight, production-ready React SVG icon library with 300+ pre-built icons.",
+  "description": "A lightweight, production-ready React SVG icon library with 800+ pre-built icons across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, and home categories.",
   "keywords": [
     "icons",
     "react",
@@ -12,7 +12,16 @@
     "library",
     "brands",
     "files",
-    "ui"
+    "ui",
+    "weather",
+    "transport",
+    "food",
+    "medical",
+    "sports",
+    "nature",
+    "education",
+    "music",
+    "home"
   ],
   "author": "Michael Scharff",
   "license": "MIT",
@@ -46,9 +55,11 @@
     "README.md",
     "LICENSE"
   ],
-  "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "peerDependencies": {
+    "react": ">=17.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -59,7 +70,10 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "typescript": "^5.6.3",
-    "vite": "^7.2.4"
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4"
   }
 }
