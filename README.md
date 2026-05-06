@@ -1,13 +1,31 @@
-# msr-icons
-A lightweight, production-ready React SVG icon library with **380+ pre-built icons**. Perfect for modern web applications.
+<div align="center">
+
+<h1>msr-icons</h1>
+
+<p>A lightweight, production-ready React SVG icon library with <strong>800+ pre-built icons</strong> across 12 categories — brands, UI, files, weather, transport, food, medical, sports, nature, education, music, and home.</p>
+
+[![npm version](https://img.shields.io/npm/v/msr-icons?style=flat-square&color=cb3837)](https://www.npmjs.com/package/msr-icons)
+[![npm downloads](https://img.shields.io/npm/dm/msr-icons?style=flat-square&color=blue)](https://www.npmjs.com/package/msr-icons)
+[![license](https://img.shields.io/npm/l/msr-icons?style=flat-square&color=green)](./LICENSE)
+[![tree-shakeable](https://img.shields.io/badge/tree--shakeable-yes-brightgreen?style=flat-square)](https://bundlephobia.com/package/msr-icons)
+[![TypeScript](https://img.shields.io/badge/TypeScript-ready-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+
+</div>
+
+---
 
 ## Features
 
-- ✨ **380+ SVG Icons** – Files, UI, brands, social, tech stack, utilities, and more
-- 🎨 **Customizable** – Control color, size, and styling via props
-- 📦 **Tree-shakeable** – Import only what you need
-- ⚡ **Optimized** – Built with Vite for fast dev/build
-- 🚀 **NPM Ready** – Published and ready to install
+| | |
+|---|---|
+| **800+ SVG Icons** | Brands, UI, files, weather, nature, transport & more |
+| **Tree-shakeable** | Import only what you need — unused icons are never bundled |
+| **Fully Customizable** | Control color, size, stroke width, background & styles via props |
+| **Dual Format** | Ships as both ESM and CommonJS |
+| **TypeScript Ready** | Full `.d.ts` declarations included |
+| **Zero Config** | Works out of the box with Vite, CRA, Next.js, and more |
+
+---
 
 ## Installation
 
@@ -19,33 +37,27 @@ yarn add msr-icons
 pnpm add msr-icons
 ```
 
+> **Peer dependency:** React 17+
+
+---
+
 ## Quick Start
 
-### Using the Icon Wrapper
+### Generic `Icon` wrapper
+
+The easiest way to use any icon by name:
 
 ```jsx
 import { Icon } from 'msr-icons';
 
 export default function App() {
-  return <Icon name="Facebook" size={32} color="#286bc2" />;
+  return (
+    <Icon name="Facebook" size={32} color="#286bc2" />
+  );
 }
 ```
 
-### Listing All Icon Names
-
-If you want to inspect all available icon component names (for docs, autocomplete hints, or dynamic selection), you can list the exported keys:
-
-```jsx
-import * as Icons from 'msr-icons';
-
-const iconNames = Object
-  .keys(Icons)
-  .filter((key) => key !== 'Icon'); // omit the wrapper if you only need raw icons
-
-console.log(iconNames);
-```
-
-### Importing Individual Icons
+### Direct named imports (recommended for bundled apps)
 
 ```jsx
 import { Facebook, Github, Twitter } from 'msr-icons';
@@ -55,134 +67,195 @@ export default function App() {
     <div>
       <Facebook fillColor="#286bc2" onClick={() => alert('Facebook')} />
       <Github fillColor="#000" />
-      <Twitter fillColor="#1DA1F2" isColored />
+      <Twitter isColored />
     </div>
   );
 }
 ```
 
-## Icon Props
-
-### Standard Props (Available on all icons)
-
-- **`fillColor`** (string) – SVG fill/stroke color. Default varies by icon.
-- **`isColored`** (boolean) – Use brand color or custom color. Default: `true`
-- **`onClick`** (function) – Click handler
-- **`onHover`** (function) – Mouse enter event handler
-- **`backgroundColor`** (string) – Background color for the SVG container
-- **`style`** (object) – Inline styles object (spread with standard props)
-- **`className`** (string) – CSS class names for styling
-
-### Icon-Specific Props
-
-- **`WIFI`** – `isDot` (boolean), `is4Lines` (boolean), `strokeWidth` (string)
-- **`Snapchat`** – `backgroundColor` (string)
-- **`Login/Logout`** – `lineWidth` (string)
-- **`Reload`** – `lineWidth` (string)
-- **`EditBox`** – `strokeWidth` (string)
-
-### Usage Examples
+### List all available icon names
 
 ```jsx
-// Basic usage with custom color
+import { iconNames } from 'msr-icons';
+
+console.log(iconNames); // ['Facebook', 'Github', 'Twitter', ...]
+```
+
+---
+
+## Props
+
+All icons share a common set of props via the `BaseIcon` wrapper:
+
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `fillColor` | `string` | varies | SVG fill or stroke color |
+| `isColored` | `boolean` | `true` | Use the icon's brand color |
+| `size` | `number` | `24` | Width and height in pixels |
+| `onClick` | `function` | — | Click event handler |
+| `onHover` | `function` | — | Mouse-enter event handler |
+| `backgroundColor` | `string` | — | Background color of the SVG container |
+| `style` | `object` | — | Inline styles merged onto the container |
+| `className` | `string` | `''` | CSS class name(s) |
+| `strokeWidth` | `string\|number` | `'1.5'` | SVG stroke thickness |
+| `mode` | `'stroke'\|'fill'` | `'fill'` | Render mode for dual-mode icons |
+
+### Usage examples
+
+```jsx
+// Custom color
 <Facebook fillColor="#286bc2" />
 
-// With event handlers
-<Twitter 
-  fillColor="#1DA1F2" 
+// Brand color
+<Instagram isColored />
+
+// With interaction
+<Twitter
+  fillColor="#1DA1F2"
   onClick={() => console.log('clicked')}
   onHover={() => console.log('hovered')}
 />
 
-// With styling
-<Github 
-  fillColor="#000" 
-  backgroundColor="#f0f0f0"
-  style={{ padding: '10px', borderRadius: '4px' }}
-  className="my-icon"
+// With full styling
+<Github
+  fillColor="#000"
+  backgroundColor="rgba(0,0,0,0.05)"
+  style={{ padding: '8px', borderRadius: '50%' }}
+  className="icon-btn"
 />
-
-// With custom colors and brand colors
-<Instagram isColored fillColor="#E1306C" />  // Custom color
-<Instagram isColored />  // Brand color (default #cc39a4)
-<Instagram />  // Default currentColor
 ```
 
-## Available Icons
+---
 
-**Files & Formats:** File, Folder variants, CSV, JSON, XML, Markdown, Excel, PowerPoint, Config, DB, RAR, SVG, WEBP, YAML, TOML
+## Icon Categories
 
-**UI Components:** Settings, Search, Menu, Trash, Edit, Download/Upload, Refresh/Reload, Send, Bell, Alerts, Charts, Toggles, Inputs, Layouts, Themes, Accessibility
+<details>
+<summary><strong>Brands</strong> — social, tech, crypto, AI, cloud, and developer tools</summary>
 
-**Brands & Platforms:** OpenAI, Perplexity, Claude, Gemini, Hugging Face, MongoDB, PostgreSQL, Elasticsearch, RabbitMQ, Redis, Solana, Ethereum, Bitcoin, MetaMask, Twilio, Sendgrid, Mailchimp, Intercom, StatusPage, PagerDuty, Facebook, Twitter, Instagram, GitHub, LinkedIn, Discord, Slack, Figma, Google, AWS, Azure, Docker, and more
+Facebook, Twitter, Instagram, LinkedIn, YouTube, TikTok, Snapchat, Pinterest, Reddit, Discord, Slack, WhatsApp, Telegram, GitHub, GitLab, Figma, Notion, Trello, Jira, Confluence, Google, Apple, Microsoft, Amazon, AWS, Azure, GCP, Docker, Kubernetes, Vercel, Netlify, Heroku, OpenAI, Claude, Gemini, HuggingFace, MongoDB, PostgreSQL, Redis, Elasticsearch, RabbitMQ, Solana, Ethereum, Bitcoin, MetaMask, and more.
 
-**Utilities:** Mail, Phone, Map, Location, Printer, Shield, Globe, Internet, Disk, Lock/Unlock, Key, Clipboard, QR/Barcode, Scanner, Flip/Rotate, Zoom
+</details>
 
-... and **380+ icons in total**.
+<details>
+<summary><strong>UI</strong> — controls, navigation, feedback, and layout</summary>
+
+Settings, Search, Menu, Hamburger, Close, ArrowUp/Down/Left/Right, ChevronUp/Down, Trash, Edit, EditBox, Download, Upload, Send, Bell, Alert, Check, CheckCircle, Info, Warning, Chart, BarChart, PieChart, Toggle, Input, Grid, List, Theme, Sun, Moon, Accessibility, Drag, Filter, Sort, Share, Copy, Paste, Undo, Redo, ZoomIn, ZoomOut, Fullscreen, and more.
+
+</details>
+
+<details>
+<summary><strong>Files &amp; Formats</strong> — file types, folders, and code formats</summary>
+
+File, Folder, FolderOpen, CSV, JSON, XML, YAML, TOML, Markdown, PDF, DOC, Excel, PowerPoint, Config, DB, RAR, ZIP, SVG, WEBP, GIF, JSFile, NodeJSFile, PythonFile, HTMLFile, Git, and more.
+
+</details>
+
+<details>
+<summary><strong>Weather</strong> — conditions and atmospheric icons</summary>
+
+Sun, Cloud, Rain, Snow, Storm, Wind, Fog, Tornado, Rainbow, Humidity, Temperature, and more.
+
+</details>
+
+<details>
+<summary><strong>Transport</strong> — vehicles and travel</summary>
+
+Car, Bus, Train, Plane, Bicycle, Motorcycle, Ship, Rocket, Ambulance, Taxi, and more.
+
+</details>
+
+<details>
+<summary><strong>Food</strong> — meals, beverages, and cuisine</summary>
+
+Pizza, Burger, Sushi, Coffee, Tea, Cake, Apple, Salad, and more.
+
+</details>
+
+<details>
+<summary><strong>Medical</strong> — health and healthcare</summary>
+
+Heart, Pill, Stethoscope, Syringe, Bandage, Hospital, DNA, Brain, and more.
+
+</details>
+
+<details>
+<summary><strong>Sports</strong> — sports and fitness</summary>
+
+Soccer, Basketball, Tennis, Baseball, Swimming, Running, Gym, Trophy, and more.
+
+</details>
+
+<details>
+<summary><strong>Nature</strong> — plants, animals, and environment</summary>
+
+Tree, Flower, Leaf, Mountain, Ocean, Fire, Water, Earth, and more.
+
+</details>
+
+<details>
+<summary><strong>Education</strong> — learning and academia</summary>
+
+Book, Graduation, Pencil, Ruler, Microscope, Calculator, Blackboard, and more.
+
+</details>
+
+<details>
+<summary><strong>Music</strong> — audio and instruments</summary>
+
+Note, Headphones, Guitar, Piano, Microphone, Speaker, Vinyl, and more.
+
+</details>
+
+<details>
+<summary><strong>Home</strong> — household and living</summary>
+
+House, Door, Window, Sofa, Bed, Kitchen, Bath, Garage, and more.
+
+</details>
+
+---
+
+## Module Formats
+
+| Format | File | Use case |
+|--------|------|----------|
+| ESM | `dist/index.js` | Modern bundlers (Vite, webpack 5, Rollup) |
+| CJS | `dist/index.cjs` | Node.js, older bundlers |
+| Types | `dist/index.d.ts` | TypeScript projects |
+
+The `exports` field in `package.json` handles format resolution automatically — no config needed.
+
+---
 
 ## Project Structure
 
 ```
 src/
 ├── icons/
-│   ├── files.jsx      # File & format icons
-│   ├── ui.jsx         # UI & controls
-│   └── brands.jsx     # Brand & platform icons
-├── Icon.jsx           # Icon wrapper component
-├── Icon.css           # Icon styling
-├── index.js           # Library entry
-└── main.jsx           # Dev entry
+│   ├── BaseIcon.jsx          # Shared SVG wrapper (all icons use this)
+│   ├── brands.jsx            # Brand & platform icons
+│   ├── brands_additions.jsx  # Additional brand icons
+│   ├── ui.jsx                # UI controls & navigation
+│   ├── ui_additions.jsx      # Additional UI icons
+│   ├── files.jsx             # File type & format icons
+│   ├── files_additions.jsx   # Additional file icons
+│   ├── weather.jsx           # Weather & climate icons
+│   ├── transport.jsx         # Vehicle & travel icons
+│   ├── food.jsx              # Food & beverage icons
+│   ├── medical.jsx           # Health & medical icons
+│   ├── sports.jsx            # Sports & fitness icons
+│   ├── nature.jsx            # Nature & environment icons
+│   ├── education.jsx         # Education & learning icons
+│   ├── music.jsx             # Music & audio icons
+│   └── home.jsx              # Home & household icons
+├── Icon.jsx                  # Generic <Icon name="..." /> wrapper
+├── icon.css                  # Base icon styles
+├── index.ts                  # Library entry point
+└── index.js                  # Legacy JS entry
 ```
 
-### Self-Explaining Props
-All props use clear, descriptive names:
-- `fillColor` instead of `color` - explicitly indicates it controls the fill color
-- `backgroundColor` - for container background
-- `onHover` - for mouse hover events
-- `strokeWidth` - for SVG stroke thickness
-
-### Styling Support
-Each icon supports comprehensive styling:
-```jsx
-<Facebook
-  fillColor="#286bc2"
-  backgroundColor="rgba(255,255,255,0.1)"
-  style={{ 
-    padding: '8px',
-    borderRadius: '50%',
-    cursor: 'pointer'
-  }}
-  onHover={() => {/* handle hover */}}
-  onClick={() => {/* handle click */}}
-/>
-```
-
-### Tree-Shakeable
-Import only the icons you need - unused icons are automatically removed during build:
-
-```jsx
-// Only Facebook and Github are bundled
-import { Facebook, Github } from 'msr-icons';
-```
-
-### ESM and CommonJS Support
-The library is built with both formats:
-- **ESM** (ES Modules) - `dist/index.js` - for modern bundlers
-- **CJS** (CommonJS) - `dist/index.cjs` - for Node.js environments
-- **TypeScript Definitions** - `dist/index.d.ts` - for type support
-
-### Export Map
-Configured in `package.json` for optimal resolution:
-```json
-"exports": {
-  ".": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.js",
-    "require": "./dist/index.cjs"
-  }
-}
-```
+---
 
 ## License
 
-MIT
+[MIT](./LICENSE) © [Michael Scharff](https://github.com/Minka1902)
