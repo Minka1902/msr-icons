@@ -1,3 +1,5 @@
+import { BaseIcon } from './BaseIcon';
+
 export function File({ fillColor = '#000', backgroundColor, onHover, style }) {
     return (
         <BaseIcon width="20" height="20" fill={fillColor} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>

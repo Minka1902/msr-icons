@@ -1,3 +1,5 @@
+import { BaseIcon } from './BaseIcon';
+
 export function WIFI({ fillColor = '#000', isDot = true, is4Lines = false, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
