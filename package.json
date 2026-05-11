@@ -1,7 +1,7 @@
 {
   "name": "msr-icons",
   "private": false,
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "A lightweight, production-ready React SVG icon library with 800+ pre-built icons across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, and home categories.",
   "keywords": [
