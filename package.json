@@ -3,7 +3,7 @@
   "private": false,
   "version": "1.0.6",
   "type": "module",
-  "description": "A lightweight, production-ready React SVG icon library with 800+ pre-built icons across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, and home categories.",
+  "description": "A lightweight, production-ready React SVG icon library with 1800+ pre-built icons across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, home, and developer/agent categories (Git, code, DevOps, data, security, AI, devices, layout, and more).",
   "keywords": [
     "icons",
     "react",
