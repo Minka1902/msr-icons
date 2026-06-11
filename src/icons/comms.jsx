@@ -9,14 +9,6 @@ export function MessageCircle2({ fillColor = '#000', isColored = true, ...rest }
     );
 }
 
-export function MessageSquare2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
-        </BaseIcon>
-    );
-}
-
 export function MessageText({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
@@ -193,22 +185,6 @@ export function BellPlus({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Comment2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
-        </BaseIcon>
-    );
-}
-
-export function CommentDots({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" /><path d="M8.5 10h.01" /><path d="M12 10h.01" /><path d="M15.5 10h.01" />
-        </BaseIcon>
-    );
-}
-
 export function ThreadIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
@@ -357,14 +333,6 @@ export function DraftMessage({ fillColor = '#000', isColored = true, ...rest }) 
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" /><path d="M9 11h6M9 8h3M14 8l2-2 1.5 1.5L15.5 9.5Z" />
-        </BaseIcon>
-    );
-}
-
-export function TypingIndicator({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" /><path d="M8.5 10h.01" /><path d="M12 10h.01" /><path d="M15.5 10h.01" />
         </BaseIcon>
     );
 }

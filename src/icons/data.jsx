@@ -209,14 +209,6 @@ export function Aggregate({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Filter3({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M3 5h18l-7 8v6l-4-2v-4L3 5Z" />
-        </BaseIcon>
-    );
-}
-
 export function SortAsc({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>

@@ -24,6 +24,9 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // This is a published component library, not a Vite app relying on
+      // Fast Refresh, so non-component exports (icon maps, name lists) are fine.
+      'react-refresh/only-export-components': 'off',
     },
   },
 ])

@@ -2,7 +2,7 @@
 
 <h1>msr-icons</h1>
 
-<p>A lightweight, production-ready React SVG icon library with <strong>1800+ pre-built icons</strong> across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, home, and a large developer/agent set — version control, code, DevOps, data, security, AI, devices, layout, and more.</p>
+<p>A lightweight, production-ready React SVG icon library with <strong>2000+ pre-built icons</strong> across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, home, a large developer/agent set (version control, code, DevOps, data, security, AI, devices, layout, and more), plus full-color <strong>file-type / MIME icons</strong>.</p>
 
 [![npm version](https://img.shields.io/npm/v/msr-icons?style=flat-square&color=cb3837)](https://www.npmjs.com/package/msr-icons)
 [![npm downloads](https://img.shields.io/npm/dm/msr-icons?style=flat-square&color=blue)](https://www.npmjs.com/package/msr-icons)
@@ -18,7 +18,7 @@
 
 | | |
 |---|---|
-| **1800+ SVG Icons** | Brands, UI, files, weather, nature, transport, Git, code, DevOps, data, security, AI & more |
+| **2000+ SVG Icons** | Brands, UI, files, weather, nature, transport, Git, code, DevOps, data, security, AI, file-type/MIME & more |
 | **Tree-shakeable** | Import only what you need — unused icons are never bundled |
 | **Fully Customizable** | Control color, size, stroke width, background & styles via props |
 | **Dual Format** | Ships as both ESM and CommonJS |
