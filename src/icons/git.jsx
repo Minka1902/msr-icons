@@ -163,16 +163,6 @@ export function RepoForked({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CommitHorizontal({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="3" />
-            <line x1="3" y1="12" x2="9" y2="12" />
-            <line x1="15" y1="12" x2="21" y2="12" />
-        </BaseIcon>
-    );
-}
-
 export function DiffAdded({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>

@@ -113,14 +113,6 @@ export function ProfileCard({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Avatar2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><circle cx="12" cy="10" r="3" /><path d="M6.5 18.5a6 6 0 0 1 11 0" />
-        </BaseIcon>
-    );
-}
-
 export function Contact2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
@@ -149,14 +141,6 @@ export function Persona({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="8" r="4" /><path d="M5 21a7 7 0 0 1 14 0M9 7a3 3 0 0 0 6 0" />
-        </BaseIcon>
-    );
-}
-
-export function Account2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><circle cx="12" cy="10" r="3" /><path d="M6.5 18.5a6 6 0 0 1 11 0" />
         </BaseIcon>
     );
 }

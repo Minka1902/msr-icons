@@ -57,26 +57,10 @@ export function Toolbox({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Gear2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="3.2" /><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1M18.7 18.7l-2.1-2.1M7.4 7.4 5.3 5.3" />
-        </BaseIcon>
-    );
-}
-
 export function GearPair({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="9" cy="9" r="2.2" /><path d="M9 5v1.5M9 11.5V13M5 9h1.5M11.5 9H13M6.4 6.4l1 1M11.6 11.6l-1-1M11.6 6.4l-1 1M6.4 11.6l1-1" /><circle cx="16" cy="16" r="1.8" /><path d="M16 13v1M16 18v1M13 16h1M18 16h1" />
-        </BaseIcon>
-    );
-}
-
-export function Cog2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="3.2" /><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1M18.7 18.7l-2.1-2.1M7.4 7.4 5.3 5.3" />
         </BaseIcon>
     );
 }
@@ -141,14 +125,6 @@ export function PowerOff({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3v6" /><path d="M8 7a7 7 0 1 0 8 0" /><path d="m4 4 16 16" />
-        </BaseIcon>
-    );
-}
-
-export function Restart2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M4 12a8 8 0 1 1 2.3 5.6" /><path d="M3 20v-4h4" />
         </BaseIcon>
     );
 }

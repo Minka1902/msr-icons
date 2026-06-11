@@ -1,7 +1,7 @@
 {
   "name": "msr-icons",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "description": "A lightweight, production-ready React SVG icon library with 1800+ pre-built icons across brands, UI, files, weather, transport, food, medical, sports, nature, education, music, home, and developer/agent categories (Git, code, DevOps, data, security, AI, devices, layout, and more).",
   "keywords": [
@@ -37,7 +37,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

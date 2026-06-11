@@ -113,14 +113,6 @@ export function CloudCog({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Container2({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9Z" /><path d="m3 7.5 9 4.5 9-4.5M12 12v9" />
-        </BaseIcon>
-    );
-}
-
 export function Docker2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
@@ -138,14 +130,6 @@ export function Pipeline({ fillColor = '#000', isColored = true, ...rest }) {
 }
 
 export function Deploy({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M12 3c3 2 5 5 5 9l-2.5 2.5h-5L7 12c0-4 2-7 5-9Z" /><circle cx="12" cy="9" r="1.6" /><path d="M9.5 16.5 7 19m7.5-2.5L17 19M9.5 14 6 15l1.5 3.5" />
-        </BaseIcon>
-    );
-}
-
-export function Rocket2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3c3 2 5 5 5 9l-2.5 2.5h-5L7 12c0-4 2-7 5-9Z" /><circle cx="12" cy="9" r="1.6" /><path d="M9.5 16.5 7 19m7.5-2.5L17 19M9.5 14 6 15l1.5 3.5" />

@@ -355,14 +355,6 @@ export function Bin({ className = "", color = '#fff', size = 24, onClick, ...pro
     );
 };
 
-export function HTMLFile({ className = "", color = '#fff', size = 24, onClick, ...props }) {
-    return (
-        <BaseIcon className={className} stroke='black' fill={color} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} {...props}>
-            <path d="m3 1.5 1.64 18.9 7.35 2.1 7.37-2.102L21 1.5H3Zm13.626 15.698-4.623 1.318-4.615-1.324-.316-3.645h2.262l.16 1.854 2.513.71.006.014 2.506-.696.264-3.007H9.516l-.188-2.344h5.656l.204-2.39H6.562L6.375 5.39h11.277l-1.026 11.807Z"></path>
-        </BaseIcon>
-    );
-};
-
 export function Folder({ className = "", color = '#ffcd4d', size = 24, onClick, ...props }) {
     return (
         <BaseIcon className={className} stroke={color} fill={color} strokeLinejoin="round" width={16} height={size} viewBox="0 0 16 16" onClick={onClick} {...props}>
@@ -400,7 +392,7 @@ export function Git({ className = "", color = 'red', size = 20, onClick, ...prop
     );
 };
 
-export function WorldMap({ fillColor, onClick, backgroundColor, className, size = 24, ...props }) {
+export function WorldMap({ fillColor, onClick, className, size = 24, ...props }) {
     return (
         <BaseIcon className={className} fill={fillColor} width={size} height={size} viewBox="0 0 100 100" onClick={onClick} {...props}>
             <path fill={fillColor} d="M0 9v20h8.5v2.5h3V29h4.064v1.566c0 .016 0 .032-.002.047c-.059.478-.06.788-.039.955c.052-.024.081-.028.227-.138c1.494-1.283 2.239-.656 4.2.043c.482.154.932.244 1.32.207c.387-.037.72-.18 1.06-.563a.383.383 0 0 1 .66.172c.024.108.028.104.188.15c.159.047.437.064.746.09c.168.014.347.037.53.075a3.331 3.331 0 0 0-.218-.372a.814.814 0 0 1-.492.022c-.343-.112-.626-.365-.842-.695c-.215-.33-.357-.761-.24-1.21c.117-.447.501-.841 1.123-1.08a.383.383 0 0 1 .342.034c.036.022.088.039.13.058a.957.957 0 0 1-.177-.23c-.134-.178-.144-.518-.502-.662a.873.873 0 0 1-.01-.938c.203-.308.56-.542 1.153-.79a.382.382 0 0 1 .156-.032c.016-.031.03-.063.049-.09c.113-.164.269-.283.492-.42a.383.383 0 0 1 .34-.03c.264.105.45.2.597.323a.698.698 0 0 1 .192.233l.004.011a.383.383 0 0 1 .59-.115c.018.016.027.03.045.045v-.004c.048-.129.118-.181.177-.226c.119-.091.244-.146.432-.217a.382.382 0 0 1 .123-.026c.034 0 .068.004.102.012c.194.047.326.084.455.16l.013-.021a.383.383 0 0 1 .475-.104c.225.114.39.217.52.323c.13.105.24.206.288.4a.512.512 0 0 1-.029.326a.507.507 0 0 1-.197.215c-.033.02-.061.025-.092.037c.136.038.225.035.274.018c.093-.034.21-.175.369-.436c.158-.26.348-.611.7-.879c.075-.056.159-.103.247-.146H20V9H0zm5 5h10v10H5V14zm17.5 3.5v3h6v-3h-6zm9 0v3h6v-3h-6zm9 0v3h6v-3h-6zm9 0v3h6v-3h-6zm9 0v3h6v-3h-6zm9 0v3h6v-3h-6zm9 0v3h6v-3h-6zm9 0v3h6v-3h-6zm3 6v6h3v-6h-3zm-44.93 1.594c.197.128.387.25.625.422a.386.386 0 0 1 .051.045c.252.26.37.584.39.886c.022.302-.037.584-.1.846c-.129.523-.248.966-.163 1.209a.383.383 0 0 1-.057.357c-.5 1.315-.511 1.568-.488 3.037c-.212.35-.53.599-.877.833c-.691.465-1.536.891-2.23 1.658c-.157.206-.318.545-.473.904c-.157.364-.308.742-.51 1.053c-.1.155-.216.3-.384.408a.8.8 0 0 1-.627.096c-.386-.11-.654-.493-.967-1.012c-.432-.294-.626-.769-.688-1.23c-.062-.465-.012-.943.053-1.366c.056-.363.113-.645.145-.853c-.124-.019-.256-.025-.364-.08c-.156-.474-.466-.569.067-1.055c-.02 0-.019-.004-.04-.004a.383.383 0 0 1-.365-.49c.156-.536.035-1.528-.316-2.178c-.176-.325-.398-.557-.617-.656c-.22-.1-.446-.11-.797.086a.383.383 0 0 1-.502-.115c-.334-.479-.76-1.106-.877-1.79a1.482 1.482 0 0 1 .174-1.007H32.63c.793.547.377 2.04-.475 2.55c.105.085.226.146.282.29c.09.232.049.503-.073.742a.382.382 0 0 1-.117.136c-.098.07-.194.125-.291.18c.487.17.956.454 1.377.807c.737.617 1.338 1.42 1.621 2.199c.155.16.268.343.408.59c.166.291.33.627.436.935c.053.154.093.3.105.453c.012.155.008.386-.213.545a.525.525 0 0 1-.332.088c.011.08.076.168.077.244c.004.375-.109.733-.381.967c-.217.186-.54.153-.844.092c.11.143.191.317.266.508c.097-.071.176-.2.293-.233c.28-.08.597.047.775.23c.335.347.49.856.672 1.45a2.86 2.86 0 0 1 1.039 1.496c.168.546.237 1.047.467 1.506a.383.383 0 0 1-.18.518c-.257.12-.489.185-.715.177c-.673-.375-.455-.372-.61.069c-.123.223-.334.325-.577.396a.385.385 0 0 1-.123.014c-.398-.017-.668.073-.918.24c-.25.168-.48.43-.715.764c-.435.618-.925 1.477-1.66 2.256c.088.424.16.743.16.95c0 .062.001.124-.04.225a.468.468 0 0 1-.128.15l.04.013c.274.089.582.213.858.359c.168.088.323.173.457.289a.383.383 0 0 1 .307-.059c.217.052.377.107.516.188c.138.081.31.232.306.474c-.003.243-.162.372-.271.44a.993.993 0 0 1-.328.127a1.17 1.17 0 0 1-.35.025a.759.759 0 0 1-.264-.078c-.044.02-.086.046-.133.063a.383.383 0 0 1-.507-.338c-.023-.015-.054-.037-.133-.067c-.203-.077-.534-.147-.842-.214a5.744 5.744 0 0 1-.44-.11c-.136-.042-.26-.076-.4-.197a.524.524 0 0 1-.16-.274c.023.11.031.207.033.301c.006.215.02.437.045.506l.002.004c-.009-.003-.014.004.059-.012c.224-.049.44.11.463.338c.055.579.198.784.32.865c.122.082.345.098.687.04c.675-.115 1.67-.513 2.649-.122c.958.18 1.641.676 2.209 1.176c.578.51 1.065 1.005 1.687 1.277c.86.066 1.496.372 1.813.891c.336.55.317 1.223.133 1.867c-.355 1.237-1.307 2.446-2.352 2.979c-.694 1.982-2.33 2.966-3.18 3.88c-.077.58-.317 1.11-.498 1.6c-.205.558-.307 1.043-.017 1.633a.382.382 0 0 1 .039.166c.002.24-.021.443-.158.633s-.432.271-.627.225c-.39-.093-.629-.372-.89-.711a4.562 4.562 0 0 1-.661-1.196c-.159-.435-.251-.89-.11-1.322a.886.886 0 0 1 .012-.031c.552-1.29.433-3.502.907-5.463c.047-.4-.096-.812-.358-1.264c-.262-.452-.637-.926-.969-1.426c-.331-.5-.63-1.032-.687-1.642c-.045-.486.252-.997.607-1.494c-.247-.354-.815-.84-1.572-1.264c-.805-.45-1.76-.84-2.568-1.039l.039.008c-.484-.068-.78-.422-1.116-.817c-.175-.206-.324-.44-.488-.67c-.662-.224-1.156-.483-1.59-1.322a3.352 3.352 0 0 1-.466-.957c-.962-.853-1.252-1.986-1.444-3.039c-.147-.804-.271-1.559-.586-2.195a.68.68 0 0 1-.377.076c-.244-.017-.513-.124-.65-.418a.709.709 0 0 1-.027-.496c.048-.158.143-.298.271-.434c-.37-.555-.892-1.042-1.424-1.316c-.35-.18-.698-.27-1.002-.258a1.157 1.157 0 0 0-.81.356a.396.396 0 0 1-.035.03c-.294 1.268-1.091.724-2.11 1.612c-.12.051-.218.097-.394.078c-.034-.003-.075-.045-.116-.06v36.013h3.37c1.386.097 2.863-.643 4.265-1.336c1.394.365 2.963.892 4.096 1.038c-.04-.674-.327-1.293.238-1.698c1.707-.108 3.658.184 5.361.492c-.041-.138-.048-.218-.119-.425c-.206-1.86 1.659-2.277 2.346-4.153c.696-.483 1.55-1.276 1.838-.173c-1.07 1.65-.431 4.177-.604 6.255h3.225c.664-.1 1.343.023 1.926.043c.602.021 1.032-.041 1.338-.412c1.258-1.55 3.142-3.251 5.207-3.28c2.143-.07 5.135.244 7.47-.415c.504-.284 1.103-.735 1.78-1.02c.832-.434 1.87-.266 2.877.053c.912.29 1.767.725 2.465 1.094c.416-.242.56-.591.765-1.04c.113-.245.282-.535.613-.675c.332-.14.722-.095 1.213.084h.002c.52.19 1.014-.05 1.674-.26c.33-.104.7-.194 1.106-.14c.327.043.657.27.98.53c1.378-.39 2.554.294 4.088-.015c.567-.115 1.082-.298 1.379-.363a.383.383 0 0 1 .3.06c1.253.881 3.16 1.098 4.694 2.223c.012.003.018.01.03.014c.184.05.346.116.511.181V91h20V71h-8.5v-2.5h-3V71h-4.035V39.814c-.348.107-.663.258-1.059.077c-.285.014-.314-.64-.51.025a.49.49 0 0 1-.56-.006c-.39-.154-.404-.524-1.068-.498a.446.446 0 0 1 .027-.375c.045-.075.087-.107.125-.137c.29-.029.468-.349.781-.02c.222.067.084.57.488.145c.425-.003 1.072.177 1.588-.115a.382.382 0 0 1 .188.045v-3.07l.002-.012c.013-.476.025-.773.02-.922c0-.01-.002-.003-.003-.012a.927.927 0 0 1-.193-.044c-.13-.037-.342-.152-.531-.243c-1.188 2.04-3.833 1.503-3.916 4.244v.002c-.155.374-.303.672-.451.887c-.158.228-.311.399-.559.473a.615.615 0 0 1-.4-.02a.655.655 0 0 1-.276-.228c-.126-.177-.176-.37-.207-.584c-.062-.43-.02-.959.137-1.483c.124-.417.402-.782.713-1.111c-.075.055-.122.18-.201.22c-.351.18-.715.22-1.053.243c-.675.045-1.255.018-1.85.492a4.32 4.32 0 0 0-.506.504c.054.014.083.025.155.041c.284.061.684.12 1.01.42c.162.15.289.374.326.63c.037.258-.003.54-.114.862a.383.383 0 0 1-.125.176c-.162.128-.15.16-.134.285c.016.126.108.33.214.553c.107.223.25.472.204.814a.802.802 0 0 1-.258.477c-.08.07-.195.103-.295.15c.041.683-.27 1.345-.768 1.832c-.586.575-1.324 1.004-2.043.893a.383.383 0 0 1-.308-.488c.233-.775.947-1.197 1.47-1.696c.492-.469.812-.939.739-1.707c-.084.148-.143.284-.244.432a.383.383 0 0 1-.227.156c-.42.1-.645.243-.795.402c-.15.16-.235.353-.307.596c-.143.486-.198 1.203-.834 1.68a.383.383 0 0 1-.601-.395c.075-.315.042-.46.014-.521c-.006-.012-.029-.02-.036-.03a.523.523 0 0 1-.125.272c-.025.029-.063.037-.09.06c.226.438.304.916.17 1.354a2.936 2.936 0 0 1-.261.584c.089.057.15.148.17.252c.083.445.095.735-.022 1a.615.615 0 0 1-.18.219c.05.018.1.035.147.062a.641.641 0 0 1 .283.356c.076.269-.025.426-.076.543c.409.038.479.605.092.742c.048-.016.025-.016.008.017a.234.234 0 0 0-.022.094c.002 0 .02.019.145-.004a.383.383 0 0 1 .449.36c-.16 2.066-1.495.73 1.517 1.888c.06.062.056.095.086.15a.383.383 0 0 1 .428-.017c.095.06.483.177.908.252c.425.076.904.135 1.295.195c.196.03.368.061.514.098c.073.018.138.037.209.068a.573.573 0 0 1 .166.114a.383.383 0 0 1 .2-.059c.06 0 .12.015.175.043l.014.008l.185.096l.012.005c.404.229.658.411.824.577c.083.082.154.14.201.308a.439.439 0 0 1-.06.367a.435.435 0 0 1-.317.174c-.165.013-.243-.031-.34-.076a1.768 1.768 0 0 1-.304-.184a3.56 3.56 0 0 1-.614-.62a.706.706 0 0 1-.238.13c-.041.016-.125.03-.174.045c.01.018.03.045.037.063c.067.145.143.273.073.506a.508.508 0 0 1-.248.283a.519.519 0 0 1-.256.047a1.348 1.348 0 0 1-.352-.07l-.498-.15c.238.7.853 1.357 1.39 2.099c.297.408.56.854.655 1.376c.094.519-.007 1.1-.355 1.698c-.21.718-.538 1.184-.98 1.373c.09.072.17.147.232.232c.107.147.177.385.09.584c-.56.331-.915.601-1.52-.033c-.08-.201-.004-.437.11-.58a1.09 1.09 0 0 1 .165-.16a3.445 3.445 0 0 1-.734-.334c-.475-.271-.945-.618-1.379-.871c-.392-.23-.738-.356-.988-.354c-.54.452-1.064.678-1.557.664c-.53-.015-.97-.313-1.254-.713c-.566-.798-.664-2.001-.224-2.982a.383.383 0 0 1 .254-.215c.782-.205 1.39-.779 2.07-1.297c.34-.259.7-.502 1.125-.642c.424-.14.913-.163 1.435.002c.18.057.291.237.262.423c-.044.278 0 .365.014.405c.111-.062.348-.314.347-.707a.383.383 0 0 1-.38-.157c.027.04-.006-.006-.067-.05a4.956 4.956 0 0 0-.25-.166c-.203-.129-.461-.282-.703-.454a3.594 3.594 0 0 1-.361-.289c-.011.006-.025.021-.035.026c-.155.071-.25.068-.373.076a3.314 3.314 0 0 1-.385 0c-.04-.002-.073-.01-.112-.014a.383.383 0 0 1 .24.22a.77.77 0 0 1 .048.478a.67.67 0 0 1-.249.367a.835.835 0 0 1-.646.156a8.391 8.391 0 0 0-2.75-.342c-.872-.042-1.569-.65-2.092-1.287a6.836 6.836 0 0 1-1.037-1.732a.383.383 0 0 1 .494-.494c.102.039.182.098.276.144c-.156-.344-.315-.71-.46-1.017a6.787 6.787 0 0 0-.243-.481a1.258 1.258 0 0 0-.075-.117a.383.383 0 0 1-.166-.264c-.06-.423-.227-.597-.443-.693c-.217-.096-.527-.094-.836.027a1.62 1.62 0 0 0-.78.649a1.306 1.306 0 0 0-.126 1.1c.039.208.062.37.074.501c.012.132.024.224-.016.363a.43.43 0 0 1-.18.256a.464.464 0 0 1-.376.045c-.174-.061-.206-.13-.258-.19c-.103-.116-.184-.245-.246-.325a.383.383 0 0 1-.06-.028c-.422-.244-.682-.656-.925-1.09c-.242-.434-.46-.906-.714-1.316c-.254-.41-.537-.748-.877-.945c-.24-.138-.604-.109-.957-.096c.157 1.013-.965 1.871-1.805 2.373c.09.035.185.059.26.137c.112.117.17.292.168.433c-.003.284-.13.48-.274.696a8.29 8.29 0 0 1-.527.68c-.397.475-.853 1-1.131 1.458c-.512 1.312-.218 3.096-1.29 4.524c-.563 1.124-1.43 2.149-2.81 2.437a.383.383 0 0 1-.24-.027a2.914 2.914 0 0 1-1.426-1.438c-.279-.593-.396-1.254-.468-1.921c-.145-1.335-.135-2.71-.573-3.58a.376.376 0 0 1-.039-.153c-.039-.767-.283-1.138-.691-1.328c-.408-.19-1.082-.181-1.963.117a.383.383 0 0 1-.19.014c-1.614-.287-2.435-1.521-2.505-2.82a4.351 4.351 0 0 1 .437-2.098a.454.454 0 0 1-.226-.106a.537.537 0 0 1-.143-.484a.646.646 0 0 1 .203-.303a.383.383 0 0 1 .354-.093c.053.012.091.032.136.046a.383.383 0 0 1 .352-.078c.14-.156.286-.306.45-.44a.38.38 0 0 1 .073-.048c.327-.16.342-.26.338-.482c-.003-.223-.124-.561-.25-.91c-.126-.35-.286-.72-.162-1.149a.946.946 0 0 1 .442-.539c.215-.121.472-.182.796-.209a.4.4 0 0 1 .041-.002c.089.002.082-.003.116-.01c-.022-.064-.063-.198-.153-.404c-.109-.252-.283-.554-.125-.943c.008-.02.039-.024.05-.043c-.043-.039-.126.006-.163-.041c-.085-.112-.073-.268-.102-.409c-.259.075-.527.109-.744-.037a.801.801 0 0 1-.297-.877c.083-.268.352-.48.653-.69c.104-.447.201-.779.383-1.009a.663.663 0 0 1 .441-.264a.642.642 0 0 1 .473.16c.22.187.338.43.467.725c.126.29.243.631.351.987c.078.214.146.33.193.396c.05-.054.114-.14.184-.256c.152-.252.317-.603.484-.918c.072-.135.147-.259.227-.377c-.04-.015-.087.009-.125-.01a1.599 1.599 0 0 1-.68-.62a1.397 1.397 0 0 1-.172-1.01c.077-.353.3-.697.664-1.004c.476-.651 1.201-1.983 2.036-2.953c.42-.49.87-.905 1.412-1.077c.502-.159 1.072.01 1.533.46c.12.023.247.03.357.085c.175.087.353.203.532.338c.347.263.688.595.943.93c.096-.275.307-.5.553-.543a.792.792 0 0 1 .408.039c.472-.577.593-.79 1.223-.248c.065.1.085.234.078.363c.278-.098.558-.171.851-.213c-.01-.042-.034-.091-.039-.132c-.404-.23-1.135-.593-1.379-1.223c.179-1.698 1.599-3.62 3.569-4.404a.38.38 0 0 1 .052.002c1.502 1.241-.488 1.691-1.318 2.5c-.199.393-.3.924-.38 1.41c-.041.243-.077.475-.128.683c.116.213-.425.573.174.32c.14.004.259.038.38.08c.26.09.501.225.768.362c-.03-.208-.185-.404-.16-.602c.269-.846.493-1.828 1.594-1.722c.154.094.176.26.223.412c.932.154.672.279 1.123-.34c.493-.196.61-.48.867-.92c.257-.44.656-.996 1.533-1.306a.383.383 0 0 1 .254 0c.796.036 1.136-.262 1.7-1.079a1.246 1.246 0 0 1 1.091-.224a.378.378 0 0 1 .07.025c.827.394 1.268 1.039 1.432 1.678c.127.494.047.927-.018 1.338c.393.16.78.206 1.252.178c.546-.033 1.184-.094 1.854.195a.383.383 0 0 1 .23.336c.02.471.052.702.077.814c.128-.052.463-.068.89-.004c.155-.23.328-.444.526-.584a.845.845 0 0 1-.141-.185c-.138-.247-.107-.571.06-.875a.844.844 0 0 1-.453-.258c-.009-.01-.01-.026-.02-.037c-.022.004-.04.017-.064.017a.475.475 0 
@@ -626,3 +618,1014 @@ export function Config({ fillColor = "#424242", onClick, backgroundColor, onHove
         </BaseIcon>
     );
 };
+
+
+// Office formats
+export function DOCX({ fillColor = '#2B579A', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+            <path d="M8 12h2l1 4 1-4h2" />
+        </BaseIcon>
+    );
+}
+
+export function PPTX({ fillColor = '#D24726', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+            <path d="M8 12h3a2 2 0 0 1 0 4H8v-4ZM8 16v2" />
+        </BaseIcon>
+    );
+}
+
+export function XLSX({ fillColor = '#217346', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+            <path d="M8 12l4 5M12 12l-4 5" />
+        </BaseIcon>
+    );
+}
+
+export function RTF({ fillColor = '#555', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h3a2 2 0 0 1 0 4h-3M11 16l2 2" />
+        </BaseIcon>
+    );
+}
+
+// Adobe / Design
+export function PSD({ fillColor = '#31A8FF', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h3a2 2 0 0 1 0 4H8v-4Z" />
+        </BaseIcon>
+    );
+}
+
+export function AI({ fillColor = '#FF9A00', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 17l2-6h2l2 6M9.5 14h3" />
+        </BaseIcon>
+    );
+}
+
+export function EPS({ fillColor = '#FF9A00', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 17v-5h4M8 14h3M8 17h4" />
+        </BaseIcon>
+    );
+}
+
+// Image formats
+export function PNG({ fillColor = '#4CAF50', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h1v5M9 12l3 3M12 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function JPG({ fillColor = '#FF9800', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M9 17V12M9 17a1.5 1.5 0 0 1-3 0v-1M13 12h2a2 2 0 0 1 0 4h-2v1" />
+        </BaseIcon>
+    );
+}
+
+export function TIFF({ fillColor = '#607D8B', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h4M10 12v5M15 12v5M15 14h-2" />
+        </BaseIcon>
+    );
+}
+
+export function BMP({ fillColor = '#795548', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h2a1.5 1.5 0 0 1 0 3 1.5 1.5 0 0 1 0 3H8v-6Z" />
+        </BaseIcon>
+    );
+}
+
+export function ICO({ fillColor = '#9C27B0', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M9 12v5M11 12a2.5 2.5 0 0 1 0 5M15 12a2.5 2.5 0 0 0 0 5" />
+        </BaseIcon>
+    );
+}
+
+export function AVIF({ fillColor = '#00BCD4', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12l2 5M10 12l-2 5M13 12v5M15 12l2 3-2 2" />
+        </BaseIcon>
+    );
+}
+
+export function HEIC({ fillColor = '#FF5722', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5M8 14h2M10 12v5M13 12v5h2a2 2 0 0 0 0-4" />
+        </BaseIcon>
+    );
+}
+
+// Audio formats
+export function MP3({ fillColor = '#E91E63', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h2a1.5 1.5 0 0 1 0 3h-2v-3ZM8 15v2M13 12h1.5a1.5 1.5 0 0 1 0 3 1.5 1.5 0 0 1 0 3H13" />
+        </BaseIcon>
+    );
+}
+
+export function WAV({ fillColor = '#9C27B0', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M7 17l1-5 1.5 3 1.5-3 1 5M16 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function FLAC({ fillColor = '#3F51B5', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5h3M8 14h2M13 12l.01 5M15 12a2.5 2.5 0 0 1 0 5" />
+        </BaseIcon>
+    );
+}
+
+export function AAC({ fillColor = '#FF9800', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 17l2-5 2 5M9 15h2M14 17l2-5 2 5M15 15h2" />
+        </BaseIcon>
+    );
+}
+
+// Video formats
+export function MP4({ fillColor = '#9C27B0', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h1.5a1.5 1.5 0 0 1 0 3H8v-3ZM8 15v2M13 12v3M13 15h2M13 17v-2h2" />
+        </BaseIcon>
+    );
+}
+
+export function MOV({ fillColor = '#795548', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12l1.5 5 1.5-5 1.5 5 1.5-5M16 12a2.5 2.5 0 0 1 0 5" />
+        </BaseIcon>
+    );
+}
+
+export function MKV({ fillColor = '#607D8B', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5M11 12l-3 2.5 3 2.5M14 12l2 5M14 12l2 5M16 12l2 5" />
+        </BaseIcon>
+    );
+}
+
+export function AVI({ fillColor = '#F44336', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 17l2-5 2 5M9 15h2M14 12v5M16 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function WEBM({ fillColor = '#00BCD4', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M7 12l1 5 1.5-3 1.5 3 1-5M14 12h1.5a1.5 1.5 0 0 1 0 3 1.5 1.5 0 0 1 0 3H14" />
+        </BaseIcon>
+    );
+}
+
+// eBook
+export function EPUB({ fillColor = '#4CAF50', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5h3M8 14h2M13 12v5h3M13 14h2" />
+        </BaseIcon>
+    );
+}
+
+// Code & config files
+export function TSFile({ fillColor = '#3178C6', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h4M10 12v5M14 12a2.5 2.5 0 0 1 0 5" />
+        </BaseIcon>
+    );
+}
+
+export function TSXFile({ fillColor = '#3178C6', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M7 12h3M8 12v5M13 12l2 5M13 17l2-5" />
+        </BaseIcon>
+    );
+}
+
+export function JSXFile({ fillColor = '#F7DF1E', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M9 12v3.5a1.5 1.5 0 0 1-3 0v-.5M14 12l2 5M14 17l2-5" />
+        </BaseIcon>
+    );
+}
+
+export function ENVFile({ fillColor = '#ECC94B', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5h3M8 14h2M13 12v5M13 12l3 5M16 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function LogFile({ fillColor = '#9E9E9E', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5h3M13 12a2.5 2.5 0 0 1 0 5" />
+        </BaseIcon>
+    );
+}
+
+export function SHFile({ fillColor = '#4CAF50', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5M8 14h2M10 12v5M13 12a2.5 2.5 0 0 1 2.5 2.5c0 1.38-1.12 2.5-2.5 2.5H13" />
+        </BaseIcon>
+    );
+}
+
+// Executables & Archives
+export function EXE({ fillColor = '#0078D4', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5h3M8 14h2M13 12v5h3M13 14h2M13 17h3" />
+        </BaseIcon>
+    );
+}
+
+export function DMG({ fillColor = '#999', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h2a2.5 2.5 0 0 1 0 5H8v-5ZM13 12h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1" />
+        </BaseIcon>
+    );
+}
+
+export function APK({ fillColor = '#3DDC84', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 17l2-5 2 5M9 15h2M14 12v5M14 12h2M16 14h-2M16 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function TAR({ fillColor = '#795548', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h4M10 12v5M14 17l2-5 2 5M15 15h2" />
+        </BaseIcon>
+    );
+}
+
+export function GZ({ fillColor = '#FF5722', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12a2.5 2.5 0 0 0 0 5h2v-2h-1M14 17v-5l3 5v-5" />
+        </BaseIcon>
+    );
+}
+
+// OpenDocument formats
+export function ODP({ fillColor = '#D24726', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h1.5a1.5 1.5 0 0 1 0 3H8v-3ZM8 15v2M13 14a2.5 2.5 0 0 1 4 0" />
+        </BaseIcon>
+    );
+}
+
+export function ODS({ fillColor = '#217346', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h3a1 1 0 0 1 0 2H8a1 1 0 0 0 0 2h4M15 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function ODT({ fillColor = '#2B579A', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h4M10 12v5M14 12h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-1" />
+        </BaseIcon>
+    );
+}
+
+// Adobe (remaining)
+export function INDD({ fillColor = '#FF3366', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5M10 12v5M10 12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2M14 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function XD({ fillColor = '#FF61F6', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12l2 5M10 12l-2 5M14 12h2a1.5 1.5 0 0 1 0 3h-2v-3ZM14 15v2" />
+        </BaseIcon>
+    );
+}
+
+// Image (remaining)
+export function RAW({ fillColor = '#607D8B', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h2a1 1 0 0 1 0 2H8v-2ZM10 14l2 3M14 17l2-5 2 5M15 15h2" />
+        </BaseIcon>
+    );
+}
+
+// Audio (remaining)
+export function OGG({ fillColor = '#9C27B0', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 14.5a2.5 2.5 0 0 0 2.5 2.5v-2H9M13 14.5a2.5 2.5 0 0 0 2.5 2.5v-2H14" />
+        </BaseIcon>
+    );
+}
+
+export function M4A({ fillColor = '#E91E63', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12l1.5 5 1.5-5 1.5 5 1.5-5M16 12v3M16 15h-2M16 17v-2h-2" />
+        </BaseIcon>
+    );
+}
+
+// Video (remaining)
+export function M4V({ fillColor = '#7C3AED', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h1.5a1.5 1.5 0 0 1 0 3H8v-3ZM8 15v2M13 12v3M13 15h2M13 17v-2h2M17 12l2 5" />
+        </BaseIcon>
+    );
+}
+
+export function FLV({ fillColor = '#F44336', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5h3M8 14h2M13 12a2.5 2.5 0 0 1 0 5M17 12l2 5" />
+        </BaseIcon>
+    );
+}
+
+// eBook (remaining)
+export function MOBI({ fillColor = '#8D6E63', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12l1 5 2-3 2 3 1-5" />
+        </BaseIcon>
+    );
+}
+
+// Code & Config (remaining)
+export function BATFile({ fillColor = '#0078D4', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h2a1.5 1.5 0 0 1 0 3 1.5 1.5 0 0 1 0 3H8v-6ZM12 12h4M14 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function INIFile({ fillColor = '#607D8B', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5M11 12v5M11 12l2.5 5M13.5 12v5M16.5 12v5" />
+        </BaseIcon>
+    );
+}
+
+export function LOCKFile({ fillColor = '#F59E0B', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6" />
+            <rect x="9" y="11" width="6" height="5" rx="1" />
+            <path d="M10 11V9.5a2 2 0 1 1 4 0V11" />
+        </BaseIcon>
+    );
+}
+
+// Executables (remaining)
+export function IPAFile({ fillColor = '#555', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12v5M11 12h2a1.5 1.5 0 0 1 0 3h-2v-3ZM15 17l2-5 2 5M16 15h2" />
+        </BaseIcon>
+    );
+}
+
+export function BZIPFile({ fillColor = '#FF5722', ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} {...rest}>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+            <path d="M14 2v6h6M8 12h2a1.5 1.5 0 0 1 0 3 1.5 1.5 0 0 1 0 3H8v-6ZM12 12v5M14 12v5" />
+        </BaseIcon>
+    );
+}
+
+
+// Files / Documents
+export function FileCode({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M10.5 12 9 14l1.5 2M13.5 12 15 14l-1.5 2" />
+        </BaseIcon>
+    );
+}
+
+export function FileJson({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M10 11.5c-1 0-1 1.5-1 2.5s0 2.5-1 2.5M14 11.5c1 0 1 1.5 1 2.5s0 2.5 1 2.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileText2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8.5 12h7M8.5 15h7M8.5 18h4" />
+        </BaseIcon>
+    );
+}
+
+export function FilePdf({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8 17v-4h1.5a1 1 0 0 1 0 2.5H8M13 17v-4h2M13 15h1.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileImage2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><circle cx="10" cy="13" r="1.3" /><path d="M8 18l3-3 2 2 2-2.5 2 3.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileVideo2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m10 12 4 2.5-4 2.5v-5Z" />
+        </BaseIcon>
+    );
+}
+
+export function FileAudio2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 13v3M11 11.5v6M13 13v3M15 14.5v1" />
+        </BaseIcon>
+    );
+}
+
+export function FileZip2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M12 8v1M12 10v1M12 12v1M11 14h2v3h-2z" />
+        </BaseIcon>
+    );
+}
+
+export function FileCsv({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8.5 13h2M8.5 16h2M12 13h2M12 16h2M16 13h.5M16 16h.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileExcel({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m9 12 6 6M15 12l-6 6" />
+        </BaseIcon>
+    );
+}
+
+export function FileWord({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m8 12 1.5 6 2-4 2 4 1.5-6" />
+        </BaseIcon>
+    );
+}
+
+export function FilePowerpoint({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 17v-5h2.5a1.5 1.5 0 0 1 0 3H9" />
+        </BaseIcon>
+    );
+}
+
+export function FileMarkdown({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8 17v-5l2 2.5 2-2.5v5M15 12v4M13.5 14.5 15 16l1.5-1.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileLock2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><rect x="9.5" y="14" width="5" height="4" rx="0.5" /><path d="M10.5 14v-1a1.5 1.5 0 0 1 3 0v1" />
+        </BaseIcon>
+    );
+}
+
+export function FileKey({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><circle cx="10" cy="14" r="1.8" /><path d="m11.3 15.3 3 3M14 17l1-1" />
+        </BaseIcon>
+    );
+}
+
+export function FilePlus2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M12 12.5v5.0M9.5 15h5.0" />
+        </BaseIcon>
+    );
+}
+
+export function FileMinus2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.5 15h5.0" />
+        </BaseIcon>
+    );
+}
+
+export function FileCheck2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m9.5 15 11.5 17.5 14.5 12.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileX2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.7 12.7 14.3 17.3M14.3 12.7 9.7 17.3" />
+        </BaseIcon>
+    );
+}
+
+export function FileEdit2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 18h1l5-5-1-1-5 5v1Z" />
+        </BaseIcon>
+    );
+}
+
+export function FileSymlink({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 18l3-3M12 15h-3M12 15v3" />
+        </BaseIcon>
+    );
+}
+
+export function FolderCode({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M10 11.5 8.5 13l1.5 1.5M14 11.5 15.5 13 14 14.5" />
+        </BaseIcon>
+    );
+}
+
+export function FolderGit({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><circle cx="9" cy="13" r="1.3" /><circle cx="15" cy="13" r="1.3" /><path d="M10.3 13h3.4" />
+        </BaseIcon>
+    );
+}
+
+export function FolderPlus2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M12 10.7v4.6M9.7 13h4.6" />
+        </BaseIcon>
+    );
+}
+
+export function FolderMinus2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M9.7 13h4.6" />
+        </BaseIcon>
+    );
+}
+
+export function FolderLock2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><rect x="9.5" y="12" width="5" height="3.5" rx="0.5" /><path d="M10.5 12v-1a1.5 1.5 0 0 1 3 0v1" />
+        </BaseIcon>
+    );
+}
+
+export function FolderSync({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M9.5 13a2.5 2.5 0 0 1 4-1M14.5 14a2.5 2.5 0 0 1-4 1" />
+        </BaseIcon>
+    );
+}
+
+export function FolderArchive({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><rect x="9.5" y="11.5" width="5" height="4" rx="0.5" /><path d="M12 13v1.5" />
+        </BaseIcon>
+    );
+}
+
+export function FolderHeart({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M12 15s-2-1.3-2-2.6a1.1 1.1 0 0 1 2-.6 1.1 1.1 0 0 1 2 .6c0 1.3-2 2.6-2 2.6Z" />
+        </BaseIcon>
+    );
+}
+
+export function Documents({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M8 4h7l3 3v11a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" /><path d="M5 7v13a1 1 0 0 0 1 1h9" /><path d="M15 4v3h3" />
+        </BaseIcon>
+    );
+}
+
+export function Clipboard2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" />
+        </BaseIcon>
+    );
+}
+
+export function ClipboardCheck({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" /><path d="m9.8 13 11.6 15.2 14.2 10.8" />
+        </BaseIcon>
+    );
+}
+
+export function ClipboardCopy({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" /><path d="M9 12h4M9 15h6M9 18h3" />
+        </BaseIcon>
+    );
+}
+
+export function ClipboardList({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" /><path d="M9 11h6M9 14h6M9 17h4" />
+        </BaseIcon>
+    );
+}
+
+export function ClipboardX({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" /><path d="M10 11 14 15M14 11 10 15" />
+        </BaseIcon>
+    );
+}
+
+export function Paperclip2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M19 11 11 19a4 4 0 0 1-6-6l8-8a2.5 2.5 0 0 1 3.5 3.5l-7.5 7.5a1 1 0 0 1-1.5-1.5l7-7" />
+        </BaseIcon>
+    );
+}
+
+export function Attachment2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M16 7 8.5 14.5a2.5 2.5 0 0 0 3.5 3.5L20 10a4.5 4.5 0 0 0-6.5-6.5L5 12" />
+        </BaseIcon>
+    );
+}
+
+export function FileGit({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><circle cx="10" cy="13" r="1.2" /><circle cx="14" cy="16" r="1.2" /><path d="M10 14.2v.8a1 1 0 0 0 1 1h2" />
+        </BaseIcon>
+    );
+}
+
+export function FileTerminal({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m8.5 12 2 2-2 2M13 16h2.5" />
+        </BaseIcon>
+    );
+}
+
+export function FileBinary({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8 12h1.5v5M14.5 12h1v5M8 17h3M13.5 17h3M8.5 12.5v0" /><rect x="13" y="11.5" width="0.01" height="0.01" />
+        </BaseIcon>
+    );
+}
+
+export function FileDiff({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M11 10.9v3.2M9.4 12.5h3.2" /><path d="M9.4 17h3.2" /><path d="M9.5 15h3" />
+        </BaseIcon>
+    );
+}
+
+export function FileSpreadsheet({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8.5 12v6M11.5 12v6M8.5 14.5h6M8.5 17h6M14.5 12v6" />
+        </BaseIcon>
+    );
+}
+
+export function FileDatabase({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><ellipse cx="12" cy="12.5" rx="3" ry="1.2" /><path d="M9 12.5v4c0 .7 1.3 1.2 3 1.2s3-.5 3-1.2v-4" />
+        </BaseIcon>
+    );
+}
+
+export function FileCertificate({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><circle cx="12" cy="13" r="2.2" /><path d="M10.5 14.8 10 18l2-1 2 1-.5-3.2" />
+        </BaseIcon>
+    );
+}
+
+export function FileSignature({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8 17c1-1 2-3 1-3.5-1 0-1 2 0 2.5s2-1 3-2M15 17h1" />
+        </BaseIcon>
+    );
+}
+
+export function FileVersion({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 12v3M9 12h2M9 13.5h2M13 12h2v5h-2z" />
+        </BaseIcon>
+    );
+}
+
+export function FileHistory({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><circle cx="12" cy="14" r="2.8" /><path d="M12 12.5v1.5l1 .7" />
+        </BaseIcon>
+    );
+}
+
+export function FileTree({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M7 4h7l4 4v12H7z" /><path d="M14 4v4h4" /><path d="M10 12h3M10 12v4h3M10 16h0M13 12h.01M13 16h.01" />
+        </BaseIcon>
+    );
+}
+
+export function FileSymbol({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M10 16c-1 0-1-4 0-4M14 12c1 0 1 4 0 4M12 11v6" />
+        </BaseIcon>
+    );
+}
+
+export function FolderTree({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="3" width="7" height="5" rx="1" /><rect x="14" y="9" width="7" height="5" rx="1" /><rect x="14" y="16" width="7" height="5" rx="1" /><path d="M6.5 8v6.5a4 4 0 0 0 4 4h3.5M6.5 11.5h7.5" />
+        </BaseIcon>
+    );
+}
+
+export function FolderCloud({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M10 15a1.5 1.5 0 0 1 0-3 2 2 0 0 1 3.8.5A1.3 1.3 0 0 1 14 15h-4Z" />
+        </BaseIcon>
+    );
+}
+
+export function FolderDownload({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M12 11.5v3.5M10.5 13.5l1.5 1.5 1.5-1.5" />
+        </BaseIcon>
+    );
+}
+
+export function FolderUpload({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M12 15.5V12M10.5 13.5 12 12l1.5 1.5" />
+        </BaseIcon>
+    );
+}
+
+export function FolderConfig({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><circle cx="12" cy="13.5" r="1.4" /><path d="M12 11.5v.8M12 14.7v.8M14 13.5h-.8M10.8 13.5H10" />
+        </BaseIcon>
+    );
+}
+
+export function FolderSecure({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M12 11 9 12v2c0 1.5 1.3 2.5 3 3 1.7-.5 3-1.5 3-3v-2l-3-1Z" />
+        </BaseIcon>
+    );
+}
+
+export function Backup2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <ellipse cx="12" cy="5.5" rx="7" ry="2.8" /><path d="M5 5.5v13c0 1.5 3 2.8 7 2.8s7-1.3 7-2.8v-13" /><path d="M5 12c0 1.5 3 2.8 7 2.8s7-1.3 7-2.8" /><path d="M12 15.5a2.5 2.5 0 1 0 2.5-2.5M14.5 11v2h-2" />
+        </BaseIcon>
+    );
+}
+
+export function Restore2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M4 9a8 8 0 1 1-1.5 5" /><path d="M4 4v5h5M12 8v4l3 2" />
+        </BaseIcon>
+    );
+}
+
+export function ArchiveBox({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7h18v3H3z" /><path d="M5 10v10h14V10M9 14h6" />
+        </BaseIcon>
+    );
+}
+
+export function UnarchiveIcon({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7h18v3H3z" /><path d="M5 10v10h14V10M12 18v-5M9.5 15.5 12 13l2.5 2.5" />
+        </BaseIcon>
+    );
+}
+
+export function TrashRestore({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M4 7h16M6 7l1 13h10l1-13M9 7V4h6v3" /><path d="M12 17v-5M9.5 14.5 12 12l2.5 2.5" />
+        </BaseIcon>
+    );
+}
+
+export function ExportData({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="13" height="16" rx="2" /><path d="M12 12h9M18 9l3 3-3 3" />
+        </BaseIcon>
+    );
+}
+
+export function ImportData({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="8" y="4" width="13" height="16" rx="2" /><path d="M3 12h9M6 9l-3 3 3 3" />
+        </BaseIcon>
+    );
+}
+
+export function SyncFiles({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M8.5 14a3.5 3.5 0 0 1 6-2M15.5 16a3.5 3.5 0 0 1-6 2" />
+        </BaseIcon>
+    );
+}
+
+export function MergeFiles({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M7 3h5l3 3v4M7 3v18h10v-4" /><path d="M3 14h10M10 11l3 3-3 3" />
+        </BaseIcon>
+    );
+}
+
+export function CompareFiles({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="7" height="16" rx="1.5" /><rect x="14" y="4" width="7" height="16" rx="1.5" /><path d="M12 6v12" />
+        </BaseIcon>
+    );
+}
+
+export function SplitFile({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M12 11v6M9.5 13.5 12 11l2.5 2.5M9.5 14.5 12 17l2.5-2.5" />
+        </BaseIcon>
+    );
+}
