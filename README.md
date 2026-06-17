@@ -256,6 +256,14 @@ src/
 
 ---
 
+## Support
+
+Need help, have a question, or want to report an issue? Visit the package support page:
+
+**[msr-icons Support →](https://msr-dev-hub-48fed1f8.base44.app)**
+
+---
+
 ## License
 
 [MIT](./LICENSE) © [Michael Scharff](https://github.com/Minka1902)
