@@ -43,21 +43,9 @@ pnpm add msr-icons
 
 ## Quick Start
 
-### Generic `Icon` wrapper
+### Named imports
 
-The easiest way to use any icon by name:
-
-```jsx
-import { Icon } from 'msr-icons';
-
-export default function App() {
-  return (
-    <Icon name="Facebook" size={32} color="#286bc2" />
-  );
-}
-```
-
-### Direct named imports (recommended for bundled apps)
+Import each icon directly by name:
 
 ```jsx
 import { Facebook, Github, Twitter } from 'msr-icons';
@@ -248,8 +236,6 @@ src/
 │   ├── education.jsx         # Education & learning icons
 │   ├── music.jsx             # Music & audio icons
 │   └── home.jsx              # Home & household icons
-├── Icon.jsx                  # Generic <Icon name="..." /> wrapper
-├── icon.css                  # Base icon styles
 ├── index.ts                  # Library entry point
 └── index.js                  # Legacy JS entry
 ```
