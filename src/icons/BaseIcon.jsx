@@ -15,8 +15,9 @@ import { Children, cloneElement, isValidElement } from 'react';
  *                   • an object ....... per-element colors keyed by the
  *                                       element's `data-part`, e.g.
  *                                       { calendar: 'black', check: 'green' }
- *                                       Use the `base` (or `default`) key to
- *                                       set the color for any untargeted parts.
+ *                                       The `base` key colors every element
+ *                                       that isn't named explicitly; extra
+ *                                       structural parts are `base2`, `base3`…
  * isColored       true → uses fillColor.                default: true
  *                 false → falls back to CSS currentColor
  *                 so the icon inherits its parent's text color.
@@ -30,20 +31,44 @@ import { Children, cloneElement, isValidElement } from 'react';
  * style           Inline style overrides.
  * children        The icon's <path>, <circle>, etc. elements. Tag each
  *                 element with `data-part="name"` so it can be colored
- *                 individually via an object fillColor.
+ *                 individually via an object fillColor. Tag filled
+ *                 elements inside a stroke icon with `data-fill`.
  */
 
-// Pull the color for a given `base`/`default` fallback out of a color map.
+// Pull the catch-all color out of a color map (`base`, then `default`).
 function resolveBaseColor(colorMap) {
     if (colorMap.base != null) return colorMap.base;
     if (colorMap.default != null) return colorMap.default;
     return '#000';
 }
 
-// Walk the child tree and paint each element that carries a matching
-// `data-part` with its color from the map. Elements without a matching
-// part are left untouched and inherit the base color from the <svg>.
-function paintParts(children, colorMap, colorAttr) {
+// Does any element in the tree carry a `data-part`? Used to avoid touching
+// icons that haven't been tagged for per-element coloring yet.
+function hasParts(children) {
+    let found = false;
+    Children.forEach(children, (child) => {
+        if (found || !isValidElement(child)) return;
+        if (child.props['data-part'] != null) {
+            found = true;
+            return;
+        }
+        if (child.props.children != null) found = hasParts(child.props.children);
+    });
+    return found;
+}
+
+// Decide whether a tagged element should be painted via `fill` or `stroke`.
+function paintAttr(child, mode) {
+    if (child.props['data-fill'] !== undefined) return 'fill';
+    const f = child.props.fill;
+    if (f != null && f !== 'none' && f !== 'transparent') return 'fill';
+    return mode === 'fill' ? 'fill' : 'stroke';
+}
+
+// Walk the child tree and paint each tagged element with its part color,
+// falling back to `base` and then the icon's base color. Untagged elements
+// are left untouched and inherit the base color from the <svg>.
+function paintParts(children, colorMap, baseColor, mode) {
     return Children.map(children, (child) => {
         if (!isValidElement(child)) return child;
 
@@ -51,12 +76,19 @@ function paintParts(children, colorMap, colorAttr) {
         const grandchildren = child.props.children;
 
         const nextProps = {};
-        if (part != null && colorMap[part] != null && typeof child.type === 'string') {
-            nextProps[colorAttr] = colorMap[part];
+        if (part != null && typeof child.type === 'string') {
+            const attr = paintAttr(child, mode);
+            // Named part wins; otherwise keep the element's own explicit color
+            // (accent colors); otherwise fall back to base / the icon color.
+            if (colorMap[part] != null) {
+                nextProps[attr] = colorMap[part];
+            } else if (child.props[attr] == null) {
+                nextProps[attr] = colorMap.base != null ? colorMap.base : baseColor;
+            }
         }
 
         if (grandchildren != null) {
-            return cloneElement(child, nextProps, paintParts(grandchildren, colorMap, colorAttr));
+            return cloneElement(child, nextProps, paintParts(grandchildren, colorMap, baseColor, mode));
         }
         if (Object.keys(nextProps).length > 0) {
             return cloneElement(child, nextProps);
@@ -83,8 +115,6 @@ export function BaseIcon({
         ? (isMap ? resolveBaseColor(fillColor) : fillColor)
         : 'currentColor';
 
-    const colorAttr = mode === 'fill' ? 'fill' : 'stroke';
-
     const modeProps = mode === 'fill'
         ? { fill: baseColor }
         : {
@@ -95,10 +125,12 @@ export function BaseIcon({
             strokeLinejoin: 'round',
         };
 
-    // Per-element coloring only kicks in when an object color is supplied
-    // and the icon is in colored mode; otherwise children render untouched.
-    const content = (isMap && isColored)
-        ? paintParts(children, fillColor, colorAttr)
+    // Paint per element when an object color is supplied, or when the icon
+    // has been tagged with data-part (so mixed fill/stroke icons render
+    // correctly even with a plain string color). Untagged icons are untouched.
+    const colorMap = (isMap && isColored) ? fillColor : {};
+    const content = (isMap || hasParts(children))
+        ? paintParts(children, colorMap, baseColor, mode)
         : children;
 
     return (

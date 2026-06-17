@@ -89,7 +89,7 @@ All icons share a common set of props via the `BaseIcon` wrapper:
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| `fillColor` | `string` | varies | SVG fill or stroke color |
+| `fillColor` | `string \| object` | varies | A single color for the whole icon, **or** a `{ part: color }` map to color each element separately ([see below](#per-element-coloring)) |
 | `isColored` | `boolean` | `true` | Use the icon's brand color |
 | `size` | `number` | `24` | Width and height in pixels |
 | `onClick` | `function` | — | Click event handler |
@@ -124,6 +124,43 @@ All icons share a common set of props via the `BaseIcon` wrapper:
   className="icon-btn"
 />
 ```
+
+### Per-element coloring
+
+Most icons are made up of several elements (a calendar plus a check, a clock plus
+its hands, …). You can color the whole icon with a single value, or color each
+element independently by passing an **object** instead of a string. With the
+generic `<Icon>` wrapper the prop is named `color`; on the individual components
+it's `fillColor`.
+
+```jsx
+// One color for everything (unchanged behavior)
+<Icon name="CalendarCheck2" color="black" />
+<CalendarCheck2 fillColor="black" />
+
+// A color per element
+<Icon name="CalendarCheck2" color={{ calendar: 'black', check: 'green' }} />
+<CalendarCheck2 fillColor={{ calendar: 'black', check: 'green' }} />
+```
+
+Each element is identified by a **part name**. Semantic icons use descriptive
+names (`calendar`, `check`, `clock`, `hands`, …); the rest expose their structural
+elements as `base`, `base2`, `base3`, … in drawing order:
+
+```jsx
+<Icon name="Login" color={{ base: '#111', base3: '#e11' }} />
+```
+
+The special **`base`** key sets the color for every element you don't name
+explicitly, so you can recolor one part while leaving the rest at a shared color:
+
+```jsx
+// everything navy, just the checkmark green
+<Icon name="CalendarCheck2" color={{ base: 'navy', check: 'green' }} />
+```
+
+> **Tip:** not sure what an icon's parts are called? Inspect the rendered SVG —
+> every colorable element carries a `data-part="…"` attribute.
 
 ---
 
