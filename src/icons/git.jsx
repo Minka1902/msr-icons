@@ -257,3 +257,11 @@ export function Changelog({ fillColor = '#000', isColored = true, ...rest }) {
         </BaseIcon>
     );
 }
+
+export function CommitHorizontal({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <circle cx="12" cy="12" r="3" /><path d="M3 12h6M15 12h6" />
+        </BaseIcon>
+    );
+}

@@ -529,3 +529,19 @@ export function Fallback({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
+
+export function Container2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5Z" /><path d="M3 7.5 12 12l9-4.5M12 12v9" />
+        </BaseIcon>
+    );
+}
+
+export function Rocket2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M12 15 9 12a11 11 0 0 1 8-8c2 0 3 1 3 3a11 11 0 0 1-8 8Z" /><path d="M9 12H5s.55-3.03 2-4c1.62-1.08 4 0 4 0M12 15v4s3.03-.55 4-2c1.08-1.62 0-4 0-4" /><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09Z" /><circle cx="15" cy="9" r="1" />
+        </BaseIcon>
+    );
+}
