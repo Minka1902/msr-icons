@@ -5350,3 +5350,107 @@ export function SplitScreen({ fillColor = '#000', isColored = true, ...rest }) {
         </BaseIcon>
     );
 }
+
+export function StatusBusy({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <circle cx="12" cy="12" r="9" /><path d="M8 12h8" />
+        </BaseIcon>
+    );
+}
+
+export function TriangleExclamation({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M10.3 4.3 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 4.3a2 2 0 0 0-3.4 0Z" /><path d="M12 9v4M12 17h.01" />
+        </BaseIcon>
+    );
+}
+
+export function PanelLeft({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M9 4v16" />
+        </BaseIcon>
+    );
+}
+
+export function PanelRight({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M15 4v16" />
+        </BaseIcon>
+    );
+}
+
+export function PanelTop({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 10h18" />
+        </BaseIcon>
+    );
+}
+
+export function PanelBottom({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 14h18" />
+        </BaseIcon>
+    );
+}
+
+export function TableColumns({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M9 4v16M15 4v16" />
+        </BaseIcon>
+    );
+}
+
+export function TableRows({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9.5h18M3 14.5h18" />
+        </BaseIcon>
+    );
+}
+
+export function ParagraphIcon({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M13 4v16M17 4v16M17 4H9.5a4.5 4.5 0 0 0 0 9H13" />
+        </BaseIcon>
+    );
+}
+
+export function DotsGrid({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <circle cx="6" cy="6" r="1" /><circle cx="12" cy="6" r="1" /><circle cx="18" cy="6" r="1" /><circle cx="6" cy="12" r="1" /><circle cx="12" cy="12" r="1" /><circle cx="18" cy="12" r="1" /><circle cx="6" cy="18" r="1" /><circle cx="12" cy="18" r="1" /><circle cx="18" cy="18" r="1" />
+        </BaseIcon>
+    );
+}
+
+export function Smile({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <circle cx="12" cy="12" r="9" /><path d="M8.5 10h.01M15.5 10h.01M8.5 14a4 4 0 0 0 7 0" />
+        </BaseIcon>
+    );
+}
+
+export function Smiley({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <circle cx="12" cy="12" r="9" /><path d="M8.5 10h.01M15.5 10h.01M8.5 14a4 4 0 0 0 7 0" />
+        </BaseIcon>
+    );
+}
+
+export function SmileyFace({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <circle cx="12" cy="12" r="9" /><path d="M8.5 10h.01M15.5 10h.01M8.5 14a4 4 0 0 0 7 0" />
+        </BaseIcon>
+    );
+}

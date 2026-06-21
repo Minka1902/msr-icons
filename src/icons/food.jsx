@@ -421,3 +421,11 @@ export function Menu3({ fillColor = '#000', isColored = true, ...rest }) {
         </BaseIcon>
     );
 }
+
+export function Restaurant2({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M6 3v6a1.5 1.5 0 0 1-3 0V3M4.5 3v18" /><path d="M17 3c-1.5 1.5-2 3.5-2 5.5a2.5 2.5 0 0 0 2.5 2.5L17 21" />
+        </BaseIcon>
+    );
+}

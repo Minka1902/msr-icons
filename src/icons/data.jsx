@@ -473,3 +473,11 @@ export function Classification({ fillColor = '#000', isColored = true, ...rest }
     );
 }
 
+
+export function Filter3({ fillColor = '#000', isColored = true, ...rest }) {
+    return (
+        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
+            <path d="M3 6h18M6 12h12M10 18h4" />
+        </BaseIcon>
+    );
+}
