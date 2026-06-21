@@ -1,16 +1,6 @@
-export { Icon as default, Icon, iconNames, icons } from './Icon';
-export * from './icons/brands';
-export * from './icons/brands_additions';
-export * from './icons/files';
-export * from './icons/files_additions';
-export * from './icons/ui';
-export * from './icons/ui_additions';
-export * from './icons/weather';
-export * from './icons/transport';
-export * from './icons/food';
-export * from './icons/medical';
-export * from './icons/sports';
-export * from './icons/nature';
-export * from './icons/education';
-export * from './icons/music';
-export * from './icons/home';
+import * as Icons from './icons';
+
+export * from './icons';
+
+export const icons = Icons;
+export const iconNames = Object.keys(Icons);
