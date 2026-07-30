@@ -19,9 +19,9 @@ export function Folder2({ fillColor = '#000', backgroundColor, onHover, style })
 export function FileText({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
         <BaseIcon viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path fill={isColored ? fillColor : "currentColor"} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <path fill={isColored ? fillColor : "currentColor"} d="M14 2v6h6" />
-            <path fill={isColored ? fillColor : "currentColor"} d="M9 13h6M9 17h6" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M14 2v6h6" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M9 13h6M9 17h6" />
         </BaseIcon>
     );
 };
@@ -29,9 +29,9 @@ export function FileText({ fillColor = "#000", isColored = true, onClick, backgr
 export function FilePlus({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path fill={isColored ? fillColor : "currentColor"} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <path fill={isColored ? fillColor : "currentColor"} d="M14 2v6h6" />
-            <path fill={isColored ? fillColor : "currentColor"} d="M12 13v4m-2-2h4" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M14 2v6h6" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M12 13v4m-2-2h4" />
         </BaseIcon>
     );
 };
@@ -39,9 +39,9 @@ export function FilePlus({ fillColor = "#000", isColored = true, onClick, backgr
 export function FileDownload({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path fill={isColored ? fillColor : "currentColor"} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <path fill={isColored ? fillColor : "currentColor"} d="M14 2v6h6" />
-            <path fill={isColored ? fillColor : "currentColor"} d="M12 13v4m-2-2l2 2 2-2" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M14 2v6h6" />
+            <path fill="none" stroke={isColored ? fillColor : "currentColor"} d="M12 13v4m-2-2l2 2 2-2" />
         </BaseIcon>
     );
 };
@@ -300,7 +300,7 @@ export function JSFile({ className = "", color = '#fff', size = 24, onClick, ...
 
 export function Gif({ className = "", color = '#fff', size = 24, onClick, ...props }) {
     return (
-        <BaseIcon className={className} stroke='black' fill={color} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} {...props}>
+        <BaseIcon className={className} stroke='black' strokeWidth="0.75" fill={color} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} {...props}>
             <path d="m16 2 5 5v13.993A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.447 2 3.999 2H16Zm-3 8h-1v5h1v-5Zm-2 0H9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1a1 1 0 0 0 1-1v-2H9v1h1v1H9a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h2v-1Zm6 0h-3v5h1v-2h2v-1h-2v-1h2v-1Z"></path>
         </BaseIcon>
     );
@@ -382,7 +382,7 @@ export function FolderOpen2({ className = "", color = '#ffcd4d', size = 24, onCl
 export function Git({ className = "", color = 'red', size = 20, onClick, ...props }) {
     return (
         <BaseIcon className={className} stroke='secondary' fill={color} width={size} height={size} viewBox="0 0 32 32" strokeWidth="0.544" onClick={onClick} {...props}>
-            <g id="BaseIconRepo_bgCarrier" stroke-width="0"></g><g id="BaseIconRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="BaseIconRepo_bgCarrier" strokeWidth="0"></g><g id="BaseIconRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
             <g id="BaseIconRepo_iconCarrier">
                 <title>file_type_git</title>
                 <path d="M29.472,14.753,17.247,2.528a1.8,1.8,0,0,0-2.55,0L12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314,2.528,14.7a1.8,1.8,0,0,0,0,2.551L14.753,29.472a1.8,1.8,0,0,0,2.55,0L29.472,17.3a1.8,1.8,0,0,0,0-2.551" className="fill:#dd4c35"></path>
@@ -579,7 +579,7 @@ export function BaseIconFile({ fillColor = "#F7931E", onClick, backgroundColor, 
         <BaseIcon stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path fill="transparent" d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
             <polyline fill="transparent" points="13 2 13 9 20 9" />
-            <text x="8" y="16" fontSize="5" fill={fillColor} fontWeight="bold">BaseIcon</text>
+            <text x="7.5" y="16.5" fontSize="5" fill={fillColor} fontWeight="bold">FILE</text>
         </BaseIcon>
     );
 };
@@ -1241,7 +1241,7 @@ export function FileMinus2({ fillColor = '#000', isColored = true, ...rest }) {
 export function FileCheck2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m9.5 15 11.5 17.5 14.5 12.5" />
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.5 15 L11.5 17.5 L14.5 12.5" />
         </BaseIcon>
     );
 }
@@ -1353,7 +1353,7 @@ export function Clipboard2({ fillColor = '#000', isColored = true, ...rest }) {
 export function ClipboardCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" /><path d="m9.8 13 11.6 15.2 14.2 10.8" />
+            <rect x="6" y="4" width="12" height="17" rx="2" /><rect x="9" y="2.5" width="6" height="3.5" rx="1" /><path d="M9.8 13 L11.6 15.2 L14.2 10.8" />
         </BaseIcon>
     );
 }

@@ -40,7 +40,7 @@ export function EX({ fillColor, onClick, backgroundColor, onHover, style }) {
 
 export function Eye({ fillColor = '#000', onClick, className, backgroundColor, onHover, style }) {
     return (
-        <BaseIcon fillColor={fillColor} className={className} fill={fillColor} onClick={onClick} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fillColor={fillColor} className={className} mode="fill" onClick={onClick} viewBox="0 0 24 24" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path data-part="base" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
             <path data-part="base2" d="M23.01 11.184c-1.241-1.918-2.85-3.547-4.654-4.712C16.36 5.182 14.157 4.5 11.985 4.5c-1.993 0-3.953.57-5.825 1.693-1.91 1.145-3.64 2.818-5.141 4.972a1.496 1.496 0 0 0-.03 1.666c1.238 1.937 2.83 3.569 4.606 4.718 2 1.295 4.151 1.951 6.39 1.951 2.19 0 4.397-.676 6.384-1.956 1.803-1.16 3.41-2.796 4.645-4.73a1.51 1.51 0 0 0-.005-1.63ZM12 16.5a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z"></path>
         </BaseIcon>
@@ -217,8 +217,8 @@ export function AttachFile({ fillColor = '#000', onClick, backgroundColor, onHov
 export function Edit({ fillColor = '#000', onClick, backgroundColor, onHover, style }) {
     return (
         <BaseIcon fillColor={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill fill-rule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8 16 3.586 17.586 2Zm-3 3-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5Z" clip-rule="evenodd"></path>
-            <path stroke="none" data-part="base2" data-fill fill-rule="evenodd" d="M2 16a3 3 0 0 1 3-3h1a1 1 0 1 1 0 2H5a1 1 0 1 0 0 2h14a3 3 0 1 1 0 6h-4a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2H5a3 3 0 0 1-3-3Z" clip-rule="evenodd"></path>
+            <path stroke="none" data-part="base" data-fill fillRule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8 16 3.586 17.586 2Zm-3 3-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5Z" clipRule="evenodd"></path>
+            <path stroke="none" data-part="base2" data-fill fillRule="evenodd" d="M2 16a3 3 0 0 1 3-3h1a1 1 0 1 1 0 2H5a1 1 0 1 0 0 2h14a3 3 0 1 1 0 6h-4a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2H5a3 3 0 0 1-3-3Z" clipRule="evenodd"></path>
         </BaseIcon>
     );
 };
@@ -540,7 +540,7 @@ export function Map({ fillColor, onClick, backgroundColor, onHover, style }) {
     );
 };
 
-export function Location({ fillColor = '#fff', className, onClick, backgroundColor, onHover, style }) {
+export function Location({ fillColor = '#000', className, onClick, backgroundColor, onHover, style }) {
     return (
         <BaseIcon className={className} fill={fillColor} onClick={onClick} viewBox="0 0 512 512" onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <g>
@@ -752,7 +752,7 @@ export function Shield({ fillColor, className, onClick, backgroundColor, onHover
 export function ArrowLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M6.5 12l6-6m-6 6l6 6m0-6H20" />
+            <path data-part="base" d="M20 12H4M10 6l-6 6 6 6" />
         </BaseIcon>
     );
 };
@@ -760,7 +760,7 @@ export function ArrowLeft({ fillColor = "#000", isColored = true, onClick, backg
 export function ArrowRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M17.5 12l-6-6m6 6l-6 6m0-6H4" />
+            <path data-part="base" d="M4 12h16M14 6l6 6-6 6" />
         </BaseIcon>
     );
 };
@@ -768,7 +768,7 @@ export function ArrowRight({ fillColor = "#000", isColored = true, onClick, back
 export function ArrowUp({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M12 6.5l-6 6m6-6l6 6m0 0H6m6 0v16" />
+            <path data-part="base" d="M12 20V4M6 10l6-6 6 6" />
         </BaseIcon>
     );
 };
@@ -776,7 +776,7 @@ export function ArrowUp({ fillColor = "#000", isColored = true, onClick, backgro
 export function ArrowDown({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M12 17.5l-6-6m6 6l6-6m0 0H6m6 0V1.5" />
+            <path data-part="base" d="M12 4v16M6 14l6 6 6-6" />
         </BaseIcon>
     );
 };
@@ -784,7 +784,7 @@ export function ArrowDown({ fillColor = "#000", isColored = true, onClick, backg
 export function ArrowTopLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M6.5 6.5v8.25m0-8.25h8.25" />
+            <path data-part="base" d="M18 18 6 6M6 14V6h8" />
         </BaseIcon>
     );
 };
@@ -792,7 +792,7 @@ export function ArrowTopLeft({ fillColor = "#000", isColored = true, onClick, ba
 export function ArrowTopRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M17.5 6.5v8.25m0-8.25h-8.25" />
+            <path data-part="base" d="m6 18 12-12M10 6h8v8" />
         </BaseIcon>
     );
 };
@@ -800,7 +800,7 @@ export function ArrowTopRight({ fillColor = "#000", isColored = true, onClick, b
 export function ArrowBottomLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M6.5 17.5v-8.25m0 8.25h8.25" />
+            <path data-part="base" d="M18 6 6 18M6 10v8h8" />
         </BaseIcon>
     );
 };
@@ -808,7 +808,7 @@ export function ArrowBottomLeft({ fillColor = "#000", isColored = true, onClick,
 export function ArrowBottomRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M17.5 17.5v-8.25m0 8.25h-8.25" />
+            <path data-part="base" d="m6 6 12 12M18 10v8h-8" />
         </BaseIcon>
     );
 };
@@ -816,7 +816,7 @@ export function ArrowBottomRight({ fillColor = "#000", isColored = true, onClick
 export function ChevronLeft({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M15.5 6.5l-6 5.5 6 5.5" />
+            <path data-part="base" d="m15 6-6 6 6 6" />
         </BaseIcon>
     );
 };
@@ -824,7 +824,7 @@ export function ChevronLeft({ fillColor = "#000", isColored = true, onClick, bac
 export function ChevronRight({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M8.5 6.5l6 5.5-6 5.5" />
+            <path data-part="base" d="m9 6 6 6-6 6" />
         </BaseIcon>
     );
 };
@@ -832,7 +832,7 @@ export function ChevronRight({ fillColor = "#000", isColored = true, onClick, ba
 export function ChevronUp({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M6.5 15.5l5.5-6 5.5 6" />
+            <path data-part="base" d="m6 15 6-6 6 6" />
         </BaseIcon>
     );
 };
@@ -840,7 +840,7 @@ export function ChevronUp({ fillColor = "#000", isColored = true, onClick, backg
 export function ChevronDown({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M6.5 8.5l5.5 6 5.5-6" />
+            <path data-part="base" d="m6 9 6 6 6-6" />
         </BaseIcon>
     );
 };
@@ -891,7 +891,7 @@ export function UsersGroup({ fillColor = "#000", isColored = true, onClick, back
             <circle stroke="none" data-part="base" data-fill cx="8" cy="7.5" r="2" />
             <circle stroke="none" data-part="base2" data-fill cx="12" cy="5.5" r="2" />
             <circle stroke="none" data-part="base3" data-fill cx="16" cy="7.5" r="2" />
-            <path stroke="none" data-part="base4" data-fill d="M3 21c0-2.5 2-4 5-4s5 1.5 5 4m6-4c0-2.5 1.5-4 3.5-4s3.5 1.5 3.5 4" />
+            <path stroke="none" data-part="base4" data-fill d="M3 21c0-2.5 2-4 5-4s5 1.5 5 4m5-4c0-2.5 1.2-4 2.8-4s2.8 1.5 2.8 4" />
         </BaseIcon>
     );
 };
@@ -937,7 +937,7 @@ export function CreditCard({ fillColor = "#000", onClick, backgroundColor, onHov
 export function DollarSign({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M12 2v20m-4-5c0 2.2 1.8 4 4 4s4-1.8 4-4-1.8-4-4-4-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4" />
+            <path data-part="base" d="M12 2v20m-4-5c0 2.2 1.8 4 4 4s4-1.8 4-4-1.8-4-4-4-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4" />
         </BaseIcon>
     );
 };
@@ -945,7 +945,7 @@ export function DollarSign({ fillColor = "#000", isColored = true, onClick, back
 export function PoundSign({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M5 18h14m-2-2c1-2 2-5 2-7 0-3-2-5-5-5-3 0-5 2-5 5v3H5" />
+            <path data-part="base" d="M5 18h14m-2-2c1-2 2-5 2-7 0-3-2-5-5-5-3 0-5 2-5 5v3H5" />
         </BaseIcon>
     );
 };
@@ -953,7 +953,7 @@ export function PoundSign({ fillColor = "#000", isColored = true, onClick, backg
 export function EuroSign({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M14 5c-3 0-5 2-5 5s2 5 5 5h5m-5-10c3 0 5 2 5 5s-2 5-5 5h-5" />
+            <path data-part="base" d="M18.5 6.6A7 7 0 1 0 18.5 17.4M5 10.5h9M5 13.5h9" />
         </BaseIcon>
     );
 };
@@ -977,7 +977,7 @@ export function StarFilled({ fillColor = "#000", isColored = true, onClick, back
 export function Heart({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path data-part="base" fill="transparent" d="M20.5 5.5c-1.5-1.5-3.5-2.5-6-2.5-2.5 0-4.5 1-6 2.5-1.5-1.5-3.5-2.5-6-2.5-4 0-7 3-7 7 0 6 11 12 12 12s12-6 12-12c0-4-3-7-7-7Z" />
+            <path data-part="base" fill="transparent" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" />
         </BaseIcon>
     );
 };
@@ -985,7 +985,7 @@ export function Heart({ fillColor = "#000", onClick, backgroundColor, onHover, s
 export function HeartFilled({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M20.5 5.5c-1.5-1.5-3.5-2.5-6-2.5-2.5 0-4.5 1-6 2.5-1.5-1.5-3.5-2.5-6-2.5-4 0-7 3-7 7 0 6 11 12 12 12s12-6 12-12c0-4-3-7-7-7Z" />
+            <path stroke="none" data-part="base" data-fill d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" />
         </BaseIcon>
     );
 };
@@ -1464,7 +1464,7 @@ export function BaseIconVideo({ fillColor = "#000", isColored = true, onClick, b
 export function BaseIconX({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <path stroke="none" data-part="base" data-fill d="M18 6L6 18M6 6l12 12" />
+            <path data-part="base" d="M18 6 6 18M6 6l12 12" />
         </BaseIcon>
     );
 };
@@ -1819,7 +1819,7 @@ export function BaseIconArchiveRemove({ fillColor = "#000", onClick, backgroundC
 };
 
 // Clipboard and copy
-export function BaseIconClipboard({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconClipboard({ fillColor = "#000", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon stroke={fillColor} fill="transparent" width={size} strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M15.75 3h1.5a2.25 2.25 0 0 1 2.25 2.25v15a2.25 2.25 0 0 1-2.25 2.25H6.75a2.25 2.25 0 0 1-2.25-2.25v-15A2.25 2.25 0 0 1 6.75 3h1.5"></path>
@@ -1828,7 +1828,7 @@ export function BaseIconClipboard({ fillColor = "white", size = 24, onClick, bac
     );
 };
 
-export function BaseIconCopy({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
+export function BaseIconCopy({ fillColor = "#000", size = 24, onClick, backgroundColor, onHover, style, strokeWidth }) {
     return (
         <BaseIcon width={size} height={size} fill="none" stroke={fillColor} strokeWidth={strokeWidth || "1.5"} strokeLinejoin="round" strokeLinecap="round" viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M19.078 6H8.672A2.672 2.672 0 0 0 6 8.672v10.406a2.672 2.672 0 0 0 2.672 2.672h10.406a2.672 2.672 0 0 0 2.672-2.672V8.672A2.672 2.672 0 0 0 19.078 6Z"></path>
@@ -1849,9 +1849,9 @@ export function BaseIconID({ size = 24, onClick, backgroundColor, onHover, style
     );
 };
 
-export function BaseIconFingerprint({ fillColor = "white", size = 24, onClick, backgroundColor, onHover, style }) {
+export function BaseIconFingerprint({ fillColor = "#000", size = 24, onClick, backgroundColor, onHover, style }) {
     return (
-        <BaseIcon width={size} height={size} fill={fillColor} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <BaseIcon fillColor={fillColor} mode="fill" width={size} height={size} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M17.815 4.47c-.08 0-.16-.02-.23-.06-1.92-.99-3.58-1.41-5.57-1.41-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2a.506.506 0 0 1 .2-.68C7.825 2.52 9.865 2 12.015 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67a.49.49 0 0 1-.44.28ZM3.505 9.72a.499.499 0 0 1-.41-.79c.99-1.4 2.25-2.5 3.75-3.27 3.14-1.62 7.16-1.63 10.31-.01 1.5.77 2.76 1.86 3.75 3.25a.5.5 0 0 1-.12.7c-.23.16-.54.11-.7-.12a9.388 9.388 0 0 0-3.39-2.94c-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21Zm6.25 12.07a.47.47 0 0 1-.35-.15c-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15Zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12ZM14.915 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1a7.297 7.297 0 0 1-2.17-5.22c0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29a11.14 11.14 0 0 1-.73-3.96c0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94-1.7 0-3.08-1.32-3.08-2.94 0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38Z"></path>
         </BaseIcon>
     );
@@ -2383,9 +2383,9 @@ export function Ruler({ fillColor = '#000', isColored = true, ...rest }) {
 export function Magnet({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path data-part="base" d="m6 15-4-4a9 9 0 0 1 12.728-12.728 9 9 0 0 1 0 12.728l-4 4Z" />
-            <path data-part="base2" d="M2 11l4 4M17.5 6.5l4 4" />
-            <path data-part="base3" d="M4 20v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V20a2 2 0 1 1-4 0ZM16 20v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V20a2 2 0 1 1-4 0Z" />
+            <path data-part="base" d="M5 20v-8a7 7 0 0 1 14 0v8" />
+            <path data-part="base2" d="M9 20v-8a3 3 0 0 1 6 0v8" />
+            <path data-part="base3" d="M5 16h4M15 16h4M5 20h4M15 20h4" />
         </BaseIcon>
     );
 }
@@ -3803,8 +3803,8 @@ export function Badge({ fillColor = '#3B82F6', isColored = true, ...rest }) {
 export function Ribbon({ fillColor = '#EC4899', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path data-part="base" d="M12 8a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
-            <path data-part="base2" d="m12 8-5 13 5-3 5 3-5-13" />
+            <path data-part="base" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+            <path data-part="base2" d="m12 12-4 10 4-2.4 4 2.4-4-10" />
         </BaseIcon>
     );
 }
@@ -4490,7 +4490,7 @@ export function ToggleOff({ fillColor = '#000', isColored = true, ...rest }) {
 export function Checkbox2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect data-part="base" x="4" y="4" width="16" height="16" rx="3" /><path data-part="base2" d="m9 12 11.4 15 15 9" />
+            <rect data-part="base" x="4" y="4" width="16" height="16" rx="3" /><path data-part="base2" d="M9 12 L11.4 15 L15 9" />
         </BaseIcon>
     );
 }
@@ -5130,7 +5130,7 @@ export function SearchMinus({ fillColor = '#000', isColored = true, ...rest }) {
 export function SearchCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="base" cx="10.5" cy="10.5" r="6" /><path data-part="base2" d="m15 15 5 5" /><path data-part="base3" d="m8.3 10.5 10.1 12.7 12.7 8.3" />
+            <circle data-part="base" cx="10.5" cy="10.5" r="6" /><path data-part="base2" d="m15 15 5 5" /><path data-part="base3" d="M8.3 10.5 L10.1 12.7 L12.7 8.3" />
         </BaseIcon>
     );
 }
@@ -5170,7 +5170,7 @@ export function FilterX({ fillColor = '#000', isColored = true, ...rest }) {
 export function FilterCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path data-part="base" d="M3 5h18l-7 8v6l-4-2v-4L3 5Z" /><path data-part="base2" d="m16 17 17.6 19 20 15" />
+            <path data-part="base" d="M3 5h18l-7 8v6l-4-2v-4L3 5Z" /><path data-part="base2" d="M16 17 L17.6 19 L20 15" />
         </BaseIcon>
     );
 }

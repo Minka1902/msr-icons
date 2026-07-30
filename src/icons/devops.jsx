@@ -92,7 +92,7 @@ export function CloudSync({ fillColor = '#000', isColored = true, ...rest }) {
 export function CloudCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M7 18a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 11 3.5 3.5 0 0 1 17 18H7Z" /><path d="m9.8 13 11.6 15.2 14.2 10.8" />
+            <path d="M7 18a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 11 3.5 3.5 0 0 1 17 18H7Z" /><path d="M9.8 13 L11.6 15.2 L14.2 10.8" />
         </BaseIcon>
     );
 }
@@ -244,7 +244,7 @@ export function Dns({ fillColor = '#000', isColored = true, ...rest }) {
 export function Ssl({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /><path d="m10.2 15.5 11.6 17.3 13.8 13.7" />
+            <rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /><path d="M10.2 15.5 L11.6 17.3 L13.8 13.7" />
         </BaseIcon>
     );
 }
@@ -308,7 +308,7 @@ export function PipelineFail({ fillColor = '#000', isColored = true, ...rest }) 
 export function PipelinePass({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><path d="m9 12 11.4 15 15 9" />
+            <circle cx="12" cy="12" r="9" /><path d="M9 12 L11.4 15 L15 9" />
         </BaseIcon>
     );
 }
@@ -316,7 +316,7 @@ export function PipelinePass({ fillColor = '#000', isColored = true, ...rest }) 
 export function BuildSuccess({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="4" y="4" width="16" height="16" rx="2" /><path d="m9 12 11.4 15 15 9" />
+            <rect x="4" y="4" width="16" height="16" rx="2" /><path d="M9 12 L11.4 15 L15 9" />
         </BaseIcon>
     );
 }
@@ -340,7 +340,7 @@ export function BuildPending({ fillColor = '#000', isColored = true, ...rest }) 
 export function TestPass({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M9 3h6M10 3v5l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" /><path d="m9.8 16 11.6 18.2 14.2 13.8" />
+            <path d="M9 3h6M10 3v5l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" /><path d="M9.8 16 L11.6 18.2 L14.2 13.8" />
         </BaseIcon>
     );
 }

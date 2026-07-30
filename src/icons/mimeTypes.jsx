@@ -33,8 +33,8 @@ export function FileTypeApplicationAcad({ onClick, onHover, className, style, ba
 export function FileTypeApplicationAfdesigner({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
-            <rect style={{ fill: '#4f4f4f' }} x="2" y="2" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ fill: '#4f4f4f' }} x="2" y="2" rx="1" ry="1" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="M 3,2 C 2.446,2 2,2.446 2,3 v 0.5 c 0,-0.554 0.446,-1 1,-1 h 18 c 0.554,0 1,0.446 1,1 V 3 C 22,2.446 21.554,2 21,2 Z" />
             <path style={{ opacity: '0.2' }} d="m 10.354798,5.5 h 2.362339 L 12.914755,6 H 13.59191 L 19.5,16.253315 18.227798,18.5 h -5.170962 l 0.524005,1 h -0.228725 l -0.523956,-1 H 6.4094235 L 6.080841,18 H 5.6744895 L 4.5,15.811517 v 0 L 6.0053145,13.200461 7.3996555,12.396779 9.7065075,8.4025485 9.242475,7.598817 Z M 11.746896,9.20628 7.6660705,16.5 h 3.9054415 l -0.450721,-1.00245 4.256208,0.0049 z" />
             <path style={{ fill: '#ffffff' }} d="m 10.354798,5 h 2.362339 l 0.197618,0.5 H 13.59191 L 19.5,15.753315 18.227798,18 h -5.170962 l 0.524005,1 H 13.352116 L 12.82816,18 H 6.4094235 L 6.080841,17.5 H 5.6744895 L 4.5,15.311517 v 0 L 6.0053145,12.700461 7.3996555,11.896779 9.7065075,7.9025485 9.242475,7.098817 Z M 11.746896,8.70628 7.6660705,16 h 3.9054415 l -0.450721,-1.00245 4.256208,0.0049 z" />
@@ -378,11 +378,11 @@ export function FileTypeApplicationGzip({ onClick, onHover, className, style, ba
 export function FileTypeApplicationIllustrator({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="3.5" rx="1.5" ry="1.5" />
-            <rect style={{ fill: '#e4e4e4' }} x="2" y="3" rx="1.5" ry="1.5" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="3.5" rx="1.5" ry="1.5" />
+            <rect width="20" height="20" style={{ fill: '#e4e4e4' }} x="2" y="3" rx="1.5" ry="1.5" />
             <path style={{ fill: '#363636' }} d="m 12,7.8 a 6,6 0 0 0 -6,6 6,6 0 0 0 0.021485,0.5 H 7.025391 A 5,5 0 0 1 7,13.8 a 5,5 0 0 1 4.990235,-5 5,5 0 0 1 0.0098,0 5,5 0 0 1 5,5 5,5 0 0 1 -0.02539,0.5 h 1.003906 A 6,6 0 0 0 18,13.8 6,6 0 0 0 12,7.8 Z" />
             <path style={{ opacity: '0.1' }} d="M 6,8 A 1,1 0 0 0 5,9 1,1 0 0 0 6,10 1,1 0 0 0 6.8652344,9.5 H 17.134766 A 1,1 0 0 0 18,10 1,1 0 0 0 19,9 1,1 0 0 0 18,8 1,1 0 0 0 17.134766,8.5 H 6.8652344 A 1,1 0 0 0 6,8 Z" />
-            <rect style={{ fill: '#ff4b4b' }} x="6" y="8" />
+            <rect width="12" height="12" style={{ fill: '#ff4b4b' }} x="6" y="8" />
             <path style={{ opacity: '0.1' }} d="m 11,7.5 c -0.277,0 -0.5,0.223 -0.5,0.5 v 2 c 0,0.277 0.223,0.5 0.5,0.5 h 2 c 0.277,0 0.5,-0.223 0.5,-0.5 V 8 C 13.5,7.723 13.277,7.5 13,7.5 Z m -5.5,6 C 5.223,13.5 5,13.723 5,14 v 2 c 0,0.277 0.223,0.5 0.5,0.5 h 2 C 7.777,16.5 8,16.277 8,16 V 14 C 8,13.723 7.777,13.5 7.5,13.5 Z m 11,0 C 16.223,13.5 16,13.723 16,14 v 2 c 0,0.277 0.223,0.5 0.5,0.5 h 2 c 0.277,0 0.5,-0.223 0.5,-0.5 v -2 c 0,-0.277 -0.223,-0.5 -0.5,-0.5 z" />
             <rect style={{ fill: '#3974e1' }} x="5" y="13" rx=".5" ry=".5" />
             <rect style={{ fill: '#3974e1' }} x="16" y="13" rx=".5" ry=".5" />
@@ -1017,8 +1017,8 @@ export function FileTypeApplicationVndKdeBluedevilSendfile({ onClick, onHover, c
 export function FileTypeApplicationVndKdeKphotoalbumImport({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="3.5" rx="1.5" ry="1.5" />
-            <rect style={{ fill: '#23b1ff' }} x="2" y="3" rx="1.5" ry="1.5" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="3.5" rx="1.5" ry="1.5" />
+            <rect width="20" height="20" style={{ fill: '#23b1ff' }} x="2" y="3" rx="1.5" ry="1.5" />
             <path style={{ fill: '#0c7d40' }} d="M 5.7001955,14 2.0917969,20.013672 C 2.3008694,20.589787 2.849908,21 3.5,21 h 6.4003905 z" />
             <path style={{ fill: '#0c9950' }} d="m 13,11 6,10 H 7 Z" />
             <path style={{ opacity: '0.2' }} d="M 16,8.5 A 2.5,2.5 0 0 0 13.541016,10.574219 2,2 0 0 0 13,10.5 a 2,2 0 0 0 -2,2 2,2 0 0 0 2,2 h 5.5 A 1.5,1.5 0 0 0 20,13 1.5,1.5 0 0 0 18.5,11.5 1.5,1.5 0 0 0 18.442383,11.5039 2.5,2.5 0 0 0 18.5,11 2.5,2.5 0 0 0 16,8.5 Z" />
@@ -1065,7 +1065,7 @@ export function FileTypeApplicationVndMsAsf({ onClick, onHover, className, style
 export function FileTypeApplicationVndMsHtmlhelp({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ fill: '#435ece' }} x="2" y="2" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ fill: '#435ece' }} x="2" y="2" rx="1" ry="1" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="M 3,2 C 2.446,2 2,2.446 2,3 v 0.5 c 0,-0.554 0.446,-1 1,-1 h 18 c 0.554,0 1,0.446 1,1 V 3 C 22,2.446 21.554,2 21,2 Z" />
             <path style={{ opacity: '0.2' }} d="m 3,22.5 c -0.554,0 -1,-0.446 -1,-1 V 21 c 0,0.554 0.446,1 1,1 h 18 c 0.554,0 1,-0.446 1,-1 v 0.5 c 0,0.554 -0.446,1 -1,1 z" />
             <path style={{ opacity: '0.2' }} d="m 13,19.5 h -2 v -2 h 2 z m 2.07,-7.75 -0.9,0.92 C 13.45,13.4 13,14 13,15.5 H 11 V 15 c 0,-1.1 0.45,-2.1 1.17,-2.83 l 1.24,-1.26 C 13.78,10.55 14,10.05 14,9.4999998 c 0,-1.1 -0.9,-2 -2,-2 -1.1,0 -2,0.9 -2,2 H 8 c 0,-2.21 1.7900001,-4 4,-4 2.21,0 4,1.79 4,4 C 16,10.38 15.64,11.18 15.07,11.75 Z" />
@@ -1588,7 +1588,7 @@ export function FileTypeApplicationXETheme({ onClick, onHover, className, style,
             <path fill="#253951" d="m2 20c-0.554 0-1-0.446-1-1v-1h20v1c0 0.554-0.446 1-1 1z" />
             <path fill="#fff" opacity=".1" d="m2 2c-0.554 0-1 0.446-1 1v0.5c0-0.554 0.446-1 1-1h18c0.554 0 1 0.446 1 1v-0.5c0-0.554-0.446-1-1-1z" />
             <path opacity=".2" d="m1 19v0.5c0 0.554 0.446 1 1 1h18c0.554 0 1-0.446 1-1v-0.5c0 0.554-0.446 1-1 1h-18c-0.554 0-1-0.446-1-1z" />
-            <rect opacity=".2" x="7" y="8.5" rx=".5" ry=".5" />
+            <rect width="8" height="8" opacity=".2" x="7" y="8.5" rx=".5" ry=".5" />
             <path fill="#fff" d="m7 9v4.5c0 0.277 0.223 0.5 0.5 0.5h7c0.277 0 0.5-0.223 0.5-0.5v-4.5h-8z" />
             <path fill="#253951" d="m7.5 8h7c0.277 0 0.5 0.223 0.5 0.5v0.5h-8v-0.5c0-0.277 0.223-0.5 0.5-0.5z" />
             <g opacity=".2" transform="translate(-2,-2.5)">
@@ -2017,8 +2017,8 @@ export function FileTypeApplicationXKdenlive({ onClick, onHover, className, styl
 export function FileTypeApplicationXKicadPcb({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
-            <rect style={{ fill: '#237223' }} x="2" y="2" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ fill: '#237223' }} x="2" y="2" rx="1" ry="1" />
             <path style={{ opacity: '0.2' }} d="m 2.9999784,2.5004296 v 9.1306634 l -0.9999785,0.869121 h 4.3e-4 v 8.999806 c 0,0.553989 0.4459904,0.999979 0.9999785,0.999979 H 4.0003868 V 22.00001 17.219839 C 3.4066356,16.871689 3.0004084,16.233438 3.0004084,15.50015 c 0,-1.098615 0.9013424,-1.999957 1.9999569,-1.999957 1.0986145,0 1.9999569,0.901342 1.9999569,1.999957 0,0.733288 -0.4062275,1.371539 -0.9999784,1.719689 v 4.780171 0.499989 H 7.9998707 V 22.00001 13.927918 L 4.3085439,10.396744 C 4.1113953,10.208055 3.9999165,9.9469971 3.9999568,9.6741031 V 3.0004189 2.5004296 Z m 2.9999354,0 v 0.4999893 6.2469357 l 3.6913263,3.5301974 c 0.1971485,0.188689 0.3086275,0.449746 0.3085875,0.722641 v 8.499817 0.499989 H 10.999806 V 22.00001 12.683804 L 7.3162912,9.2297766 C 7.1145387,9.0407971 7.0000067,8.7767376 6.9998922,8.5003002 V 3.0004189 2.5004296 Z m 2.9999353,0 v 0.4999893 5.0662968 l 3.6835149,3.4540283 c 0.201752,0.188979 0.316285,0.453039 0.316399,0.729476 v 9.74979 0.499989 h 0.999978 V 11.500236 h 2.500376 l 0.999979,0.999978 h 4.499903 V 6.5003432 H 17.500096 L 16.500117,7.5003217 H 14.630158 L 13.000193,5.9788703 V 2.5004296 h -1.000408 v 0.4999893 3.0858709 l 2.41401,2.4140104 h 2.866579 c 0.348147,-0.593751 0.986395,-0.9999785 1.71969,-0.9999785 1.098625,0 1.999957,0.901332 1.999957,1.9999574 0,1.0986249 -0.901332,1.9999569 -1.999957,1.9999569 -0.733295,0 -1.371543,-0.406227 -1.71969,-0.999979 h -3.880867 c -0.265193,-5.1e-5 -0.519508,-0.10543 -0.707016,-0.292962 L 10.29279,8.0574967 C 10.105258,7.8699892 9.9998786,7.6156742 9.9998276,7.3504807 V 3.0004189 2.5004296 Z" />
             <path style={{ fill: '#dfbd8a' }} d="m 2.9999784,2.0004407 v 9.1306633 l -0.9999785,0.869121 h 4.3e-4 v 8.999806 c 0,0.553989 0.4459904,0.999979 0.9999785,0.999979 H 4.0003868 V 21.500021 16.71985 C 3.4066356,16.3717 3.0004084,15.733449 3.0004084,15.000161 c 0,-1.098615 0.9013424,-1.999957 1.9999569,-1.999957 1.0986145,0 1.9999569,0.901342 1.9999569,1.999957 0,0.733288 -0.4062275,1.371539 -0.9999784,1.719689 v 4.780171 0.499989 H 7.9998707 V 21.500021 13.427929 L 4.3085439,9.8967551 C 4.1113953,9.7080661 3.9999165,9.4470081 3.9999568,9.1741141 V 2.5004299 2.0004407 Z m 2.9999354,0 v 0.4999892 6.2469358 l 3.6913263,3.5301983 c 0.1971485,0.188688 0.3086275,0.449745 0.3085875,0.72264 v 8.499817 0.499989 H 10.999806 V 21.500021 12.183816 L 7.3162912,8.7297877 C 7.1145387,8.5408082 7.0000067,8.2767487 6.9998922,8.0003112 V 2.5004299 2.0004407 Z m 2.9999353,0 v 0.4999892 5.0662968 l 3.6835149,3.4540283 c 0.201752,0.188979 0.316285,0.453039 0.316399,0.729476 v 9.74979 0.499989 h 0.999978 V 11.000247 h 2.500376 l 0.999979,0.999978 h 4.499903 V 6.0003543 H 17.500096 L 16.500117,7.0003327 H 14.630158 L 13.000193,5.4788813 V 2.0004407 h -1.000408 v 0.4999892 3.0858709 l 2.41401,2.4140104 h 2.866579 c 0.348147,-0.593751 0.986395,-0.9999785 1.71969,-0.9999785 1.098625,0 1.999957,0.901332 1.999957,1.9999574 0,1.0986249 -0.901332,1.9999569 -1.999957,1.9999569 -0.733295,0 -1.371543,-0.406227 -1.71969,-0.999979 H 13.399507 C 13.134314,10.000217 12.879999,9.8948381 12.692491,9.7073056 L 10.29279,7.5575077 C 10.105258,7.3700002 9.9998786,7.1156852 9.9998276,6.8504917 V 2.5004299 2.0004407 Z" />
             <path style={{ opacity: '0.2' }} d="m 19.000064,8.5003007 c -0.552273,0 -0.999979,0.4477054 -0.999979,0.9999784 0,0.5522729 0.447706,0.9999789 0.999979,0.9999789 0.552273,0 0.999978,-0.447706 0.999978,-0.9999789 0,-0.552273 -0.447705,-0.9999784 -0.999978,-0.9999784 z M 5.0003653,14.500171 c -0.5522728,0 -0.9999785,0.447706 -0.9999785,0.999979 0,0.552273 0.4477057,0.999978 0.9999785,0.999978 0.552273,0 0.9999785,-0.447705 0.9999785,-0.999978 0,-0.552273 -0.4477055,-0.999979 -0.9999785,-0.999979 z" />
@@ -2047,8 +2047,8 @@ export function FileTypeApplicationXKicadProject({ onClick, onHover, className, 
 export function FileTypeApplicationXKicadSchematic({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
-            <rect style={{ fill: '#e4e4e4' }} x="2" y="2" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ fill: '#e4e4e4' }} x="2" y="2" rx="1" ry="1" />
             <path style={{ opacity: '0.1' }} d="M 9,2.5 V 6 c 2.76e-5,0.2761309 0.2238691,0.4999724 0.5,0.5 H 11 V 8.59375 C 10.422113,8.8030956 10,9.3553894 10,10 c 0,0.644611 0.422113,1.196905 1,1.40625 v 1.431641 c -5.19e-4,3.57e-4 -0.0014,-3.6e-4 -0.002,0 L 9,14.181641 V 13 C 9.00386,12.718115 8.7740645,12.489738 8.4921875,12.494141 8.2164294,12.498451 7.9962236,12.724234 8,13 v 2.5 H 7.5 7 2 v 1 H 7 7.5 8 v 0.425781 c -0.00709,0.04824 -0.00709,0.09628 0,0.144531 V 19 c -0.00956,0.676161 1.0095626,0.676161 1,0 v -1.064453 l 1.373047,0.914062 -0.5312501,0.175782 c -0.6330046,0.210842 -0.3165983,1.16006 0.3164061,0.949218 L 11,19.695312 V 22.5 h 1 v -3 -0.425781 c 0.0022,-0.01554 -7.19e-4,-0.03105 0,-0.04687 V 19 h -0.002 c -4.8e-4,-0.05143 -1.51e-4,-0.102496 -0.01758,-0.154297 l -0.238281,-1.427734 c -0.03657,-0.240605 -0.241054,-0.418963 -0.484376,-0.423828 -0.315717,-0.0062 -0.556148,0.277141 -0.5,0.58789 l 0.06055,0.361328 L 9,16.732422 v -0.648438 c 0.00892,-0.054 0.00892,-0.108114 0,-0.162109 v -0.533203 c 0.00196,-0.0013 0.00392,-0.0026 0.00586,-0.0039 l 2.550782,-1.716797 c 0.03826,-0.02487 0.06553,-0.05562 0.09375,-0.08594 C 11.84322,13.527404 12.003813,13.369179 12,13.099609 V 11.40625 C 12.420421,11.253948 12.753948,10.920421 12.90625,10.5 H 14 v 1.416016 c -0.02756,0.162261 0.02649,0.328669 0.144531,0.443359 9.96e-4,10e-4 0.0029,9.53e-4 0.0039,0.002 0.0022,0.0023 0.0036,0.0056 0.0059,0.0078 0.113186,0.107947 0.27137,0.155774 0.425781,0.130859 H 20.5 c 0.276131,-2.8e-5 0.499972,-0.223869 0.5,-0.5 v -1.5 h 1 v -1 H 21 V 8 C 20.999972,7.7238691 20.776131,7.5000276 20.5,7.5 h -6 C 14.223869,7.5000276 14.000028,7.7238691 14,8 V 9.5 H 12.90625 C 12.753948,9.0795787 12.420421,8.746052 12,8.59375 V 6.5 h 1.416016 c 0.162261,0.027561 0.328669,-0.026488 0.443359,-0.1445312 v -0.00195 c 0.0013,-0.00129 0.0026,-0.0026 0.0039,-0.00391 0.0013,-0.00129 0.0026,-0.0026 0.0039,-0.00391 C 13.975186,6.2325245 14.024905,6.0743652 14,5.9199219 V 2.5 h -1 v 3 h -1 v -3 h -1 v 3 h -1 v -3 z m -2.5,4 c -0.6761613,-0.00956 -0.6761613,1.0095626 0,1 h 2 c 0.6761613,0.00956 0.6761613,-1.0095626 0,-1 z m -2,2 c -0.6761613,-0.00956 -0.6761613,1.0095626 0,1 h 4 c 0.6761613,0.00956 0.6761613,-1.0095626 0,-1 z m 10.5,0 h 5 v 1 h -5 z m 0,2 h 5 v 1 h -5 z m -1.5,4 c -0.676161,-0.0096 -0.676161,1.009563 0,1 h 2 c 0.676161,0.0096 0.676161,-1.009563 0,-1 z m 0,2 c -0.676161,-0.0096 -0.676161,1.009563 0,1 h 4 c 0.676161,0.0096 0.676161,-1.009563 0,-1 z" />
             <path style={{ fill: '#4e9a06' }} d="m 11,2 v 7 1 2.6 c -0.0096,0.676161 1.009563,0.676161 1,0 V 10 H 22 V 9 H 12 V 2 Z M 2,15 v 1 H 7 7.5 V 15 H 7 Z m 9,3.5 v 0.5 3 h 1 v -3 -0.5 z" />
             <rect style={{ fill: '#e8cc8d' }} x="14.5" y="8" />
@@ -2192,8 +2192,8 @@ export function FileTypeApplicationXMacbinary({ onClick, onHover, className, sty
 export function FileTypeApplicationXMsDosExecutable({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="1.5" rx="1.05" ry="1.05" />
-            <rect style={{ fill: '#e4e4e4' }} x="2" y="1" rx="1.05" ry="1.05" />
+            <rect width="21" height="21" style={{ opacity: '0.2' }} x="2" y="1.5" rx="1.05" ry="1.05" />
+            <rect width="21" height="21" style={{ fill: '#e4e4e4' }} x="2" y="1" rx="1.05" ry="1.05" />
             <path style={{ opacity: '0.1' }} d="M 20,4.5 12,5.66769 V 11.5 h 8 z M 11,5.8340539 5,6.6407646 V 11.5 h 6 z M 5,12.5 v 4.901087 l 6,0.822407 V 12.5 Z m 7,0 v 5.865792 L 20,19.5 v -7 z" />
             <path style={{ fill: '#0078d6' }} d="M 20,4 12,5.16769 V 11 h 8 z M 11,5.3340539 5,6.1407646 V 11 h 6 z M 5,12 v 4.901087 l 6,0.822407 V 12 Z m 7,0 v 5.865792 L 20,19 v -7 z" />
             <path style={{ fill: '#ffffff', opacity: '0.2' }} d="M 3.0507812 1 C 2.4690813 1 2 1.4690813 2 2.0507812 L 2 2.5507812 C 2 1.9690813 2.4690813 1.5 3.0507812 1.5 L 21.949219 1.5 C 22.530919 1.5 23 1.9690813 23 2.5507812 L 23 2.0507812 C 23 1.4690813 22.530919 1 21.949219 1 L 3.0507812 1 z" />
@@ -2392,11 +2392,11 @@ export function FileTypeApplicationXRemoteConnection({ onClick, onHover, classNa
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <rect style={{ opacity: '0.2' }} x="6" y="4.5" rx="1" ry="1" />
             <rect style={{ fill: '#8e8e8e' }} x="6" y="4" rx="1" ry="1" />
-            <rect style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
             <path style={{ fill: '#3f3f3f' }} d="m 2,16 v 1 c 0,0.554 0.446,1 1,1 h 18 c 0.554,0 1,-0.446 1,-1 v -1 z" />
             <path style={{ fill: '#0085e5' }} d="M 3,2 C 2.446,2 2,2.446 2,3 V 16 H 22 V 3 C 22,2.446 21.554,2 21,2 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="M 3,2 C 2.446,2 2,2.446 2,3 v 0.5 c 0,-0.554 0.446,-1 1,-1 h 18 c 0.554,0 1,0.446 1,1 V 3 C 22,2.446 21.554,2 21,2 Z" />
-            <rect style={{ opacity: '0.2' }} x="2" y="16" />
+            <rect width="20" height="8" style={{ opacity: '0.2' }} x="2" y="16" />
             <circle style={{ opacity: '0.2' }} cx="17.5" cy="18" r="5.5" />
             <circle style={{ fill: '#00d3ac' }} cx="17.5" cy="17.5" r="5.5" />
             <path style={{ fill: '#ffffff' }} d="M 14.907376,16 14,16.87496 15.685247,18.5 14,20.12504 14.907376,21 17.5,18.5 Z" />
@@ -2653,11 +2653,11 @@ export function FileTypeApplicationXVmwareEasterEgg({ onClick, onHover, classNam
 export function FileTypeApplicationXVmwareSnapshot({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ fill: '#3f51b5' }} x="5" y="2" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
-            <rect style={{ fill: '#217dd5' }} x="10" y="7" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
-            <rect style={{ fill: '#03a9f4' }} x="2" y="10" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#3f51b5' }} x="5" y="2" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#217dd5' }} x="10" y="7" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#03a9f4' }} x="2" y="10" rx="2" ry="2" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="M 7,2 C 5.892,2 5,2.892 5,4 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 4 C 17,2.892 16.108,2 15,2 Z" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="m 12,7 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 9 C 22,7.892 21.108,7 20,7 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="m 4,10 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 12 c 0,-1.108 -0.892,-2 -2,-2 z" />
@@ -2672,12 +2672,12 @@ export function FileTypeApplicationXVmwareSnapshot({ onClick, onHover, className
 export function FileTypeApplicationXVmwareTeam({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="4" y="4.5" rx="2.667" ry="2.667" />
-            <rect style={{ fill: '#3f51b5' }} x="4" y="4" rx="2.667" ry="2.667" />
+            <rect width="16" height="16" style={{ opacity: '0.2' }} x="4" y="4.5" rx="2.667" ry="2.667" />
+            <rect width="16" height="16" style={{ fill: '#3f51b5' }} x="4" y="4" rx="2.667" ry="2.667" />
             <path style={{ fill: '#ffffff', opacity: '0.1' }} d="M 6.6660156 4 C 5.1886824 4 4 5.1886824 4 6.6660156 L 4 7.1660156 C 4 5.6886824 5.1886824 4.5 6.6660156 4.5 L 17.333984 4.5 C 18.811318 4.5 20 5.6886824 20 7.1660156 L 20 6.6660156 C 20 5.1886824 18.811318 4 17.333984 4 L 6.6660156 4 z" />
             <path style={{ opacity: '0.2' }} d="m 10,2.5 c -0.554,0 -1,0.446 -1,1 v 4 c 0,0.554 0.446,1 1,1 h 4 c 0.554,0 1,-0.446 1,-1 v -4 c 0,-0.554 -0.446,-1 -1,-1 z m -7,7 c -0.554,0 -1,0.446 -1,1 v 4 c 0,0.554 0.446,1 1,1 h 4 c 0.554,0 1,-0.446 1,-1 v -4 C 8,9.946 7.554,9.5 7,9.5 Z m 14,0 c -0.554,0 -1,0.446 -1,1 v 4 c 0,0.554 0.446,1 1,1 h 4 c 0.554,0 1,-0.446 1,-1 v -4 c 0,-0.554 -0.446,-1 -1,-1 z m -7,7 c -0.554,0 -1,0.446 -1,1 v 4 c 0,0.554 0.446,1 1,1 h 4 c 0.554,0 1,-0.446 1,-1 v -4 c 0,-0.554 -0.446,-1 -1,-1 z" />
-            <rect style={{ fill: '#03a9f4' }} x="9" y="2" rx="1" ry="1" />
-            <rect style={{ fill: '#03a9f4' }} x="9" y="16" rx="1" ry="1" />
+            <rect width="6" height="6" style={{ fill: '#03a9f4' }} x="9" y="2" rx="1" ry="1" />
+            <rect width="6" height="6" style={{ fill: '#03a9f4' }} x="9" y="16" rx="1" ry="1" />
             <rect style={{ fill: '#217dd5' }} x="9" y="-22" rx="1" ry="1" transform="rotate(90)" />
             <rect style={{ fill: '#217dd5' }} x="9" y="-8" rx="1" ry="1" transform="rotate(90)" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="m 10,16 c -0.554,0 -1,0.446 -1,1 v 0.5 c 0,-0.554 0.446,-1 1,-1 h 4 c 0.554,0 1,0.446 1,1 V 17 c 0,-0.554 -0.446,-1 -1,-1 z" />
@@ -2691,13 +2691,13 @@ export function FileTypeApplicationXVmwareTeam({ onClick, onHover, className, st
 export function FileTypeApplicationXVmwareVmClone({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ fill: '#3f51b5' }} x="5" y="2" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#3f51b5' }} x="5" y="2" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
             <rect style={{ opacity: '0.4', fill: '#ffffff' }} x="8" y="5" rx="1" ry="1" />
-            <rect style={{ fill: '#217dd5' }} x="10" y="7" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#217dd5' }} x="10" y="7" rx="2" ry="2" />
             <rect style={{ opacity: '0.4', fill: '#ffffff' }} x="13" y="10" rx="1" ry="1" />
-            <rect style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
-            <rect style={{ fill: '#03a9f4' }} x="2" y="10" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#03a9f4' }} x="2" y="10" rx="2" ry="2" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="M 7,2 C 5.892,2 5,2.892 5,4 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 4 C 17,2.892 16.108,2 15,2 Z" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="m 12,7 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 9 C 22,7.892 21.108,7 20,7 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="m 4,10 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 12 c 0,-1.108 -0.892,-2 -2,-2 z" />
@@ -2709,11 +2709,11 @@ export function FileTypeApplicationXVmwareVmClone({ onClick, onHover, className,
 export function FileTypeApplicationXVmwareVmLegacy({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ fill: '#ff9800' }} x="5" y="2" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
-            <rect style={{ fill: '#ffc107' }} x="10" y="7" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
-            <rect style={{ fill: '#ffeb3b' }} x="2" y="10" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#ff9800' }} x="5" y="2" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#ffc107' }} x="10" y="7" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#ffeb3b' }} x="2" y="10" rx="2" ry="2" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="M 7,2 C 5.892,2 5,2.892 5,4 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 4 C 17,2.892 16.108,2 15,2 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="m 12,7 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 9 C 22,7.892 21.108,7 20,7 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="m 4,10 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 12 c 0,-1.108 -0.892,-2 -2,-2 z" />
@@ -2724,11 +2724,11 @@ export function FileTypeApplicationXVmwareVmLegacy({ onClick, onHover, className
 export function FileTypeApplicationXVmwareVm({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ fill: '#3f51b5' }} x="5" y="2" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
-            <rect style={{ fill: '#217dd5' }} x="10" y="7" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
-            <rect style={{ fill: '#03a9f4' }} x="2" y="10" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#3f51b5' }} x="5" y="2" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#217dd5' }} x="10" y="7" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#03a9f4' }} x="2" y="10" rx="2" ry="2" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="M 7,2 C 5.892,2 5,2.892 5,4 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 4 C 17,2.892 16.108,2 15,2 Z" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="m 12,7 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 9 C 22,7.892 21.108,7 20,7 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="m 4,10 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 12 c 0,-1.108 -0.892,-2 -2,-2 z" />
@@ -2739,11 +2739,11 @@ export function FileTypeApplicationXVmwareVm({ onClick, onHover, className, styl
 export function FileTypeApplicationXVmwareVmfoundry({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ fill: '#686868' }} x="5" y="2" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
-            <rect style={{ fill: '#818181' }} x="10" y="7" rx="2" ry="2" />
-            <rect style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
-            <rect style={{ fill: '#9e9e9e' }} x="2" y="10" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#686868' }} x="5" y="2" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="10" y="7.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#818181' }} x="10" y="7" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ opacity: '0.2' }} x="2" y="10.5" rx="2" ry="2" />
+            <rect width="12" height="12" style={{ fill: '#9e9e9e' }} x="2" y="10" rx="2" ry="2" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="M 7,2 C 5.892,2 5,2.892 5,4 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 4 C 17,2.892 16.108,2 15,2 Z" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="m 12,7 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 9 C 22,7.892 21.108,7 20,7 Z" />
             <path style={{ opacity: '0.1', fill: '#ffffff' }} d="m 4,10 c -1.108,0 -2,0.892 -2,2 v 0.5 c 0,-1.108 0.892,-2 2,-2 h 8 c 1.108,0 2,0.892 2,2 V 12 c 0,-1.108 -0.892,-2 -2,-2 z" />
@@ -2892,8 +2892,8 @@ export function FileTypeApplicationXYarock({ onClick, onHover, className, style,
 export function FileTypeApplicationXZoom({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="1.5" rx="6.3" ry="6.3" />
-            <rect style={{ fill: '#4992fd' }} x="2" y="1" rx="6.3" ry="6.3" />
+            <rect width="21" height="21" style={{ opacity: '0.2' }} x="2" y="1.5" rx="6.3" ry="6.3" />
+            <rect width="21" height="21" style={{ fill: '#4992fd' }} x="2" y="1" rx="6.3" ry="6.3" />
             <path style={{ opacity: '0.2' }} d="m 6.75,8.4999999 c -0.415516,0 -0.75,0.3345 -0.75,0.75 V 10.5 12 13.5 c 0,1.108 0.891958,2 2,2 h 2.5 2.5 1.25 C 14.665516,15.5 15,15.1655 15,14.75 V 13.5 12 10.5 C 15,9.392 14.108042,8.4999999 13,8.4999999 H 10.5 8 Z m 11.773438,0 c -0.159317,-0.011 -0.340922,0.061972 -0.513672,0.2226562 -0.607499,0.5650681 -1.318412,1.041433 -1.816407,1.7167969 -0.205077,0.278118 -0.191745,0.647856 -0.193359,0.994141 -9e-4,0.189998 0.001,0.378909 0,0.566406 0.001,0.187497 -9e-4,0.376409 0,0.566406 0.0016,0.346285 -0.01171,0.714069 0.193359,0.992188 0.497995,0.675364 1.208908,1.151729 1.816407,1.716797 0.17275,0.160685 0.354356,0.233656 0.513672,0.222656 0.265525,-0.01834 0.470703,-0.26995 0.470703,-0.736328 0,-0.913033 0.01432,-1.836176 0,-2.761719 0.01432,-0.925543 0,-1.85064 0,-2.763672 0,-0.466378 -0.205177,-0.7179931 -0.470703,-0.7363281 z" />
             <path style={{ fill: '#ffffff' }} d="M 6.75 8 C 6.334484 8 6 8.3345 6 8.75 L 6 10 L 6 11.5 L 6 13 C 6 14.108 6.891958 15 8 15 L 10.5 15 L 13 15 L 14.25 15 C 14.665516 15 15 14.6655 15 14.25 L 15 13 L 15 11.5 L 15 10 C 15 8.8920001 14.108042 8 13 8 L 10.5 8 L 8 8 L 6.75 8 z M 18.523438 8 C 18.364121 7.989 18.182516 8.0619717 18.009766 8.2226562 C 17.402267 8.7877243 16.691354 9.2640892 16.193359 9.9394531 C 15.988282 10.217571 16.001614 10.587309 16 10.933594 C 15.9991 11.123592 16.001 11.312503 16 11.5 C 16.001 11.687497 15.9991 11.876409 16 12.066406 C 16.0016 12.412691 15.988289 12.780475 16.193359 13.058594 C 16.691354 13.733958 17.402267 14.210323 18.009766 14.775391 C 18.182516 14.936076 18.364122 15.009047 18.523438 14.998047 C 18.788963 14.979707 18.994141 14.728097 18.994141 14.261719 C 18.994141 13.348686 19.008461 12.425543 18.994141 11.5 C 19.008461 10.574457 18.994141 9.64936 18.994141 8.7363281 C 18.994141 8.2699501 18.788964 8.018335 18.523438 8 z" />
             <path style={{ fill: '#ffffff', opacity: '0.2' }} d="M 8.3007812 1 C 4.8105811 1 2 3.8105811 2 7.3007812 L 2 7.8007812 C 2 4.3105811 4.8105811 1.5 8.3007812 1.5 L 16.699219 1.5 C 20.189419 1.5 23 4.3105811 23 7.8007812 L 23 7.3007812 C 23 3.8105811 20.189419 1 16.699219 1 L 8.3007812 1 z" />
@@ -2945,7 +2945,7 @@ export function FileTypeApplicationXAllegorithmicSubstance({ onClick, onHover, c
 
 export function FileTypeBinary({ onClick, onHover, className, style, backgroundColor }) {
     return (
-        <svg fill="#fff" viewBox="0 0 318 318" stroke="#fff" strokeWidth="1" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
+        <svg fill="#37474f" viewBox="0 0 318 318" stroke="#37474f" strokeWidth="1" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
             <path d="M189.304,94.314c0.574-0.459,1.6-1.426,3.074-2.901l-0.144,4.368l-0.087,3.994v24.307h8.879V82.075h-7.299 l-13.532,10.773l4.282,5.346L189.304,94.314z"></path>
             <path d="M122.128,94.314c0.575-0.459,1.599-1.426,3.074-2.901l-0.145,4.368l-0.087,3.994v24.307h8.881V82.075h-7.299 L113.02,92.848l4.279,5.346L122.128,94.314z"></path>
             <path d="M189.304,151.904c0.574-0.461,1.6-1.43,3.074-2.903l-0.144,4.366l-0.087,3.994v24.306h8.879v-42.004h-7.299 l-13.532,10.775l4.282,5.344L189.304,151.904z"></path>
@@ -2974,8 +2974,8 @@ export function FileTypeDjvu({ onClick, onHover, className, style, backgroundCol
 export function FileTypeFontXGeneric({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
-            <rect style={{ fill: '#a7a7a7' }} x="2" y="2" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="2.5" rx="1" ry="1" />
+            <rect width="20" height="20" style={{ fill: '#a7a7a7' }} x="2" y="2" rx="1" ry="1" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="M 3,2 C 2.446,2 2,2.446 2,3 v 0.5 c 0,-0.554 0.446,-1 1,-1 h 18 c 0.554,0 1,0.446 1,1 V 3 C 22,2.446 21.554,2 21,2 Z" />
             <path style={{ opacity: '0.1' }} d="M 18,7 C 16.904,7.5992 14.646,7.5248 12.511,7.4998 10.834,7.5098 7.5624,7.3615 7.0001,8.9999 7.2125,8.7068 11.109,7.3785 10.717,9.0283 10.256,10.373 9.432,11.293 8.7258,12.509 8.0397,12.561 7.0891,12.591 6.4999,13 6.6533,12.905 7.9602,12.645 8.484,12.931 7.6823,14.257 6.8552,15.33 6.267,16.774 6.1051,17.269 5.7402,18.067 6.3005,18.426 6.7757,18.648 6.4429,18.329 6.6353,18.019 7.4414,16.286 8.5514,14.827 9.5645,13.217 10.156,13.463 10.73,13.919 11.375,13.99 12.254,14.095 13.768,12.853 14,12 13,12.751 11.274,12.517 10.134,12.492 L 12.596,8.8975 C 12.838,8.9719 13.266,8.9919 13.974,8.9999 15.623,9.0468 17.732,8.7392 18,7 Z" />
             <path style={{ fill: '#4f4f4f' }} d="M 18,6.5 C 16.904,7.0992 14.646,7.0248 12.511,6.9998 10.834,7.0098 7.5624,6.8615 7.0001,8.4999 7.2125,8.2068 11.109,6.8785 10.717,8.5283 10.256,9.8726 9.432,10.793 8.7258,12.009 8.0397,12.061 7.0891,12.091 6.4999,12.5 6.6533,12.405 7.9602,12.145 8.484,12.431 7.6823,13.757 6.8552,14.83 6.267,16.274 6.1051,16.769 5.7402,17.567 6.3005,17.926 6.7757,18.148 6.4429,17.829 6.6353,17.519 7.4414,15.786 8.5514,14.327 9.5645,12.717 10.156,12.963 10.73,13.419 11.375,13.49 12.254,13.595 13.768,12.353 14,11.5 13,12.251 11.274,12.017 10.134,11.992 L 12.596,8.3975 C 12.838,8.4719 13.266,8.4919 13.974,8.4999 15.623,8.5468 17.732,8.2392 18,6.5 Z" />
@@ -2999,8 +2999,8 @@ export function FileTypeGnomeMimeApplicationXReferencer({ onClick, onHover, clas
 export function FileTypeImageSvgXmlCompressed({ onClick, onHover, className, style, backgroundColor }) {
     return (
         <svg viewBox="0 0 24 24" className={className} onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }}>
-            <rect style={{ opacity: '0.2' }} x="2" y="3.5" rx="1.5" ry="1.5" />
-            <rect style={{ fill: '#e4e4e4' }} x="2" y="3" rx="1.5" ry="1.5" />
+            <rect width="20" height="20" style={{ opacity: '0.2' }} x="2" y="3.5" rx="1.5" ry="1.5" />
+            <rect width="20" height="20" style={{ fill: '#e4e4e4' }} x="2" y="3" rx="1.5" ry="1.5" />
             <path style={{ opacity: '0.4' }} d="M 11 7 C 10.723 7 10.5 7.223 10.5 7.5 L 10.5 7.9921875 A 6 6 0 0 0 10.46875 8 L 6.8652344 8 A 1 1 0 0 0 6 7.5 A 1 1 0 0 0 5 8.5 A 1 1 0 0 0 6 9.5 A 1 1 0 0 0 6.8652344 9 L 8.4003906 9 A 6 6 0 0 0 6.0546875 13 L 5.5 13 C 5.223 13 5 13.223 5 13.5 L 5 15.5 C 5 15.777 5.223 16 5.5 16 L 7.5 16 C 7.777 16 8 15.777 8 15.5 L 8 13.5 C 8 13.223 7.777 13 7.5 13 L 7.0644531 13 A 5 5 0 0 1 10.5 9.03125 L 10.5 9.5 C 10.5 9.777 10.723 10 11 10 L 13 10 C 13.277 10 13.5 9.777 13.5 9.5 L 13.5 9.03125 A 5 5 0 0 1 16.933594 13 L 16.5 13 C 16.223 13 16 13.223 16 13.5 L 16 15.5 C 16 15.777 16.223 16 16.5 16 L 18.5 16 C 18.777 16 19 15.777 19 15.5 L 19 13.5 C 19 13.223 18.777 13 18.5 13 L 17.945312 13 A 6 6 0 0 0 15.599609 9 L 17.134766 9 A 1 1 0 0 0 18 9.5 A 1 1 0 0 0 19 8.5 A 1 1 0 0 0 18 7.5 A 1 1 0 0 0 17.134766 8 L 13.53125 8 A 6 6 0 0 0 13.5 7.9921875 L 13.5 7.5 C 13.5 7.223 13.277 7 13 7 L 11 7 z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="M 3.5,3 C 2.669,3 2,3.669 2,4.5 V 5 C 2,4.169 2.669,3.5 3.5,3.5 h 17 C 21.331,3.5 22,4.169 22,5 V 4.5 C 22,3.669 21.331,3 20.5,3 Z" />
         </svg>
@@ -3719,7 +3719,7 @@ export function FileTypeTextXMsRegedit({ onClick, onHover, className, style, bac
             <path style={{ fill: '#85bfff' }} d="M 20,8 14,2 v 5 c 0,0.554 0.446,1 1,1 z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="M 5,2 C 4.446,2 4,2.446 4,3 v 0.5 c 0,-0.554 0.446,-1 1,-1 h 9 V 2 Z" />
             <path style={{ opacity: '0.2' }} d="m 14.072266,10.501953 c -0.141945,-0.0099 -0.287875,0.02085 -0.420899,0.09766 l -1.28125,0.739257 c -0.35473,0.204804 -0.475311,0.655035 -0.270507,1.009766 l 0.739257,1.28125 c 0.204804,0.354731 0.655035,0.475312 1.009766,0.270508 l 1.28125,-0.739258 c 0.354731,-0.204804 0.475312,-0.655035 0.270508,-1.009766 L 14.661133,10.87012 C 14.533131,10.648411 14.30884,10.518491 14.072266,10.501953 Z M 7.75,11.5 C 7.3345,11.5 7,11.8345 7,12.25 v 1.5 C 7,14.1655 7.3345,14.5 7.75,14.5 7.3345,14.5 7,14.8345 7,15.25 v 1.5 C 7,17.1655 7.3345,17.5 7.75,17.5 7.3345,17.5 7,17.8345 7,18.25 v 1.5 c 0,0.4155 0.3345,0.75 0.75,0.75 h 1.5 c 0.4155,0 0.75,-0.3345 0.75,-0.75 0,0.4155 0.3345,0.75 0.75,0.75 h 1.5 c 0.4155,0 0.75,-0.3345 0.75,-0.75 0,0.4155 0.3345,0.75 0.75,0.75 h 1.5 c 0.4155,0 0.75,-0.3345 0.75,-0.75 v -1.5 C 16,17.8345 15.6655,17.5 15.25,17.5 h -1.5 C 13.3345,17.5 13,17.8345 13,18.25 13,17.8345 12.6655,17.5 12.25,17.5 12.6655,17.5 13,17.1655 13,16.75 v -1.5 C 13,14.8345 12.6655,14.5 12.25,14.5 h -1.5 C 10.3345,14.5 10,14.8345 10,15.25 10,14.8345 9.6655,14.5 9.25,14.5 9.6655,14.5 10,14.1655 10,13.75 v -1.5 C 10,11.8345 9.6655,11.5 9.25,11.5 Z m 8,2 C 15.3345,13.5 15,13.8345 15,14.25 v 1.5 c 0,0.4155 0.3345,0.75 0.75,0.75 h 1.5 c 0.4155,0 0.75,-0.3345 0.75,-0.75 v -1.5 C 18,13.8345 17.6655,13.5 17.25,13.5 Z M 10,16.75 c 0,0.4155 0.3345,0.75 0.75,0.75 C 10.3345,17.5 10,17.8345 10,18.25 10,17.8345 9.6655,17.5 9.25,17.5 9.6655,17.5 10,17.1655 10,16.75 Z" />
-            <rect style={{ fill: '#ffffff' }} x="7" y="11" rx=".75" ry=".75" />
+            <rect width="11" height="11" style={{ fill: '#ffffff' }} x="7" y="11" rx=".75" ry=".75" />
             <rect style={{ fill: '#bbdcff' }} x="7" y="14" rx=".75" ry=".75" />
             <rect style={{ fill: '#ffffff' }} x="7" y="17" rx=".75" ry=".75" />
             <rect style={{ fill: '#ffffff' }} x="10" y="14" rx=".75" ry=".75" />
@@ -3929,7 +3929,7 @@ export function FileTypeXContentVideoBluray({ onClick, onHover, className, style
             <path style={{ fill: '#9c27b0' }} d="M 3.5,3 C 2.669,3 2,3.669 2,4.5 V 17 H 22 V 4.5 C 22,3.669 21.331,3 20.5,3 Z" />
             <path style={{ opacity: '0.2', fill: '#ffffff' }} d="M 3.5,3 C 2.669,3 2,3.669 2,4.5 V 5 C 2,4.169 2.669,3.5 3.5,3.5 h 17 C 21.331,3.5 22,4.169 22,5 V 4.5 C 22,3.669 21.331,3 20.5,3 Z" />
             <path style={{ fill: '#e4e4e4' }} d="m 2,17 v 2.5 C 2,20.331 2.669,21 3.5,21 h 17 C 21.331,21 22,20.331 22,19.5 V 17 Z" />
-            <rect style={{ fill: '#ffffff', opacity: '0.2' }} x="2" y="17" />
+            <rect width="20" height="7" style={{ fill: '#ffffff', opacity: '0.2' }} x="2" y="17" />
             <rect style={{ fill: '#999999' }} x="14" y="18" rx=".462" ry=".464" />
             <rect style={{ fill: '#9c27b0' }} x="4" y="18" rx=".476" ry=".5" />
             <circle style={{ opacity: '0.2' }} cx="14.5" cy="19" r="1.5" />

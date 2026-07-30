@@ -12,7 +12,7 @@ export function CalendarDays({ fillColor = '#000', isColored = true, ...rest }) 
 export function CalendarCheck2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect data-part="calendar" x="4" y="5" width="16" height="16" rx="2" /><path data-part="calendar" d="M4 9h16M8 3v4M16 3v4" /><path data-part="check" d="m9.6 15 11.5 17.4 14.4 12.6" />
+            <rect data-part="calendar" x="4" y="5" width="16" height="16" rx="2" /><path data-part="calendar" d="M4 9h16M8 3v4M16 3v4" /><path data-part="check" d="M9.6 15 L11.5 17.4 L14.4 12.6" />
         </BaseIcon>
     );
 }
@@ -156,7 +156,7 @@ export function Reminder({ fillColor = '#000', isColored = true, ...rest }) {
 export function Duration({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="start" cx="6" cy="12" r="3" /><circle data-part="end" cx="18" cy="12" r="3" /><path data-part="line" d="M9 12h6" stroke-dasharray="2 2" /><path data-part="line" d="M6 12V9M18 12V9" />
+            <circle data-part="start" cx="6" cy="12" r="3" /><circle data-part="end" cx="18" cy="12" r="3" /><path data-part="line" d="M9 12h6" strokeDasharray="2 2" /><path data-part="line" d="M6 12V9M18 12V9" />
         </BaseIcon>
     );
 }
@@ -164,7 +164,7 @@ export function Duration({ fillColor = '#000', isColored = true, ...rest }) {
 export function Countdown({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="clock" cx="12" cy="12" r="9" /><path data-part="hands" d="M12 12V7" /><path data-part="progress" d="M12 3a9 9 0 0 1 6.4 15.4" stroke-dasharray="3 3" />
+            <circle data-part="clock" cx="12" cy="12" r="9" /><path data-part="hands" d="M12 12V7" /><path data-part="progress" d="M12 3a9 9 0 0 1 6.4 15.4" strokeDasharray="3 3" />
         </BaseIcon>
     );
 }
@@ -180,7 +180,7 @@ export function History2({ fillColor = '#000', isColored = true, ...rest }) {
 export function TimeMachine({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="clock" cx="12" cy="12" r="9" /><path data-part="hands" d="M12 7v5l4 2" /><path data-part="progress" d="M12 3a9 9 0 0 1 0 18" stroke-dasharray="3 3" /><path data-part="arrow" d="m7 5-1 3 3 1" />
+            <circle data-part="clock" cx="12" cy="12" r="9" /><path data-part="hands" d="M12 7v5l4 2" /><path data-part="progress" d="M12 3a9 9 0 0 1 0 18" strokeDasharray="3 3" /><path data-part="arrow" d="m7 5-1 3 3 1" />
         </BaseIcon>
     );
 }

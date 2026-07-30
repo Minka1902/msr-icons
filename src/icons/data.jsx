@@ -172,7 +172,7 @@ export function Trend2({ fillColor = '#000', isColored = true, ...rest }) {
 export function Forecast({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M4 4v16h16" /><path d="m6 15 3-3 3 2" /><path d="M15 11l5-4" stroke-dasharray="2 2" /><path d="M12 14h.01M15 12h.01M18 10h.01" />
+            <path d="M4 4v16h16" /><path d="m6 15 3-3 3 2" /><path d="M15 11l5-4" strokeDasharray="2 2" /><path d="M12 14h.01M15 12h.01M18 10h.01" />
         </BaseIcon>
     );
 }
@@ -340,7 +340,7 @@ export function JoinTables({ fillColor = '#000', isColored = true, ...rest }) {
 export function NormalizeData({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M4 18h16M4 18 4 6M8 18v-4M12 18V8M16 18v-7M20 18V5" /><path d="M4 11h16" stroke-dasharray="2 2" />
+            <path d="M4 18h16M4 18 4 6M8 18v-4M12 18V8M16 18v-7M20 18V5" /><path d="M4 11h16" strokeDasharray="2 2" />
         </BaseIcon>
     );
 }
@@ -396,7 +396,7 @@ export function DataClean({ fillColor = '#000', isColored = true, ...rest }) {
 export function Anonymize({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="9" r="4" /><path d="M5 20a7 7 0 0 1 14 0" /><path d="M9 9h6" stroke-dasharray="1.5 1.5" />
+            <circle cx="12" cy="9" r="4" /><path d="M5 20a7 7 0 0 1 14 0" /><path d="M9 9h6" strokeDasharray="1.5 1.5" />
         </BaseIcon>
     );
 }
@@ -452,7 +452,7 @@ export function Outlier({ fillColor = '#000', isColored = true, ...rest }) {
 export function Correlation({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M4 4v16h16" /><path d="m5 17 13-9" stroke-dasharray="2 2" /><path d="M7 15h.01" /><path d="M10 12h.01" /><path d="M13 11h.01" /><path d="M16 8h.01" />
+            <path d="M4 4v16h16" /><path d="m5 17 13-9" strokeDasharray="2 2" /><path d="M7 15h.01" /><path d="M10 12h.01" /><path d="M13 11h.01" /><path d="M16 8h.01" />
         </BaseIcon>
     );
 }
@@ -468,7 +468,7 @@ export function Regression({ fillColor = '#000', isColored = true, ...rest }) {
 export function Classification({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="8" cy="9" r="2" /><circle cx="8" cy="15" r="2" /><circle cx="16" cy="9" r="2" /><path d="M12 6v12" stroke-dasharray="2 2" /><path d="m14 14 2 2 3-4" />
+            <circle cx="8" cy="9" r="2" /><circle cx="8" cy="15" r="2" /><circle cx="16" cy="9" r="2" /><path d="M12 6v12" strokeDasharray="2 2" /><path d="m14 14 2 2 3-4" />
         </BaseIcon>
     );
 }

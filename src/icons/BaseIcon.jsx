@@ -21,6 +21,8 @@ import { Children, cloneElement, isValidElement } from 'react';
  * isColored       true → uses fillColor.                default: true
  *                 false → falls back to CSS currentColor
  *                 so the icon inherits its parent's text color.
+ * size            Rendered width/height in px.          default: 24
+ *                 Any explicit `width`/`height` prop wins over it.
  * strokeWidth     SVG stroke-width.                     default: '1.5'
  * mode            'stroke' (default) – fill:none, stroke:color
  *                 'fill'             – fill:color, no stroke
@@ -29,6 +31,9 @@ import { Children, cloneElement, isValidElement } from 'react';
  * backgroundColor CSS background-color on the <svg> element.
  * className       Additional CSS class string.
  * style           Inline style overrides.
+ * ...rest         Any other prop (width, height, stroke, fill, role,
+ *                 aria-label, data-*, …) is forwarded to the <svg> and
+ *                 overrides the mode defaults.
  * children        The icon's <path>, <circle>, etc. elements. Tag each
  *                 element with `data-part="name"` so it can be colored
  *                 individually via an object fillColor. Tag filled
@@ -103,12 +108,14 @@ export function BaseIcon({
     strokeWidth,
     mode = 'stroke',
     viewBox = '0 0 24 24',
+    size = 24,
     onClick,
     onHover,
     backgroundColor,
     className,
     style,
     children,
+    ...rest
 }) {
     const isMap = fillColor != null && typeof fillColor === 'object';
     const baseColor = isColored
@@ -128,6 +135,14 @@ export function BaseIcon({
     // Paint per element when an object color is supplied, or when the icon
     // has been tagged with data-part (so mixed fill/stroke icons render
     // correctly even with a plain string color). Untagged icons are untouched.
+    // `undefined` entries in rest would clobber the mode defaults (React omits
+    // the attribute, and the SVG spec then falls back to black fill), so drop
+    // them and only forward props that were actually given a value.
+    const passThrough = {};
+    for (const key of Object.keys(rest)) {
+        if (rest[key] !== undefined) passThrough[key] = rest[key];
+    }
+
     const colorMap = (isMap && isColored) ? fillColor : {};
     const content = (isMap || hasParts(children))
         ? paintParts(children, colorMap, baseColor, mode)
@@ -135,12 +150,16 @@ export function BaseIcon({
 
     return (
         <svg
+            xmlns="http://www.w3.org/2000/svg"
             viewBox={viewBox}
+            width={size}
+            height={size}
             onClick={onClick}
             onMouseEnter={onHover}
             className={className}
             style={{ backgroundColor, ...style }}
             {...modeProps}
+            {...passThrough}
         >
             {content}
         </svg>

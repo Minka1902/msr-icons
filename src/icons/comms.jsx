@@ -100,7 +100,7 @@ export function MailOpen2({ fillColor = '#000', isColored = true, ...rest }) {
 export function MailCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect data-part="base" x="3" y="5" width="18" height="14" rx="2" /><path data-part="base2" d="m3.5 6.5 8.5 7 8.5-7" /><path data-part="base3" d="m16 17 17.6 19 20 15" />
+            <rect data-part="base" x="3" y="5" width="18" height="14" rx="2" /><path data-part="base2" d="m3.5 6.5 8.5 7 8.5-7" /><path data-part="base3" d="M16 17 L17.6 19 L20 15" />
         </BaseIcon>
     );
 }
@@ -284,7 +284,7 @@ export function ArchiveChat({ fillColor = '#000', isColored = true, ...rest }) {
 export function MarkRead({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path data-part="base" d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" /><path data-part="base2" d="m9 10 11.4 13 15 7" />
+            <path data-part="base" d="M5 4h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" /><path data-part="base2" d="M9 10 L11.4 13 L15 7" />
         </BaseIcon>
     );
 }
