@@ -180,7 +180,7 @@ export function Signature2({ fillColor = '#000', isColored = true, ...rest }) {
 export function Authentication({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="9" cy="9" r="4" /><path d="m12 12 8 8M17 17l2-2M19.5 14.5 21 16" /><path d="m7.2 9 8.6 10.8 10.8 7.2" />
+            <circle cx="9" cy="9" r="4" /><path d="m12 12 8 8M17 17l2-2M19.5 14.5 21 16" /><path d="M7.2 9 L8.6 10.8 L10.8 7.2" />
         </BaseIcon>
     );
 }
@@ -188,7 +188,7 @@ export function Authentication({ fillColor = '#000', isColored = true, ...rest }
 export function Authorization({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z" /><path d="m9.4 11 11.5 13.6 14.6 8.4" />
+            <path d="M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z" /><path d="M9.4 11 L11.5 13.6 L14.6 8.4" />
         </BaseIcon>
     );
 }
@@ -196,7 +196,7 @@ export function Authorization({ fillColor = '#000', isColored = true, ...rest })
 export function Captcha({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="6" width="18" height="12" rx="2" /><path d="M7 14 9 9l2 5M7.7 12.5h2.6M14 9v5M14 9c1.5 0 1.5 2.5 0 2.5M17 9v5" stroke-dasharray="1 1" />
+            <rect x="3" y="6" width="18" height="12" rx="2" /><path d="M7 14 9 9l2 5M7.7 12.5h2.6M14 9v5M14 9c1.5 0 1.5 2.5 0 2.5M17 9v5" strokeDasharray="1 1" />
         </BaseIcon>
     );
 }
@@ -252,7 +252,7 @@ export function AuditLog({ fillColor = '#000', isColored = true, ...rest }) {
 export function ComplianceIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m9.4 13 11.5 15.6 14.6 10.4" />
+            <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.4 13 L11.5 15.6 L14.6 10.4" />
         </BaseIcon>
     );
 }
@@ -324,7 +324,7 @@ export function PenTest({ fillColor = '#000', isColored = true, ...rest }) {
 export function SecurityScan({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z" /><path d="M8 12h8" /><path d="M8 9.5h8" stroke-dasharray="1.5 1.5" />
+            <path d="M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z" /><path d="M8 12h8" /><path d="M8 9.5h8" strokeDasharray="1.5 1.5" />
         </BaseIcon>
     );
 }
@@ -420,7 +420,7 @@ export function WafIcon({ fillColor = '#000', isColored = true, ...rest }) {
 export function SandboxIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 8h18" stroke-dasharray="2 2" /><rect x="8" y="11" width="8" height="6" rx="1" />
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 8h18" strokeDasharray="2 2" /><rect x="8" y="11" width="8" height="6" rx="1" />
         </BaseIcon>
     );
 }

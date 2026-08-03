@@ -92,7 +92,7 @@ export function SdCard({ fillColor = '#000', isColored = true, ...rest }) {
 export function Router2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="13" width="18" height="6" rx="2" /><path d="M7 16h.01M11 16h6M9 13l3-4M15 13l-1.5-2" /><path d="M16 7a4 4 0 0 0-8 0" stroke-dasharray="1.5 1.5" />
+            <rect x="3" y="13" width="18" height="6" rx="2" /><path d="M7 16h.01M11 16h6M9 13l3-4M15 13l-1.5-2" /><path d="M16 7a4 4 0 0 0-8 0" strokeDasharray="1.5 1.5" />
         </BaseIcon>
     );
 }

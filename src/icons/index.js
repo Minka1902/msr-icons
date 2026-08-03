@@ -1,4 +1,5 @@
 export * from './BaseIcon';
+export * from './Icon';
 export * from './ai';
 export * from './brands';
 export * from './code';

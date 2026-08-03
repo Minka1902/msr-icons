@@ -281,7 +281,7 @@ export function Sandwich2({ fillColor = '#000', isColored = true, ...rest }) {
 export function Taco2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M3 16a9 9 0 0 1 18 0H3Z" /><path d="M3 16a3 3 0 0 0 18 0" /><path d="M8 13l1-2M12 12v-2M16 13l-1-2" />
+            <path d="M3 16a9 9 0 0 1 18 0H3Z" /><path d="M3 16a9 4 0 0 0 18 0" /><path d="M8 13l1-2M12 12v-2M16 13l-1-2" />
         </BaseIcon>
     );
 }
@@ -361,7 +361,7 @@ export function Egg2({ fillColor = '#000', isColored = true, ...rest }) {
 export function Cheese2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M3 18 12 8h9v10H3Z" /><path d="M3 18a3 3 0 0 0 18 0" /><circle cx="9" cy="14" r="1" /><circle cx="15" cy="13" r="1" />
+            <path d="M3 18 12 8h9v10H3Z" /><path d="M3 18a9 3 0 0 0 18 0" /><circle cx="9" cy="14" r="1" /><circle cx="15" cy="13" r="1" />
         </BaseIcon>
     );
 }

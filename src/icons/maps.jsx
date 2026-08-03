@@ -108,7 +108,7 @@ export function Target2({ fillColor = '#000', isColored = true, ...rest }) {
 export function GeoFence({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M5 8a2 2 0 1 0 0-.01M19 8a2 2 0 1 0 0-.01M5 18a2 2 0 1 0 0-.01M19 18a2 2 0 1 0 0-.01" /><path d="M7 7h10M7 18h10M5 9.5v6.5M19 9.5V16" stroke-dasharray="2 2" />
+            <path d="M5 8a2 2 0 1 0 0-.01M19 8a2 2 0 1 0 0-.01M5 18a2 2 0 1 0 0-.01M19 18a2 2 0 1 0 0-.01" /><path d="M7 7h10M7 18h10M5 9.5v6.5M19 9.5V16" strokeDasharray="2 2" />
         </BaseIcon>
     );
 }
@@ -156,7 +156,7 @@ export function Satellite2({ fillColor = '#000', isColored = true, ...rest }) {
 export function StreetView({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="6" r="2.5" /><path d="M9 13a3 3 0 0 1 6 0v3h-2v5h-2v-5H9v-3Z" /><path d="M4 18a9 9 0 0 0 16 0" stroke-dasharray="2 2" />
+            <circle cx="12" cy="6" r="2.5" /><path d="M9 13a3 3 0 0 1 6 0v3h-2v5h-2v-5H9v-3Z" /><path d="M4 18a9 9 0 0 0 16 0" strokeDasharray="2 2" />
         </BaseIcon>
     );
 }

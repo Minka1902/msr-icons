@@ -4,7 +4,7 @@ import { BaseIcon } from './BaseIcon';
 export function UserCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="8" r="3.2" /><path d="M6 19a6 6 0 0 1 12 0" /><path d="m16 17 17.6 19 20 15" />
+            <circle cx="12" cy="8" r="3.2" /><path d="M6 19a6 6 0 0 1 12 0" /><path d="M16 17 L17.6 19 L20 15" />
         </BaseIcon>
     );
 }
@@ -60,7 +60,7 @@ export function UserSearch({ fillColor = '#000', isColored = true, ...rest }) {
 export function UserStar({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="8" r="3.2" /><path d="M6 19a6 6 0 0 1 12 0" /><path d="m18 14.8 18.9 16.6 20.2 16.8 19.1 17.9 19.3 19.2 18 18.3 16.7 19.2 16.9 17.9 15.8 16.8 17.1 16.6Z" />
+            <circle cx="12" cy="8" r="3.2" /><path d="M6 19a6 6 0 0 1 12 0" /><path d="M18 14.8 L18.9 16.6 L20.2 16.8 L19.1 17.9 L19.3 19.2 L18 18.3 L16.7 19.2 L16.9 17.9 L15.8 16.8 L17.1 16.6 Z" />
         </BaseIcon>
     );
 }
@@ -172,7 +172,7 @@ export function Role({ fillColor = '#000', isColored = true, ...rest }) {
 export function Permission2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="8" r="3.2" /><path d="M6 19a6 6 0 0 1 12 0" /><path d="m15.8 16 17.6 18.2 20.2 13.8" />
+            <circle cx="12" cy="8" r="3.2" /><path d="M6 19a6 6 0 0 1 12 0" /><path d="M15.8 16 L17.6 18.2 L20.2 13.8" />
         </BaseIcon>
     );
 }

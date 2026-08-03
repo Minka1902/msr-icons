@@ -52,7 +52,7 @@ export function TokenCount({ fillColor = '#000', isColored = true, ...rest }) {
 export function ContextWindow({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 8h18" /><path d="M6 12h8M6 15h6M17 11v6" stroke-dasharray="2 2" />
+            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 8h18" /><path d="M6 12h8M6 15h6M17 11v6" strokeDasharray="2 2" />
         </BaseIcon>
     );
 }
@@ -60,7 +60,7 @@ export function ContextWindow({ fillColor = '#000', isColored = true, ...rest })
 export function EmbeddingIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" /><path d="M12 12h.01" /><path d="M8 9h.01" /><path d="M16 9h.01" /><path d="M8 15h.01" /><path d="M16 15h.01" /><path d="M12 12 8 9M12 12l4-3M12 12-4 3M12 12l4 3" />
+            <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z" /><path d="M12 12h.01" /><path d="M8 9h.01" /><path d="M16 9h.01" /><path d="M8 15h.01" /><path d="M16 15h.01" /><path d="M12 12 8 9M12 12l4-3M12 12l-4 3M12 12l4 3" />
         </BaseIcon>
     );
 }
@@ -204,7 +204,7 @@ export function DiagramIcon({ fillColor = '#000', isColored = true, ...rest }) {
 export function BlueprintIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="4" width="18" height="16" rx="1.5" /><path d="M3 9h6v11M9 9V4M15 4v7h6M15 11v9" stroke-dasharray="2 2" />
+            <rect x="3" y="4" width="18" height="16" rx="1.5" /><path d="M3 9h6v11M9 9V4M15 4v7h6M15 11v9" strokeDasharray="2 2" />
         </BaseIcon>
     );
 }

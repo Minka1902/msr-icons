@@ -249,7 +249,7 @@ export function CloudSnow2({ fillColor = '#000', isColored = true, ...rest }) {
 export function CloudLightning2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M12 17 9 22h4l-2 3" />
+            <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M13 15.5 10 19.5h3L11.5 23" />
         </BaseIcon>
     );
 }
