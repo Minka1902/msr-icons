@@ -379,15 +379,14 @@ export function FolderOpen2({ className = "", color = '#ffcd4d', size = 24, onCl
     );
 };
 
-export function Git({ className = "", color = 'red', size = 20, onClick, ...props }) {
+export function Git({ fillColor = '#DD4C35', fillingColor = '#fff', isColored = true, ...rest }) {
+    const body = isColored ? fillColor : 'currentColor';
+
     return (
-        <BaseIcon className={className} stroke='secondary' fill={color} width={size} height={size} viewBox="0 0 32 32" strokeWidth="0.544" onClick={onClick} {...props}>
-            <g id="BaseIconRepo_bgCarrier" strokeWidth="0"></g><g id="BaseIconRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-            <g id="BaseIconRepo_iconCarrier">
-                <title>Git</title>
-                <path d="M29.472,14.753,17.247,2.528a1.8,1.8,0,0,0-2.55,0L12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314,2.528,14.7a1.8,1.8,0,0,0,0,2.551L14.753,29.472a1.8,1.8,0,0,0,2.55,0L29.472,17.3a1.8,1.8,0,0,0,0-2.551" className="fill:#dd4c35"></path>
-                <path d="M12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314" className="fill-background"></path>
-            </g>
+        <BaseIcon fillColor={fillColor} isColored={isColored} mode="fill" viewBox="0 0 32 32" {...rest}>
+            <title>Git</title>
+            <path data-part="diamond" fill={body} d="M29.472,14.753,17.247,2.528a1.8,1.8,0,0,0-2.55,0L12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314,2.528,14.7a1.8,1.8,0,0,0,0,2.551L14.753,29.472a1.8,1.8,0,0,0,2.55,0L29.472,17.3a1.8,1.8,0,0,0,0-2.551"></path>
+            <path data-part="branch" fill={isColored ? fillingColor : 'none'} d="M12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314"></path>
         </BaseIcon>
     );
 };
