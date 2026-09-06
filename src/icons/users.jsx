@@ -237,7 +237,9 @@ export function Following({ fillColor = '#000', isColored = true, ...rest }) {
 export function Account2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><circle cx="12" cy="10" r="3" /><path d="M6.5 18.5a6 6 0 0 1 11 0" />
+            <rect data-part="frame" x="3" y="3" width="18" height="18" rx="4" />
+            <circle data-part="head" cx="12" cy="10" r="3" />
+            <path data-part="body" d="M6.5 18.5a5.5 5.5 0 0 1 11 0" />
         </BaseIcon>
     );
 }

@@ -130,7 +130,7 @@ export function Csv({ fillColor = '#1D6F42', onClick, backgroundColor, onHover, 
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || '1.5'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" fill="transparent" />
             <path fill="transparent" d="M14 3v5h5" />
-            <text x="7" y="16" fill={fillColor} fontSize="6" fontFamily="'Segoe UI', Arial">CSV</text>
+            <text x="12" y="16" textAnchor="middle" fill={fillColor} stroke="none" fontSize="6" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">CSV</text>
         </BaseIcon>
     );
 };
@@ -140,7 +140,7 @@ export function Json({ fillColor = '#C77800', onClick, backgroundColor, onHover,
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || '1.5'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" fill="transparent" />
             <path fill="transparent" d="M14 3v5h5" />
-            <text x="7" y="16" fill={fillColor} fontSize="6" fontFamily="'Segoe UI', Arial">JSON</text>
+            <text x="12" y="16" textAnchor="middle" fill={fillColor} stroke="none" fontSize="5" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">JSON</text>
         </BaseIcon>
     );
 };
@@ -150,7 +150,7 @@ export function Xml({ fillColor = '#6A1B9A', onClick, backgroundColor, onHover, 
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || '1.5'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" fill="transparent" />
             <path fill="transparent" d="M14 3v5h5" />
-            <text x="7" y="16" fill={fillColor} fontSize="6" fontFamily="'Segoe UI', Arial">XML</text>
+            <text x="12" y="16" textAnchor="middle" fill={fillColor} stroke="none" fontSize="6" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">XML</text>
         </BaseIcon>
     );
 };
@@ -170,7 +170,7 @@ export function Ppt({ fillColor = '#D24726', onClick, backgroundColor, onHover, 
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || '1.5'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" fill="transparent" />
             <path fill="transparent" d="M14 3v5h5" />
-            <text x="7" y="16" fill={fillColor} fontSize="6" fontFamily="'Segoe UI', Arial">PPT</text>
+            <text x="12" y="16" textAnchor="middle" fill={fillColor} stroke="none" fontSize="6" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">PPT</text>
         </BaseIcon>
     );
 };
@@ -180,7 +180,7 @@ export function Excel({ fillColor = '#217346', onClick, backgroundColor, onHover
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || '1.5'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" fill="transparent" />
             <path fill="transparent" d="M14 3v5h5" />
-            <text x="7" y="16" fill={fillColor} fontSize="6" fontFamily="'Segoe UI', Arial">XLS</text>
+            <text x="12" y="16" textAnchor="middle" fill={fillColor} stroke="none" fontSize="6" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">XLS</text>
         </BaseIcon>
     );
 };
@@ -190,7 +190,7 @@ export function Sql({ fillColor = '#0B63CE', onClick, backgroundColor, onHover, 
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || '1.5'} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" fill="transparent" />
             <path fill="transparent" d="M14 3v5h5" />
-            <text x="7" y="16" fill={fillColor} fontSize="6" fontFamily="'Segoe UI', Arial">SQL</text>
+            <text x="12" y="16" textAnchor="middle" fill={fillColor} stroke="none" fontSize="6" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">SQL</text>
         </BaseIcon>
     );
 };
@@ -546,7 +546,7 @@ export function Rar({ fillColor = "#E74C3C", onClick, backgroundColor, onHover, 
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <path fill="transparent" d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
             <polyline fill="transparent" points="13 2 13 9 20 9" />
-            <text x="9" y="15" fontSize="6" fill={fillColor} fontWeight="bold">RAR</text>
+            <text x="12" y="15" textAnchor="middle" fill={fillColor} stroke="none" fontSize="6" fontWeight="bold" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">RAR</text>
         </BaseIcon>
     );
 };
@@ -579,7 +579,7 @@ export function BaseIconFile({ fillColor = "#F7931E", onClick, backgroundColor, 
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <path fill="transparent" d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
             <polyline fill="transparent" points="13 2 13 9 20 9" />
-            <text x="7.5" y="16.5" fontSize="5" fill={fillColor} fontWeight="bold">FILE</text>
+            <text x="12" y="16.5" textAnchor="middle" fill={fillColor} stroke="none" fontSize="5" fontWeight="bold" fontFamily="system-ui, -apple-system, 'Segoe UI', Arial, sans-serif">FILE</text>
         </BaseIcon>
     );
 };

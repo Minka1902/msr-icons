@@ -412,7 +412,9 @@ export function DataMask({ fillColor = '#000', isColored = true, ...rest }) {
 export function RowIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="9" width="18" height="6" rx="1.5" />
+            <rect data-part="table" x="3" y="4" width="18" height="16" rx="2" />
+            <path data-part="grid" d="M3 9.5h18M3 14.5h18" />
+            <rect data-part="row" x="3.75" y="10.25" width="16.5" height="3.5" stroke="none" data-fill />
         </BaseIcon>
     );
 }
@@ -420,7 +422,9 @@ export function RowIcon({ fillColor = '#000', isColored = true, ...rest }) {
 export function ColumnIcon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="9" y="3" width="6" height="18" rx="1.5" />
+            <rect data-part="table" x="3" y="4" width="18" height="16" rx="2" />
+            <path data-part="grid" d="M9 4v16M15 4v16" />
+            <rect data-part="column" x="9.75" y="4.75" width="4.5" height="14.5" stroke="none" data-fill />
         </BaseIcon>
     );
 }

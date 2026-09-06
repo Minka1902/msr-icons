@@ -132,8 +132,8 @@ export function RegisteredMark({ fillColor = '#000', isColored = true, ...rest }
 export function SectionSign({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M15.5 8.2c0-1.9-1.6-3.2-3.6-3.2-2.1 0-3.7 1.2-3.7 3 0 1.7 1.4 2.6 3.4 3.4l2 .8c2 .8 3.4 1.7 3.4 3.4 0 1.8-1.6 3-3.7 3" />
-            <path d="M8.5 15.8c0 1.9 1.6 3.2 3.6 3.2M12 12.8l-2-.8C8.4 11.2 7 10.3 7 8.6c0-1.8 1.6-3 3.7-3" />
+            <path data-part="upper" d="M14.8 7.4c0-1.4-1.2-2.4-2.9-2.4S9 6 9 7.4c0 1 .6 1.7 1.8 2.2l4 1.6c1.3.5 1.9 1.3 1.9 2.4 0 1.4-1.2 2.4-2.9 2.4" />
+            <path data-part="lower" d="M9.2 16.6c0 1.4 1.2 2.4 2.9 2.4s2.9-1 2.9-2.4c0-1-.6-1.7-1.8-2.2l-4-1.6C7.9 12.3 7.3 11.5 7.3 10.4c0-1.4 1.2-2.4 2.9-2.4" />
         </BaseIcon>
     );
 }

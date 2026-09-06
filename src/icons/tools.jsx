@@ -253,7 +253,8 @@ export function Gear2({ fillColor = '#000', isColored = true, ...rest }) {
 export function Restart2({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M3 12a9 9 0 1 0 3-6.7L3 8" /><path d="M3 4v4h4" />
+            <path data-part="power" d="M12 3v7" />
+            <path data-part="arc" d="M7.5 6.3a8 8 0 1 0 9 0" />
         </BaseIcon>
     );
 }

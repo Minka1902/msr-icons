@@ -4,7 +4,9 @@ import { BaseIcon } from './BaseIcon';
 export function CodeBracket({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M9 6 3 12l6 6" />
+            <path data-part="left" d="m8 6-6 6 6 6" />
+            <path data-part="right" d="m16 6 6 6-6 6" />
+            <path data-part="slash" d="m13.5 4-3 16" />
         </BaseIcon>
     );
 }

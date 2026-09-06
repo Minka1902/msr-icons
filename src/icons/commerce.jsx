@@ -277,9 +277,9 @@ export function Subscription({ fillColor = '#000', isColored = true, ...rest }) 
 export function Membership({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <circle cx="8" cy="11" r="2" />
-            <path d="M5 16a3 3 0 0 1 6 0M14 10h4M14 13h3" />
+            <rect data-part="card" x="3" y="5" width="18" height="14" rx="2" />
+            <path data-part="star" d="m9 8.4 1.25 2.55 2.8.4-2.02 1.98.47 2.8L9 14.8l-2.5 1.33.47-2.8-2.02-1.98 2.8-.4Z" />
+            <path data-part="lines" d="M15 11h3.5M15 14h2.5" />
         </BaseIcon>
     );
 }

@@ -1683,7 +1683,8 @@ export function BaseIconForward({ fillColor = "#000", onClick, backgroundColor, 
 export function BaseIconSort({ fillColor = "#000", onClick, backgroundColor, onHover, style, strokeWidth, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
-            <path data-part="base" fill="transparent" d="M3 6h18M3 12h18M3 18h18" />
+            <path data-part="lines" fill="transparent" d="M4 6h13M4 12h9M4 18h5" />
+            <path data-part="arrow" fill="transparent" d="M19 8v11M16 16l3 3 3-3" />
         </BaseIcon>
     );
 };
@@ -2032,7 +2033,8 @@ export function AspectRatio({ fillColor = "#000", onClick, backgroundColor, onHo
 export function ThemeDark({ fillColor = "#000", isColored = true, onClick, backgroundColor, onHover, style, strokeWidth, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
-            <path stroke="none" data-part="base" data-fill d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            <rect data-part="frame" x="3" y="3" width="18" height="18" rx="4" />
+            <path data-part="moon" d="M16.6 14.3A5.3 5.3 0 0 1 9.7 7.4a5.6 5.6 0 1 0 6.9 6.9Z" stroke="none" data-fill />
         </BaseIcon>
     );
 };
@@ -2040,15 +2042,9 @@ export function ThemeDark({ fillColor = "#000", isColored = true, onClick, backg
 export function ThemeLight({ fillColor = "#F59E0B", onClick, backgroundColor, onHover, style, strokeWidth, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
-            <circle cx="12" cy="12" r="5" fill="transparent" />
-            <line x1="12" y1="1" x2="12" y2="3" stroke={fillColor} />
-            <line x1="12" y1="21" x2="12" y2="23" stroke={fillColor} />
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke={fillColor} />
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke={fillColor} />
-            <line x1="1" y1="12" x2="3" y2="12" stroke={fillColor} />
-            <line x1="21" y1="12" x2="23" y2="12" stroke={fillColor} />
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke={fillColor} />
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke={fillColor} />
+            <rect data-part="frame" x="3" y="3" width="18" height="18" rx="4" />
+            <circle data-part="sun" cx="12" cy="12" r="3.5" />
+            <path data-part="rays" d="M12 6v1.3M12 16.7V18M18 12h-1.3M7.3 12H6M16.24 7.76l-.92.92M8.68 15.32l-.92.92M16.24 16.24l-.92-.92M8.68 8.68l-.92-.92" />
         </BaseIcon>
     );
 };
@@ -2557,10 +2553,8 @@ export function SplitView({ fillColor = '#000', isColored = true, ...rest }) {
 export function GridView({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect data-part="base" x="3" y="3" width="7" height="7" rx="1" />
-            <rect data-part="base2" x="14" y="3" width="7" height="7" rx="1" />
-            <rect data-part="base3" x="3" y="14" width="7" height="7" rx="1" />
-            <rect data-part="base4" x="14" y="14" width="7" height="7" rx="1" />
+            <rect data-part="frame" x="3" y="3" width="18" height="18" rx="2" />
+            <path data-part="grid" d="M9 3v18M15 3v18M3 9h18M3 15h18" />
         </BaseIcon>
     );
 }
@@ -4294,7 +4288,9 @@ export function LayoutRows({ fillColor = '#000', isColored = true, ...rest }) {
 export function LayoutSidebar({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect data-part="base" x="3" y="4" width="18" height="16" rx="2" /><path data-part="base2" d="M9 4v16" />
+            <rect data-part="base" x="3" y="4" width="18" height="16" rx="2" />
+            <path data-part="divider" d="M9 4v16" />
+            <path data-part="content" d="M12 9h6M12 13h4" />
         </BaseIcon>
     );
 }
@@ -4302,7 +4298,9 @@ export function LayoutSidebar({ fillColor = '#000', isColored = true, ...rest })
 export function LayoutSidebarRight({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect data-part="base" x="3" y="4" width="18" height="16" rx="2" /><path data-part="base2" d="M15 4v16" />
+            <rect data-part="base" x="3" y="4" width="18" height="16" rx="2" />
+            <path data-part="divider" d="M15 4v16" />
+            <path data-part="content" d="M6 9h6M6 13h4" />
         </BaseIcon>
     );
 }
@@ -5020,8 +5018,8 @@ export function BadgeInfo({ fillColor = '#000', isColored = true, ...rest }) {
 export function StatusOnline({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="base" cx="12" cy="12" r="9" />
-            <circle data-part="base2" cx="12" cy="12" r="4" />
+            <circle data-part="ring" cx="12" cy="12" r="9" />
+            <circle data-part="dot" cx="12" cy="12" r="4.5" stroke="none" data-fill />
         </BaseIcon>
     );
 }
@@ -5038,8 +5036,8 @@ export function StatusOffline({ fillColor = '#000', isColored = true, ...rest })
 export function StatusAway({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="base" cx="12" cy="12" r="9" />
-            <path data-part="base2" d="M12 7.5v4.5l3 2" />
+            <circle data-part="ring" cx="12" cy="12" r="9" />
+            <path data-part="mark" d="M12 12V6.5a5.5 5.5 0 0 1 5.5 5.5Z" stroke="none" data-fill />
         </BaseIcon>
     );
 }
@@ -5047,8 +5045,7 @@ export function StatusAway({ fillColor = '#000', isColored = true, ...rest }) {
 export function Unverified({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path data-part="base" d="M12 3 5 6v5c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6l-7-3Z" />
-            <path data-part="base2" d="M9.8 9.3a2.2 2.2 0 1 1 3 2c-.6.3-.9.7-.9 1.4v.2M12 15.5h.01" />
+            <path data-part="base" d="M12 3 5 6v5c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6l-7-3Z" strokeDasharray="3 2.5" />
         </BaseIcon>
     );
 }
@@ -5074,8 +5071,8 @@ export function Approved({ fillColor = '#000', isColored = true, ...rest }) {
 export function Rejected({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle data-part="base" cx="12" cy="12" r="9" />
-            <path data-part="base2" d="m5.6 5.6 12.8 12.8" />
+            <path data-part="check" d="m4.5 12.5 3.5 3.5L18 6" />
+            <path data-part="slash" d="m4.5 5 15 15" />
         </BaseIcon>
     );
 }
@@ -5358,7 +5355,8 @@ export function SplitScreen({ fillColor = '#000', isColored = true, ...rest }) {
 export function StatusBusy({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><path d="M8 12h8" />
+            <circle data-part="ring" cx="12" cy="12" r="9" />
+            <rect data-part="mark" x="7" y="10.5" width="10" height="3" rx="1.5" stroke="none" data-fill />
         </BaseIcon>
     );
 }
@@ -5406,7 +5404,9 @@ export function PanelBottom({ fillColor = '#000', isColored = true, ...rest }) {
 export function TableColumns({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M9 4v16M15 4v16" />
+            <rect data-part="base" x="3" y="4" width="18" height="16" rx="2" />
+            <path data-part="header" d="M3 9h18" />
+            <path data-part="dividers" d="M9 9v11M15 9v11" />
         </BaseIcon>
     );
 }
@@ -5414,7 +5414,9 @@ export function TableColumns({ fillColor = '#000', isColored = true, ...rest }) 
 export function TableRows({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9.5h18M3 14.5h18" />
+            <rect data-part="base" x="3" y="4" width="18" height="16" rx="2" />
+            <path data-part="header" d="M3 9h18" />
+            <path data-part="dividers" d="M3 14.5h18M8 9v11" />
         </BaseIcon>
     );
 }

@@ -1179,8 +1179,9 @@ export function Chrome({ fillColor = '#4285F4', isColored = true, ...rest }) {
 export function Safari({ fillColor = '#006CFF', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="10" />
-            <path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z" fill={isColored ? fillColor : 'currentColor'} stroke="none" />
+            <circle data-part="dial" cx="12" cy="12" r="10" />
+            <path data-part="needle" d="m16.24 7.76-2.34 6.14L12 12Z" fill={isColored ? '#FF5150' : 'currentColor'} stroke="none" />
+            <path data-part="tail" d="m7.76 16.24 2.34-6.14L12 12Z" fill={isColored ? '#B7B7B7' : 'currentColor'} stroke="none" />
         </BaseIcon>
     );
 }

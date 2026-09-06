@@ -236,7 +236,9 @@ export function Gateway({ fillColor = '#000', isColored = true, ...rest }) {
 export function Dns({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+            <circle data-part="globe" cx="10" cy="10" r="7" />
+            <path data-part="meridians" d="M3 10h14M10 3a12 12 0 0 1 0 14M10 3a12 12 0 0 0 0 14" />
+            <path data-part="records" d="M14 17.8h7M14 20.8h4" />
         </BaseIcon>
     );
 }
