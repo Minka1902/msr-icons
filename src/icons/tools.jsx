@@ -12,7 +12,7 @@ export function Settings2({ fillColor = '#000', isColored = true, ...rest }) {
 export function Settings3({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="m9 3 1 2.5 2.7-.7.9 2.6 2.7.5-.5 2.7 2 1.9-1.5 2.3 1.5 2.3-2 1.9.5 2.7-2.7.5-.9 2.6L10 21l-1-2.5" /><circle cx="11" cy="12" r="3" />
+            <path d="M10.3 3.9L13.7 3.9L13.7 6.5L14.7 6.9L16.5 5L19 7.5L17.1 9.3L17.5 10.3L20.1 10.3L20.1 13.7L17.5 13.7L17.1 14.7L19 16.5L16.5 19L14.7 17.1L13.7 17.5L13.7 20.1L10.3 20.1L10.3 17.5L9.3 17.1L7.5 19L5 16.5L6.9 14.7L6.5 13.7L3.9 13.7L3.9 10.3L6.5 10.3L6.9 9.3L5 7.5L7.5 5L9.3 6.9L10.3 6.5Z" /><circle cx="12" cy="12" r="3" />
         </BaseIcon>
     );
 }

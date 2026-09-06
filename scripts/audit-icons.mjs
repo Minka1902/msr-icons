@@ -185,7 +185,10 @@ function propDrift(icons) {
         const spreads = /\.\.\.(rest|props)\b/.test(sig);
         if (!icon.body.includes('<BaseIcon')) drift.noBaseIcon.push(icon);
         else if (!spreads) drift.noSpread.push(icon);
-        if (props.includes('fillColor') && !spreads && !/fillColor=\{/.test(icon.body)) drift.deadFillColor.push(icon);
+        // A destructured fillColor never reaches rest, so the spread cannot cover for
+        // it. Passing it only as stroke/fill on the <svg> still leaves the object
+        // (per-part) color form and isColored={false} with nothing to act on.
+        if (props.includes('fillColor') && !/<BaseIcon[^>]*\bfillColor=\{/.test(icon.body)) drift.deadFillColor.push(icon);
     }
     return drift;
 }
