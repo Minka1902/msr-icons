@@ -9,7 +9,7 @@ Every colorable element in an icon carries a `data-part="…"` attribute. That l
 consumers color each element independently with an object `fillColor`:
 
 ```jsx
-<Icon name="CalendarCheck2" color={{ calendar: 'black', check: 'green' }} />
+<Icon name="CalendarCheck" color={{ calendar: 'black', check: 'green' }} />
 ```
 
 See the **Per-element coloring** section of the README for the full API.
@@ -39,22 +39,22 @@ After running: `npm run lint && npm run build`.
 | File | Icons | Status |
 |------|------:|--------|
 | `time.jsx` | 24 | ✅ done (semantic names, hand-tagged) |
-| `comms.jsx` | 52 | ✅ done |
+| `comms.jsx` | 56 | ✅ done |
 | `ui.jsx` | 555 | ✅ 548 done · 7 to hand-tag |
 | `ai.jsx` | 30 | ⬜ pending |
 | `brands.jsx` | 246 | ⬜ pending (mostly single-color logos) |
 | `code.jsx` | 43 | ⬜ pending |
 | `commerce.jsx` | 34 | ⬜ pending |
-| `data.jsx` | 59 | ⬜ pending |
+| `data.jsx` | 60 | ⬜ pending |
 | `devices.jsx` | 39 | ⬜ pending |
-| `devops.jsx` | 66 | ⬜ pending |
-| `education.jsx` | 34 | ⬜ pending |
+| `devops.jsx` | 68 | ⬜ pending |
+| `education.jsx` | 35 | ⬜ pending |
 | `files.jsx` | 175 | ⬜ pending |
-| `food.jsx` | 47 | ⬜ pending |
-| `git.jsx` | 23 | ⬜ pending |
+| `food.jsx` | 48 | ⬜ pending |
+| `git.jsx` | 24 | ⬜ pending |
 | `home.jsx` | 36 | ⬜ pending |
 | `maps.jsx` | 24 | ⬜ pending |
-| `media.jsx` | 29 | ⬜ pending |
+| `media.jsx` | 28 | ⬜ pending |
 | `medical.jsx` | 39 | ⬜ pending |
 | `mimeTypes.jsx` | 260 | ⬜ pending (multi-color — expect many hand-tags) |
 | `music.jsx` | 10 | ⬜ pending |
@@ -63,9 +63,9 @@ After running: `npm run lint && npm run build`.
 | `security.jsx` | 54 | ⬜ pending |
 | `sports.jsx` | 39 | ⬜ pending |
 | `symbols.jsx` | 28 | ⬜ pending |
-| `tools.jsx` | 29 | ⬜ pending |
-| `transport.jsx` | 44 | ⬜ pending |
-| `users.jsx` | 29 | ⬜ pending |
+| `tools.jsx` | 32 | ⬜ pending |
+| `transport.jsx` | 45 | ⬜ pending |
+| `users.jsx` | 31 | ⬜ pending |
 | `weather.jsx` | 39 | ⬜ pending |
 
 ## Needs hand-tagging
@@ -79,11 +79,11 @@ human to assign semantic `data-part` names (and keep its accent colors).
 ### `ui.jsx`
 | Icon | Reason |
 |------|--------|
-| `BaseIconMail` | Multi-color (red `#FC3F1D` envelope + gray `#4e4e4e` body) |
-| `BaseIconClipboard` | White-on-dark design (`fillColor='white'` default) |
-| `BaseIconCopy` | White-on-dark design |
-| `BaseIconFingerprint` | White-on-dark design |
-| `BaseIconVersion` | White-on-dark design |
+| `Mail` | Multi-color (red `#FC3F1D` envelope + gray `#4e4e4e` body) |
+| `Clipboard` | White-on-dark design (`fillColor='white'` default) |
+| `Copy` | White-on-dark design |
+| `Fingerprint` | White-on-dark design |
+| `Version` | White-on-dark design |
 | `Location` | `fillColor='#fff'` default; strokes would flip white |
 | `ThemeLight` | Two-tone (amber rays `#F59E0B` + neutral center) |
 

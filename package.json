@@ -38,6 +38,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
+    "audit-icons": "node scripts/audit-icons.mjs",
     "prepublishOnly": "npm run build"
   },
   "main": "./dist/index.cjs",
