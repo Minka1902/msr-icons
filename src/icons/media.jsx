@@ -101,7 +101,7 @@ export function VolumeMute({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="speaker" d="M4 9v6h3l5 4V5L7 9H4Z" />
-            <path data-part="slash" d="m16 9 5 6M21 9l-5 6" />
+            <path data-part="slash" d="m3 3 18 18" />
         </BaseIcon>
     );
 }
