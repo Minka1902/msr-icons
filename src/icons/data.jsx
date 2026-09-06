@@ -1,7 +1,7 @@
 import { BaseIcon } from './BaseIcon';
 
 // Data / Analytics / Charts
-export function ChartBar2({ fillColor = '#000', isColored = true, ...rest }) {
+export function ChartBar({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 4v16h16" /><path d="M8 18v-5M12 18V9M16 18v-7" />
@@ -9,7 +9,7 @@ export function ChartBar2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function ChartLine2({ fillColor = '#000', isColored = true, ...rest }) {
+export function ChartLine({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 4v16h16" /><path d="m6 15 4-4 3 2 5-6" />
@@ -17,7 +17,7 @@ export function ChartLine2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function ChartPie2({ fillColor = '#000', isColored = true, ...rest }) {
+export function ChartPie({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3a9 9 0 1 0 9 9h-9V3Z" /><path d="M14 3.5A8 8 0 0 1 20.5 10H14V3.5Z" />
@@ -25,7 +25,7 @@ export function ChartPie2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function ChartArea2({ fillColor = '#000', isColored = true, ...rest }) {
+export function ChartArea({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 4v16h16" /><path d="M6 16 9 12l3 2 5-6v8H6v-2Z" />
@@ -97,7 +97,7 @@ export function Analytics({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Dashboard3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Dashboard({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="13" r="8" /><path d="M12 13l4-3M4 13h2M18 13h2M12 5v2" />
@@ -113,7 +113,7 @@ export function Kpi({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Funnel2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Funnel({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 5h18l-7 8v6l-4-2v-4L3 5Z" />
@@ -137,7 +137,7 @@ export function PivotTable({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Spreadsheet2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Spreadsheet({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 9h18M3 14.5h18M8 4v16M13.5 4v16" />
@@ -145,7 +145,7 @@ export function Spreadsheet2({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Report2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Report({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 17v-3M12 17v-5M15 17v-2" />
@@ -161,7 +161,7 @@ export function Insight({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Trend2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Trend({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 4v16h16" /><path d="m6 16 4-4 3 2 5-6M14 8h4v4" />
@@ -361,7 +361,7 @@ export function DataMigration({ fillColor = '#000', isColored = true, ...rest })
     );
 }
 
-export function DataExport2({ fillColor = '#000', isColored = true, ...rest }) {
+export function DataExport({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <ellipse cx="9" cy="6" rx="6" ry="2.3" /><path d="M3 6v8c0 1.3 2.7 2.3 6 2.3M3 10c0 1.3 2.7 2.3 6 2.3" /><path d="M13 14h8M18 11l3 3-3 3" />
@@ -369,7 +369,7 @@ export function DataExport2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function DataImport2({ fillColor = '#000', isColored = true, ...rest }) {
+export function DataImport({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <ellipse cx="15" cy="6" rx="6" ry="2.3" /><path d="M9 6v8c0 1.3 2.7 2.3 6 2.3M9 10c0 1.3 2.7 2.3 6 2.3" /><path d="M3 14h8M6 11l-3 3 3 3" />
@@ -377,7 +377,7 @@ export function DataImport2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function DataSync2({ fillColor = '#000', isColored = true, ...rest }) {
+export function DataSync({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <ellipse cx="12" cy="6" rx="7" ry="2.5" /><path d="M5 6v6M19 6v6" /><path d="M7 16a3 3 0 0 1 5-1.2M17 18a3 3 0 0 1-5 1.2M11.5 13.5 12 14.8l1.3-.4M12.5 20l-.5-1.3-1.3.4" />

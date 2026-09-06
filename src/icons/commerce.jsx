@@ -149,7 +149,7 @@ export function Shipping({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Package2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Package({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3 4 7v10l8 4 8-4V7z" />

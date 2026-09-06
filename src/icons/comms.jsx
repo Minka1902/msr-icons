@@ -1,7 +1,7 @@
 import { BaseIcon } from './BaseIcon';
 
 // Communication / Social
-export function MessageCircle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function MessageCircle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="base" d="M21 11.5a8.5 8 0 0 1-12 7L4 20l1.5-4.5A8 8 0 0 1 12 3.5c5 0 9 3.6 9 8Z" />
@@ -129,7 +129,7 @@ export function MailSearch({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function AtSign2({ fillColor = '#000', isColored = true, ...rest }) {
+export function AtSign({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle data-part="base" cx="12" cy="12" r="4" /><path data-part="base2" d="M16 12v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-3.5 7.1" />
@@ -137,7 +137,7 @@ export function AtSign2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Megaphone2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Megaphone({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="base" d="M3 11v2a1 1 0 0 0 1 1h2l9 5V5L6 10H4a1 1 0 0 0-1 1Z" /><path data-part="base2" d="M6 14v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-2M18 9a3 3 0 0 1 0 6" />
@@ -153,7 +153,7 @@ export function Announcement({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Notification2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Notification({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="base" d="M18 10.6V15s2 1 2 1H4s2-1 2-6a6 6 0 0 1 7.6-5.8" />
@@ -171,7 +171,7 @@ export function NotificationOff({ fillColor = '#000', isColored = true, ...rest 
     );
 }
 
-export function BellRing2({ fillColor = '#000', isColored = true, ...rest }) {
+export function BellRing({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="base" d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6Z" /><path data-part="base2" d="M10 19a2 2 0 0 0 4 0" /><path data-part="base3" d="M3.5 6a4 4 0 0 1 1.5-3M20.5 6a4 4 0 0 0-1.5-3" />
@@ -221,7 +221,7 @@ export function ThumbsDownAlt({ fillColor = '#000', isColored = true, ...rest })
     );
 }
 
-export function PhoneCall2({ fillColor = '#000', isColored = true, ...rest }) {
+export function PhoneCall({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="base" d="M6 3.5 9 4l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5.5 3a2 2 0 0 1-2 2C10 19 5 14 4 6a2 2 0 0 1 2-2.5Z" /><path data-part="base2" d="M14 4a4 4 0 0 1 3 3M14 8a1.5 1.5 0 0 1 1.2 1.2" />
@@ -392,7 +392,7 @@ export function VoiceMessage({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function ScreenShare2({ fillColor = '#000', isColored = true, ...rest }) {
+export function ScreenShare({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect data-part="base" x="3" y="4" width="18" height="12" rx="2" /><path data-part="base2" d="M8 20h8M12 16v4M12 12V7M9.5 9.5 12 7l2.5 2.5" />
@@ -442,7 +442,7 @@ export function CommentDots({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function MessageSquare2({ fillColor = '#000', isColored = true, ...rest }) {
+export function MessageSquare({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M21 14a2 2 0 0 1-2 2H8l-5 4V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z" />

@@ -264,7 +264,7 @@ export function Zip({ className = "", color = '#fff', size = 24, onClick, ...pro
     );
 };
 
-export function Css({ className = "", color = '#fff', size = 24, onClick, ...props }) {
+export function CssFile({ className = "", color = '#fff', size = 24, onClick, ...props }) {
     return (
         <BaseIcon className={className} stroke='black' fill={color} width={size} height={size} viewBox="0 0 24 24" onClick={onClick} {...props}>
             <path d="m3 1.5 1.64 18.9 7.35 2.1 7.37-2.102L21 1.5H3Zm13.626 15.698-4.623 1.318-4.615-1.324-.316-3.645h2.262l.16 1.854 2.513.71.006.014 2.506-.696.264-3.007H9.516l-.188-2.344h5.656l.204-2.39H6.562L6.375 5.39h11.277l-1.026 11.807Z"></path>
@@ -384,7 +384,7 @@ export function Git({ className = "", color = 'red', size = 20, onClick, ...prop
         <BaseIcon className={className} stroke='secondary' fill={color} width={size} height={size} viewBox="0 0 32 32" strokeWidth="0.544" onClick={onClick} {...props}>
             <g id="BaseIconRepo_bgCarrier" strokeWidth="0"></g><g id="BaseIconRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
             <g id="BaseIconRepo_iconCarrier">
-                <title>file_type_git</title>
+                <title>Git</title>
                 <path d="M29.472,14.753,17.247,2.528a1.8,1.8,0,0,0-2.55,0L12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314,2.528,14.7a1.8,1.8,0,0,0,0,2.551L14.753,29.472a1.8,1.8,0,0,0,2.55,0L29.472,17.3a1.8,1.8,0,0,0,0-2.551" className="fill:#dd4c35"></path>
                 <path d="M12.158,5.067l3.22,3.22a2.141,2.141,0,0,1,2.712,2.73l3.1,3.1a2.143,2.143,0,1,1-1.285,1.21l-2.895-2.895v7.617a2.141,2.141,0,1,1-1.764-.062V12.3a2.146,2.146,0,0,1-1.165-2.814L10.911,6.314" className="fill-background"></path>
             </g>
@@ -574,7 +574,7 @@ export function Toml({ fillColor = "#78A0F9", onClick, backgroundColor, onHover,
     );
 };
 
-export function BaseIconFile({ fillColor = "#F7931E", onClick, backgroundColor, onHover, style, strokeWidth, ...rest }) {
+export function FileUnknown({ fillColor = "#F7931E", onClick, backgroundColor, onHover, style, strokeWidth, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} stroke={fillColor} strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth || "1.5"} viewBox="0 0 24 24" onClick={onClick} onMouseEnter={onHover} style={{ backgroundColor, ...style }} {...rest}>
             <path fill="transparent" d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
@@ -753,7 +753,7 @@ export function HEIC({ fillColor = '#FF5722', ...rest }) {
 }
 
 // Audio formats
-export function MP3({ fillColor = '#E91E63', ...rest }) {
+export function MP({ fillColor = '#E91E63', ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} {...rest}>
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
@@ -873,7 +873,7 @@ export function JSXFile({ fillColor = '#F7DF1E', ...rest }) {
     );
 }
 
-export function ENVFile({ fillColor = '#ECC94B', ...rest }) {
+export function EnvFile2({ fillColor = '#ECC94B', ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} {...rest}>
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
@@ -1134,7 +1134,7 @@ export function FilePdf({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileImage2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileImage({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><circle cx="10" cy="13" r="1.3" /><path d="M8 18l3-3 2 2 2-2.5 2 3.5" />
@@ -1142,7 +1142,7 @@ export function FileImage2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileVideo2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileVideo({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="m10 12 4 2.5-4 2.5v-5Z" />
@@ -1150,7 +1150,7 @@ export function FileVideo2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileAudio2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileAudio({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 13v3M11 11.5v6M13 13v3M15 14.5v1" />
@@ -1158,7 +1158,7 @@ export function FileAudio2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileZip2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileZip({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M12 8v1M12 10v1M12 12v1M11 14h2v3h-2z" />
@@ -1230,7 +1230,7 @@ export function FilePlus2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileMinus2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileMinus({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.5 15h5.0" />
@@ -1238,7 +1238,7 @@ export function FileMinus2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileCheck2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.5 15 L11.5 17.5 L14.5 12.5" />
@@ -1246,7 +1246,7 @@ export function FileCheck2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileX2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileX({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9.7 12.7 14.3 17.3M14.3 12.7 9.7 17.3" />
@@ -1254,7 +1254,7 @@ export function FileX2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FileEdit2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FileEdit({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" /><path d="M14 3v4h4" /><path d="M9 18h1l5-5-1-1-5 5v1Z" />
@@ -1294,7 +1294,7 @@ export function FolderPlus2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FolderMinus2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FolderMinus({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 7a1 1 0 0 1 1-1h5l2 2h8a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7Z" /><path d="M9.7 13h4.6" />
@@ -1382,7 +1382,7 @@ export function ClipboardX({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Paperclip2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Paperclip({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M19 11 11 19a4 4 0 0 1-6-6l8-8a2.5 2.5 0 0 1 3.5 3.5l-7.5 7.5a1 1 0 0 1-1.5-1.5l7-7" />
@@ -1390,7 +1390,7 @@ export function Paperclip2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Attachment2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Attachment({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M16 7 8.5 14.5a2.5 2.5 0 0 0 3.5 3.5L20 10a4.5 4.5 0 0 0-6.5-6.5L5 12" />
@@ -1542,7 +1542,7 @@ export function FolderSecure({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Backup2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Backup({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <ellipse cx="12" cy="5.5" rx="7" ry="2.8" /><path d="M5 5.5v13c0 1.5 3 2.8 7 2.8s7-1.3 7-2.8v-13" /><path d="M5 12c0 1.5 3 2.8 7 2.8s7-1.3 7-2.8" /><path d="M12 15.5a2.5 2.5 0 1 0 2.5-2.5M14.5 11v2h-2" />
@@ -1550,7 +1550,7 @@ export function Backup2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Restore2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Restore({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 9a8 8 0 1 1-1.5 5" /><path d="M4 4v5h5M12 8v4l3 2" />

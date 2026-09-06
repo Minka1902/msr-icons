@@ -17,7 +17,7 @@ export function Gpu({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Memory2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Memory({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="8" width="20" height="8" rx="1" /><path d="M6 8V6M10 8V6M14 8V6M18 8V6M5 16v2M9 16v2M15 16v2M19 16v2" />
@@ -33,7 +33,7 @@ export function Motherboard({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Chip2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Chip({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="7" y="7" width="10" height="10" rx="1.5" /><path d="M9 3v3M12 3v3M15 3v3M9 18v3M12 18v3M15 18v3M3 9h3M3 12h3M3 15h3M18 9h3M18 12h3M18 15h3" />
@@ -89,7 +89,7 @@ export function SdCard({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Router2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Router({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="13" width="18" height="6" rx="2" /><path d="M7 16h.01M11 16h6M9 13l3-4M15 13l-1.5-2" /><path d="M16 7a4 4 0 0 0-8 0" strokeDasharray="1.5 1.5" />
@@ -121,7 +121,7 @@ export function Antenna2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function SatelliteDish2({ fillColor = '#000', isColored = true, ...rest }) {
+export function SatelliteDish({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M5 19a11 11 0 0 1 11-11" /><path d="M4 14a7 7 0 0 1 4-1.5M19 5a3 3 0 0 0-4 0l5 5a3 3 0 0 0 0-4l-1-1Z" /><circle cx="5" cy="19" r="2" />
@@ -153,7 +153,7 @@ export function Printer3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Projector2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Projector({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="8" width="20" height="9" rx="2" /><circle cx="9" cy="12.5" r="3" /><path d="M16 11h2M6 17v2M18 17v2" />
@@ -161,7 +161,7 @@ export function Projector2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Monitor3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Monitor({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8M12 16v4" />
@@ -193,7 +193,7 @@ export function Keyboard3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Mouse3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Mouse({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="7" y="3" width="10" height="18" rx="5" /><path d="M12 7v3" />
@@ -217,7 +217,7 @@ export function Gamepad3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Joystick2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Joystick({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="6" r="2.5" /><path d="M12 8.5v6" /><path d="M6 21a6 6 0 0 1 12 0H6Z" /><rect x="9" y="14" width="6" height="3" rx="1" />
@@ -257,7 +257,7 @@ export function Speaker3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Battery2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Battery({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="8" width="17" height="8" rx="2" /><path d="M21 11v2" />
@@ -265,7 +265,7 @@ export function Battery2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function BatteryCharging2({ fillColor = '#000', isColored = true, ...rest }) {
+export function BatteryCharging({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="8" width="17" height="8" rx="2" /><path d="M21 11v2" /><path d="M11 9.5 8.5 12.5h3L9 15.5" />
@@ -273,7 +273,7 @@ export function BatteryCharging2({ fillColor = '#000', isColored = true, ...rest
     );
 }
 
-export function BatteryLow2({ fillColor = '#000', isColored = true, ...rest }) {
+export function BatteryLow({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="8" width="17" height="8" rx="2" /><path d="M21 11v2M5 11v2" />
@@ -281,7 +281,7 @@ export function BatteryLow2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function BatteryFull2({ fillColor = '#000', isColored = true, ...rest }) {
+export function BatteryFull({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="8" width="17" height="8" rx="2" /><path d="M21 11v2M5 11v2M9 11v2M13 11v2" />

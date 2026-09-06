@@ -293,7 +293,7 @@ export function Golf2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Bowling2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Bowling({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><circle cx="10" cy="8" r="1" /><circle cx="14" cy="8" r="1" /><circle cx="12" cy="11" r="1" />
@@ -301,7 +301,7 @@ export function Bowling2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Boxing2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Boxing({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 5h7a4 4 0 0 1 4 4v3a3 3 0 0 1-3 3h-2v3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5Z" /><path d="M7 9H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h2" />
@@ -309,7 +309,7 @@ export function Boxing2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Skateboard2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Skateboard({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <ellipse cx="12" cy="9" rx="9" ry="3" /><circle cx="7" cy="15" r="2" /><circle cx="17" cy="15" r="2" /><path d="M7 12v1M17 12v1" />
@@ -333,7 +333,7 @@ export function Dartboard({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Whistle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Whistle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M16 9a5 5 0 1 1-5 5h-2l-6-2 6-2h7M16 9V6h3" /><circle cx="16" cy="14" r="1" />

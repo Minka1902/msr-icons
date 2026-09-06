@@ -62,7 +62,7 @@ export function TerminalSquare({ fillColor = '#000', isColored = true, ...rest }
     );
 }
 
-export function Console2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Console({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="5" width="20" height="14" rx="2" />
@@ -180,7 +180,7 @@ export function ClassIcon({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Module2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Module({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3 4 7v10l8 4 8-4V7zM4 7l8 4 8-4M12 11v10" />

@@ -25,7 +25,7 @@ export function Sliders2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Wrench2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Wrench({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M15 7a4 4 0 0 0-5 5l-6 6 2 2 6-6a4 4 0 0 0 5-5l-2.5 2.5-2-2L15 7Z" />
@@ -33,7 +33,7 @@ export function Wrench2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Hammer2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Hammer({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M14 4 9 9l2 2 5-5-2-2Z" /><path d="m11 11-7 7 2 2 7-7M15 5l4 4" />
@@ -41,7 +41,7 @@ export function Hammer2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Screwdriver2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Screwdriver({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="m14 3 4 4-3 3-1-1-7 7v3h3l7-7-1-1 3-3-4-4Z" />
@@ -97,7 +97,7 @@ export function Maintenance({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Build2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Build({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6" />
@@ -113,7 +113,7 @@ export function Construct({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Power2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Power({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3v9" /><path d="M7 6a8 8 0 1 0 10 0" />
@@ -137,7 +137,7 @@ export function Reboot({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Reset2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Reset({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 12a9 9 0 1 0 3-6.7L3 8" /><path d="M3 4v4h4" />
@@ -145,7 +145,7 @@ export function Reset2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Sync2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Sync({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 11a8 8 0 0 1 14-5l2 2M20 13a8 8 0 0 1-14 5l-2-2" /><path d="M20 4v4h-4M4 20v-4h4" />
@@ -161,7 +161,7 @@ export function Refresh3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Update2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Update({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M21 12a9 9 0 1 1-3-6.7" /><path d="M21 4v5h-5" /><path d="M12 8v4l3 2" />
@@ -177,7 +177,7 @@ export function Upgrade({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Install2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Install({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3v11M8 10l4 4 4-4" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
@@ -193,7 +193,7 @@ export function Uninstall({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Plugin2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Plugin({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M9 3v4M15 3v4M7 7h10v4a5 5 0 0 1-10 0V7Z" /><path d="M12 16v5" />
@@ -201,7 +201,7 @@ export function Plugin2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Extension2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Extension({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M8 4a2 2 0 0 1 4 0h4v4a2 2 0 0 1 0 4v4h-4a2 2 0 0 1-4 0H4v-4a2 2 0 0 0 0-4V4h4Z" />
@@ -234,7 +234,7 @@ export function Automation({ fillColor = '#000', isColored = true, ...rest }) {
 }
 
 
-export function Cog2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Cog({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" />
@@ -250,7 +250,7 @@ export function Gear2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Restart2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Restart({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="power" d="M12 3v7" />

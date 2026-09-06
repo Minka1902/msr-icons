@@ -9,7 +9,7 @@ export function CalendarDays({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function CalendarCheck2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CalendarCheck({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect data-part="calendar" x="4" y="5" width="16" height="16" rx="2" /><path data-part="calendar" d="M4 9h16M8 3v4M16 3v4" /><path data-part="check" d="M9.6 15 L11.5 17.4 L14.4 12.6" />
@@ -17,7 +17,7 @@ export function CalendarCheck2({ fillColor = '#000', isColored = true, ...rest }
     );
 }
 
-export function CalendarX2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CalendarX({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect data-part="calendar" x="4" y="5" width="16" height="16" rx="2" /><path data-part="calendar" d="M4 9h16M8 3v4M16 3v4" /><path data-part="cross" d="M9.8 12.8 14.2 17.2M14.2 12.8 9.8 17.2" />
@@ -25,7 +25,7 @@ export function CalendarX2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CalendarPlus2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CalendarPlus({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect data-part="calendar" x="4" y="5" width="16" height="16" rx="2" /><path data-part="calendar" d="M4 9h16M8 3v4M16 3v4" /><path data-part="plus" d="M12 12.6v4.8M9.6 15h4.8" />
@@ -33,7 +33,7 @@ export function CalendarPlus2({ fillColor = '#000', isColored = true, ...rest })
     );
 }
 
-export function CalendarMinus2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CalendarMinus({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect data-part="calendar" x="4" y="5" width="16" height="16" rx="2" /><path data-part="calendar" d="M4 9h16M8 3v4M16 3v4" /><path data-part="minus" d="M9 15h6" />
@@ -89,7 +89,7 @@ export function ClockAlert({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Stopwatch2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Stopwatch({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle data-part="dial" cx="12" cy="14" r="7" /><path data-part="hands" d="M12 14v-3M9 3h6M12 3v4M18 9l1.5-1.5M5 9 3.5 7.5" />
@@ -113,7 +113,7 @@ export function Hourglass2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Alarm2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Alarm({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle data-part="clock" cx="12" cy="13" r="7" /><path data-part="hands" d="M12 13V9M5 3 2.5 5.5M19 3l2.5 2.5M5 19l-2 2M19 19l2 2" />
@@ -169,7 +169,7 @@ export function Countdown({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function History2({ fillColor = '#000', isColored = true, ...rest }) {
+export function History({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path data-part="arrow" d="M3 12a9 9 0 1 0 3-6.7L3 8" /><path data-part="hands" d="M3 4v4h4M12 8v4l3 2" />

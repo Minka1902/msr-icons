@@ -1,7 +1,7 @@
 import { BaseIcon } from './BaseIcon';
 
 // Security / Privacy
-export function LockOpen2({ fillColor = '#000', isColored = true, ...rest }) {
+export function LockOpen({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 0 1 7.5-2" /><path d="M12 15v2" />
@@ -25,7 +25,7 @@ export function Unlock2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function KeyRound2({ fillColor = '#000', isColored = true, ...rest }) {
+export function KeyRound({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="8" cy="8" r="4" /><path d="m11 11 8 8-2 2-2-2 1-1-2-2 1-1" />
@@ -81,7 +81,7 @@ export function FaceId({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Scan2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Scan({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2M3 12h18" />
@@ -153,7 +153,7 @@ export function PrivacyMask({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Token2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Token({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4" /><path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
@@ -169,7 +169,7 @@ export function Certificate2({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Signature2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Signature({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 17c2-1 3-4 2-5s-2 2-1 4 3-1 4-4 1 3 3 3 2-3 3-3" /><path d="M3 21h18" />

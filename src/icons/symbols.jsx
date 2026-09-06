@@ -73,7 +73,7 @@ export function Infinity2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Percentage2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Percentage({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="7" cy="7" r="2.5" /><circle cx="17" cy="17" r="2.5" /><path d="m6 18 12-12" />
@@ -89,7 +89,7 @@ export function Hashtag2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Asterisk2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Asterisk({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 4v16M5 8l14 8M19 8 5 16" />
@@ -113,7 +113,7 @@ export function CopyrightAlt({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Trademark2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Trademark({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 7h6M6 7v8M12 15V7l3 5 3-5v8" />
@@ -202,7 +202,7 @@ export function SquareRoot({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Pi2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Pi({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 7h16M8 7v11M16 7v9a2 2 0 0 0 3 1" />
@@ -210,7 +210,7 @@ export function Pi2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Sigma2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Sigma({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M17 4H6l6 8-6 8h11" />

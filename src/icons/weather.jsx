@@ -214,7 +214,7 @@ export function MoonStars({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CloudSun2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudSun({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="8" cy="7" r="3" /><path d="M8 1v1M2 7h1M3.5 2.5l.7.7M12 3l.7-.7M3.5 11.5l.7-.7" /><path d="M9 19a3.5 3.5 0 0 1-.4-6.96A4.5 4.5 0 0 1 17 14a3 3 0 0 1 0 5H9Z" />
@@ -222,7 +222,7 @@ export function CloudSun2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CloudMoon2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudMoon({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M15 7a4 4 0 1 1-4-4 3 3 0 0 0 4 4Z" /><path d="M8 20a3.5 3.5 0 0 1-.4-6.96A4.5 4.5 0 0 1 16 15a3 3 0 0 1 0 5H8Z" />
@@ -230,7 +230,7 @@ export function CloudMoon2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CloudRain2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudRain({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M8 19v2M12 19v3M16 19v2" />
@@ -238,7 +238,7 @@ export function CloudRain2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CloudSnow2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudSnow({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M8 20h.01M12 20h.01M16 20h.01M10 22h.01M14 22h.01" />
@@ -246,7 +246,7 @@ export function CloudSnow2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CloudLightning2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudLightning({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M13 15.5 10 19.5h3L11.5 23" />
@@ -254,7 +254,7 @@ export function CloudLightning2({ fillColor = '#000', isColored = true, ...rest 
     );
 }
 
-export function CloudFog2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudFog({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M5 20h14M7 23h10" />
@@ -262,7 +262,7 @@ export function CloudFog2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function CloudDrizzle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function CloudDrizzle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 17a4 4 0 0 1-.5-7.96A5.5 5.5 0 0 1 17.5 10 3.5 3.5 0 0 1 17 17H7Z" /><path d="M9 19v1M13 19v1M9 22v1M13 22v1M17 19v1" />
@@ -270,7 +270,7 @@ export function CloudDrizzle2({ fillColor = '#000', isColored = true, ...rest })
     );
 }
 
-export function Tornado2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Tornado({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 5h16M6 9h12M9 13h7M11 17h4M13 21l-1-4" />
@@ -278,7 +278,7 @@ export function Tornado2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Hurricane2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Hurricane({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="2" /><path d="M12 10c4-3 8-2 8-2-1 3-4 4-6 4M12 14c-4 3-8 2-8 2 1-3 4-4 6-4" />
@@ -286,7 +286,7 @@ export function Hurricane2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Rainbow2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Rainbow({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 18a9 9 0 0 1 18 0M6 18a6 6 0 0 1 12 0M9 18a3 3 0 0 1 6 0" />
@@ -294,7 +294,7 @@ export function Rainbow2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Umbrella2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Umbrella({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z" /><path d="M12 12v7a2 2 0 0 0 4 0" />

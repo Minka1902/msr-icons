@@ -125,8 +125,15 @@ const collisions = (icons, key) => [...groupBy(icons, key).values()].filter((g) 
 // Two exports of the same name silently shadow each other through `export *`.
 const duplicateNames = (icons) => collisions(icons, (i) => i.name);
 
+// text/x-csrc and text/x-CSrc are genuinely different MIME types (.c vs .C),
+// so this pair is a real distinction rather than a naming slip.
+const CASE_PAIR_ALLOWED = new Set(['filetypetextxcsrc']);
+
 // Names that differ only by case: a consumer cannot tell them apart.
-const caseCollisions = (icons) => collisions(icons, (i) => i.name.toLowerCase());
+const caseCollisions = (icons) => collisions(icons, (i) => {
+    const key = i.name.toLowerCase();
+    return CASE_PAIR_ALLOWED.has(key) ? null : key;
+});
 
 // Icons whose markup renders pixel-for-pixel identically.
 const identical = (icons) => collisions(icons, (i) => markup(i.body));
@@ -197,11 +204,12 @@ function propDrift(icons) {
 function nameShape(icons) {
     const all = new Set(icons.map((i) => i.name));
     const basePrefix = icons.filter((i) => i.name.startsWith('BaseIcon'));
+    // Only a single trailing digit reads as a variant number; a longer run is
+    // part of the name itself (View360, Atari2600).
     const orphanSuffix = icons.filter((i) => (
-        /\d$/.test(i.name)
+        /(^|\D)\d$/.test(i.name)
         && !i.name.startsWith('FileType')
-        && !i.name.startsWith('BaseIcon')
-        && !all.has(i.name.replace(/\d+$/, ''))
+        && !all.has(i.name.replace(/\d$/, ''))
     ));
     return { basePrefix, orphanSuffix };
 }
