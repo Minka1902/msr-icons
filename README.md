@@ -86,7 +86,7 @@ All icons share a common set of props via the `BaseIcon` wrapper:
 | `style` | `object` | — | Inline styles merged onto the container |
 | `className` | `string` | `''` | CSS class name(s) |
 | `strokeWidth` | `string\|number` | `'1.5'` | SVG stroke thickness |
-| `mode` | `'stroke'\|'fill'` | `'fill'` | Render mode for dual-mode icons |
+| `mode` | `'stroke'\|'fill'` | `'stroke'` | Render mode for dual-mode icons |
 
 ### Usage examples
 
@@ -123,12 +123,12 @@ it's `fillColor`.
 
 ```jsx
 // One color for everything (unchanged behavior)
-<Icon name="CalendarCheck2" color="black" />
-<CalendarCheck2 fillColor="black" />
+<Icon name="CalendarCheck" color="black" />
+<CalendarCheck fillColor="black" />
 
 // A color per element
-<Icon name="CalendarCheck2" color={{ calendar: 'black', check: 'green' }} />
-<CalendarCheck2 fillColor={{ calendar: 'black', check: 'green' }} />
+<Icon name="CalendarCheck" color={{ calendar: 'black', check: 'green' }} />
+<CalendarCheck fillColor={{ calendar: 'black', check: 'green' }} />
 ```
 
 Each element is identified by a **part name**. Semantic icons use descriptive
@@ -144,11 +144,327 @@ explicitly, so you can recolor one part while leaving the rest at a shared color
 
 ```jsx
 // everything navy, just the checkmark green
-<Icon name="CalendarCheck2" color={{ base: 'navy', check: 'green' }} />
+<Icon name="CalendarCheck" color={{ base: 'navy', check: 'green' }} />
 ```
 
 > **Tip:** not sure what an icon's parts are called? Inspect the rendered SVG —
 > every colorable element carries a `data-part="…"` attribute.
+
+---
+
+## Checking the icon set
+
+```bash
+npm run audit-icons          # human-readable report, non-zero exit on a defect
+node scripts/audit-icons.mjs --json
+```
+
+The audit reads every icon and reports duplicate export names, names colliding
+only by letter case, shapes missing the geometry attributes they need to paint,
+icons that render identically or are indistinguishable at 24px, icons that
+bypass `BaseIcon` or drop pass-through props, paint outside the viewBox, and
+names that leak internal prefixes or unexplained variant numbers.
+
+---
+
+## Deprecated names
+
+Some icons were renamed so their name describes what they draw: the internal
+`BaseIcon` prefix was dropped from public names, variant numbers were dropped
+where the plain name was unused, names that differed from another export only
+by letter case were disambiguated, and a handful of icons that drew exactly
+what another icon already drew now point at it.
+
+**Every old name still works.** They are re-exported from the package root, so
+existing imports and `<Icon name="…" />` lookups resolve unchanged. They are
+deprecated and will be removed in the next major version — prefer the new name.
+`iconNames` lists current names only.
+
+<details>
+<summary><strong>Full list</strong> — 261 renamed or merged names</summary>
+
+**Internal prefix dropped**
+
+| Old name | Use instead |
+|---|---|
+| `BaseIcon360` | `View360` |
+| `BaseIconAlert` | `Alert` |
+| `BaseIconArchive` | `Archive` |
+| `BaseIconArchiveAdd` | `ArchiveAdd` |
+| `BaseIconArchiveRemove` | `ArchiveRemove` |
+| `BaseIconBack` | `Back` |
+| `BaseIconBookmark` | `Bookmark` |
+| `BaseIconCamera` | `Camera` |
+| `BaseIconCheckCircleFilled` | `CheckCircleFilled` |
+| `BaseIconClipboard` | `Clipboard` |
+| `BaseIconCode` | `Code` |
+| `BaseIconCopy` | `Copy` |
+| `BaseIconDownload` | `Download` |
+| `BaseIconEqual` | `Equal` |
+| `BaseIconEye2` | `Eye2` |
+| `BaseIconEye3` | `Eye3` |
+| `BaseIconEye4` | `Eye4` |
+| `BaseIconFile` | `FileUnknown` |
+| `BaseIconFilter` | `Filter` |
+| `BaseIconFingerprint` | `Fingerprint` |
+| `BaseIconFlag` | `Flag` |
+| `BaseIconForward` | `Forward` |
+| `BaseIconGear` | `Gear` |
+| `BaseIconHardDrive` | `HardDrive` |
+| `BaseIconHeadphones` | `Headphones` |
+| `BaseIconHome` | `Home` |
+| `BaseIconID` | `ID` |
+| `BaseIconImage` | `Image` |
+| `BaseIconInbox` | `Inbox` |
+| `BaseIconLight` | `Light` |
+| `BaseIconLink` | `Link2` |
+| `BaseIconLoader` | `Loader` |
+| `BaseIconMail` | `Mail` |
+| `BaseIconMailOpen` | `MailOpen` |
+| `BaseIconMailRead` | `MailRead` |
+| `BaseIconMailUnread` | `MailUnread` |
+| `BaseIconMaximize` | `Maximize` |
+| `BaseIconMenu2` | `Menu2` |
+| `BaseIconMic` | `Mic` |
+| `BaseIconMinimize` | `Minimize` |
+| `BaseIconMinusSign` | `MinusSign` |
+| `BaseIconMoreHorizontal` | `MoreHorizontal` |
+| `BaseIconMoreVertical` | `MoreVertical` |
+| `BaseIconPaste` | `Paste` |
+| `BaseIconPlusSign` | `PlusSign` |
+| `BaseIconRadio` | `Radio` |
+| `BaseIconRepeat` | `Repeat` |
+| `BaseIconShare` | `Share` |
+| `BaseIconSkipBack` | `SkipBack` |
+| `BaseIconSkipForward` | `SkipForward` |
+| `BaseIconSkipToEnd` | `SkipToEnd` |
+| `BaseIconSkipToStart` | `SkipToStart` |
+| `BaseIconSliders` | `Sliders` |
+| `BaseIconSort` | `Sort` |
+| `BaseIconSpeaker` | `Speaker` |
+| `BaseIconSpinner` | `Spinner2` |
+| `BaseIconStore` | `Store2` |
+| `BaseIconTerminal` | `Terminal` |
+| `BaseIconToggle` | `Toggle` |
+| `BaseIconUpload` | `Upload` |
+| `BaseIconVersion` | `Version` |
+| `BaseIconVideo` | `Video` |
+| `BaseIconVolume` | `Volume` |
+| `BaseIconVolumeOff` | `VolumeOff` |
+| `BaseIconXCircleFilled` | `XCircleFilled` |
+| `BaseIconXSquare` | `XSquare` |
+| `BaseIconZap` | `Zap` |
+
+**Number suffix dropped**
+
+| Old name | Use instead |
+|---|---|
+| `Account2` | `Account` |
+| `Airplane2` | `Airplane` |
+| `Alarm2` | `Alarm` |
+| `Asterisk2` | `Asterisk` |
+| `AtSign2` | `AtSign` |
+| `Atlas2` | `Atlas` |
+| `Attachment2` | `Attachment` |
+| `Avatar2` | `Avatar` |
+| `Backpack2` | `Backpack` |
+| `Backup2` | `Backup` |
+| `Bacteria2` | `Bacteria` |
+| `Banana2` | `Banana` |
+| `Bathtub2` | `Bathtub` |
+| `Battery2` | `Battery` |
+| `BatteryCharging2` | `BatteryCharging` |
+| `BatteryFull2` | `BatteryFull` |
+| `BatteryLow2` | `BatteryLow` |
+| `BellRing2` | `BellRing` |
+| `Bone2` | `Bone` |
+| `BookOpen3` | `BookOpen` |
+| `Bowling2` | `Bowling` |
+| `Boxing2` | `Boxing` |
+| `Bridge2` | `Bridge` |
+| `Build2` | `Build` |
+| `Building3` | `Building` |
+| `Cactus2` | `Cactus` |
+| `CalendarCheck2` | `CalendarCheck` |
+| `CalendarMinus2` | `CalendarMinus` |
+| `CalendarPlus2` | `CalendarPlus` |
+| `CalendarX2` | `CalendarX` |
+| `Capsule2` | `Capsule` |
+| `Card2` | `Card` |
+| `Carrot2` | `Carrot` |
+| `Castle2` | `Castle` |
+| `ChartArea2` | `ChartArea` |
+| `ChartBar2` | `ChartBar` |
+| `ChartLine2` | `ChartLine` |
+| `ChartPie2` | `ChartPie` |
+| `Checkbox2` | `Checkbox` |
+| `Cheese2` | `Cheese` |
+| `Chip2` | `Chip` |
+| `CloudDrizzle2` | `CloudDrizzle` |
+| `CloudFog2` | `CloudFog` |
+| `CloudLightning2` | `CloudLightning` |
+| `CloudMoon2` | `CloudMoon` |
+| `CloudRain2` | `CloudRain` |
+| `CloudSnow2` | `CloudSnow` |
+| `CloudSun2` | `CloudSun` |
+| `Cog2` | `Cog` |
+| `ColorPicker2` | `ColorPicker` |
+| `Console2` | `Console` |
+| `Contact2` | `Contact` |
+| `Container2` | `Container` |
+| `Cookie3` | `Cookie` |
+| `Crosshair2` | `Crosshair` |
+| `Dashboard3` | `Dashboard` |
+| `DataExport2` | `DataExport` |
+| `DataImport2` | `DataImport` |
+| `DataSync2` | `DataSync` |
+| `Distance2` | `Distance` |
+| `Donut2` | `Donut` |
+| `DoorOpen2` | `DoorOpen` |
+| `Dropdown2` | `Dropdown` |
+| `Egg2` | `Egg` |
+| `Elevator2` | `Elevator` |
+| `Extension2` | `Extension` |
+| `Factory3` | `Factory` |
+| `FastForward2` | `FastForward` |
+| `FileAudio2` | `FileAudio` |
+| `FileCheck2` | `FileCheck` |
+| `FileEdit2` | `FileEdit` |
+| `FileImage2` | `FileImage` |
+| `FileMinus2` | `FileMinus` |
+| `FileVideo2` | `FileVideo` |
+| `FileX2` | `FileX` |
+| `FileZip2` | `FileZip` |
+| `FirstAid2` | `FirstAid` |
+| `FolderMinus2` | `FolderMinus` |
+| `Fuel2` | `Fuel` |
+| `Funnel2` | `Funnel` |
+| `Hammer2` | `Hammer` |
+| `Highlighter2` | `Highlighter` |
+| `History2` | `History` |
+| `Hotel2` | `Hotel` |
+| `Hurricane2` | `Hurricane` |
+| `Install2` | `Install` |
+| `Joystick2` | `Joystick` |
+| `KeyRound2` | `KeyRound` |
+| `LayoutDashboard2` | `LayoutDashboard` |
+| `Library2` | `Library` |
+| `LockOpen2` | `LockOpen` |
+| `Logs2` | `Logs` |
+| `MP3` | `MP` |
+| `Mask2` | `Mask` |
+| `Megaphone2` | `Megaphone` |
+| `Memory2` | `Memory` |
+| `MessageCircle2` | `MessageCircle` |
+| `MessageSquare2` | `MessageSquare` |
+| `Microphone2` | `Microphone` |
+| `Module2` | `Module` |
+| `Monitor3` | `Monitor` |
+| `Mouse3` | `Mouse` |
+| `Mushroom2` | `Mushroom` |
+| `Navigation3` | `Navigation` |
+| `Node2` | `Node` |
+| `Notebook3` | `Notebook` |
+| `Notepad2` | `Notepad` |
+| `Notification2` | `Notification` |
+| `Package2` | `Package` |
+| `Paperclip2` | `Paperclip` |
+| `PauseCircle2` | `PauseCircle` |
+| `Percentage2` | `Percentage` |
+| `Permission2` | `Permission` |
+| `PhoneCall2` | `PhoneCall` |
+| `Pi2` | `Pi` |
+| `PlayCircle2` | `PlayCircle` |
+| `Plugin2` | `Plugin` |
+| `Podcast2` | `Podcast` |
+| `Power2` | `Power` |
+| `Presentation2` | `Presentation` |
+| `Projector2` | `Projector` |
+| `Quote2` | `Quote` |
+| `Rainbow2` | `Rainbow` |
+| `Report2` | `Report` |
+| `Reset2` | `Reset` |
+| `Restart2` | `Restart` |
+| `Restore2` | `Restore` |
+| `Retry2` | `Retry` |
+| `Router2` | `Router` |
+| `Sailboat2` | `Sailboat` |
+| `Sandwich2` | `Sandwich` |
+| `SatelliteDish2` | `SatelliteDish` |
+| `Scan2` | `Scan` |
+| `ScreenShare2` | `ScreenShare` |
+| `Screwdriver2` | `Screwdriver` |
+| `Server2` | `Server` |
+| `Shower2` | `Shower` |
+| `Sigma2` | `Sigma` |
+| `Signature2` | `Signature` |
+| `Sitemap2` | `Sitemap` |
+| `Skateboard2` | `Skateboard` |
+| `Slider2` | `Slider` |
+| `Spreadsheet2` | `Spreadsheet` |
+| `Stairs2` | `Stairs` |
+| `StopCircle2` | `StopCircle` |
+| `Stopwatch2` | `Stopwatch` |
+| `Sync2` | `Sync` |
+| `Table2` | `Table` |
+| `Taco2` | `Taco` |
+| `Target2` | `Target` |
+| `TestTube2` | `TestTube` |
+| `TextCursor2` | `TextCursor` |
+| `Thermometer3` | `Thermometer` |
+| `Toilet2` | `Toilet` |
+| `Token2` | `Token` |
+| `Tornado2` | `Tornado` |
+| `Trademark2` | `Trademark` |
+| `Traffic2` | `Traffic` |
+| `Trend2` | `Trend` |
+| `Triangle3` | `Triangle` |
+| `Umbrella2` | `Umbrella` |
+| `Update2` | `Update` |
+| `UserCircle2` | `UserCircle` |
+| `UserGroup2` | `UserGroup` |
+| `UserX2` | `UserX` |
+| `Utensils2` | `Utensils` |
+| `Van2` | `Van` |
+| `Virus2` | `Virus` |
+| `VolumeMute2` | `VolumeMute` |
+| `VolumeX2` | `VolumeX` |
+| `Warehouse2` | `Warehouse` |
+| `Whistle2` | `Whistle` |
+| `Whiteboard2` | `Whiteboard` |
+| `Wrench2` | `Wrench` |
+
+**Case collisions resolved**
+
+| Old name | Use instead |
+|---|---|
+| `BankNote` | `Banknote2` |
+| `Blockquote` | `BlockQuote2` |
+| `Css` | `CssFile` |
+| `ENVFile` | `EnvFile2` |
+| `FaceID` | `FaceId2` |
+| `VPN` | `Vpn2` |
+
+**Merged into the icon they duplicated**
+
+| Old name | Use instead |
+|---|---|
+| `BaseIconCheckBox` | `Checkbox` |
+| `BaseIconChevronsDown` | `ChevronsDown` |
+| `BaseIconChevronsLeft` | `ChevronsLeft` |
+| `BaseIconChevronsRight` | `ChevronsRight` |
+| `BaseIconChevronsUp` | `ChevronsUp` |
+| `BaseIconMenu3` | `MoreVertical` |
+| `BaseIconX` | `Close` |
+| `ContrastIcon` | `CircleHalf` |
+| `MoreHorizontal2` | `MoreHorizontal` |
+| `RadioButton` | `CircleDot` |
+| `RecordIcon` | `Record` |
+| `Smiley` | `Smile` |
+| `SmileyFace` | `Smile` |
+| `TriangleExclamation` | `TriangleAlert` |
+
+</details>
 
 ---
 

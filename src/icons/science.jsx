@@ -49,7 +49,7 @@ export function Flask2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function TestTube2({ fillColor = '#000', isColored = true, ...rest }) {
+export function TestTube({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M15 3 6 12a3 3 0 0 0 4.5 4L19.5 7M14 4l4 4M9 12h5" />
@@ -121,7 +121,7 @@ export function Snowflake2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Thermometer3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Thermometer({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 14V4a2 2 0 0 0-4 0v10a4 4 0 1 0 4 0Z" /><path d="M10 14V8" /><circle cx="10" cy="17.5" r="1.3" />
@@ -137,7 +137,7 @@ export function TreeAlt({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Cactus2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Cactus({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M10 21v-4M10 17V6a2 2 0 0 1 4 0v11M10 11H8a2 2 0 0 1-2-2V8M14 13h2a2 2 0 0 0 2-2v-1" /><path d="M8 21h8" />
@@ -145,7 +145,7 @@ export function Cactus2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Mushroom2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Mushroom({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 11a8 8 0 0 1 16 0H4Z" /><path d="M10 11v6a2 2 0 0 0 4 0v-6" /><path d="M9 8h.01M13 9h.01M15 7h.01" />

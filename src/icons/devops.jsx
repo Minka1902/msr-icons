@@ -1,7 +1,7 @@
 import { BaseIcon } from './BaseIcon';
 
 // DevOps / Cloud / Infrastructure
-export function Server2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Server({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="4" width="18" height="7" rx="1.5" /><rect x="3" y="13" width="18" height="7" rx="1.5" /><path d="M7 7.5h.01" /><path d="M7 16.5h.01" />
@@ -177,7 +177,7 @@ export function Cluster({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Node2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Node({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="3" /><circle cx="5" cy="5" r="2" /><circle cx="19" cy="5" r="2" /><circle cx="5" cy="19" r="2" /><circle cx="19" cy="19" r="2" /><path d="m6.5 6.5 3 3M17.5 6.5l-3 3M6.5 17.5l3-3M17.5 17.5l-3-3" />
@@ -236,7 +236,9 @@ export function Gateway({ fillColor = '#000', isColored = true, ...rest }) {
 export function Dns({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+            <circle data-part="globe" cx="10" cy="10" r="7" />
+            <path data-part="meridians" d="M3 10h14M10 3a12 12 0 0 1 0 14M10 3a12 12 0 0 0 0 14" />
+            <path data-part="records" d="M14 17.8h7M14 20.8h4" />
         </BaseIcon>
     );
 }
@@ -265,7 +267,7 @@ export function Monitoring({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Logs2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Logs({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 8h8M8 12h8M8 16h5" />
@@ -481,7 +483,7 @@ export function Bandwidth({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Traffic2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Traffic({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="8" y="2" width="8" height="20" rx="3" /><circle cx="12" cy="7" r="1.6" /><circle cx="12" cy="12" r="1.6" /><circle cx="12" cy="17" r="1.6" />
@@ -513,7 +515,7 @@ export function CircuitBreaker({ fillColor = '#000', isColored = true, ...rest }
     );
 }
 
-export function Retry2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Retry({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 12a8 8 0 1 1 2.3 5.6" /><path d="M3 20v-4h4" />
@@ -530,7 +532,7 @@ export function Fallback({ fillColor = '#000', isColored = true, ...rest }) {
 }
 
 
-export function Container2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Container({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5Z" /><path d="M3 7.5 12 12l9-4.5M12 12v9" />

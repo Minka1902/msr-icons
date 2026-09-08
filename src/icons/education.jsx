@@ -138,7 +138,7 @@ export function Certificate3({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Backpack2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Backpack({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 8a6 6 0 0 1 12 0v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8Z" /><path d="M9 8a3 3 0 0 1 6 0M9 13h6v4H9zM10 8V5a2 2 0 0 1 4 0v3" />
@@ -146,7 +146,7 @@ export function Backpack2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Notebook3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Notebook({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="5" y="3" width="14" height="18" rx="2" /><path d="M9 3v18M5 8h4M5 12h4M5 16h4M12 8h4M12 12h3" />
@@ -154,7 +154,7 @@ export function Notebook3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Notepad2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Notepad({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="4" y="5" width="16" height="16" rx="2" /><path d="M8 3v4M12 3v4M16 3v4M8 12h8M8 16h5" />
@@ -170,7 +170,7 @@ export function Ruler2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Triangle3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Triangle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 19h16L4 5v14Z" /><path d="M4 13a6 6 0 0 0 6 6" />
@@ -202,7 +202,7 @@ export function Abacus({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Atlas2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Atlas({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M5 4a2 2 0 0 1 2-2h12v18H7a2 2 0 0 0-2 2V4Z" /><circle cx="12" cy="9" r="3.5" /><path d="M8.5 9h7M12 5.5a8 8 0 0 1 0 7" />
@@ -234,7 +234,7 @@ export function Bookmark3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function BookOpen3({ fillColor = '#000', isColored = true, ...rest }) {
+export function BookOpen({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 5C10 3.5 7 3.5 4 4v14c3-.5 6-.5 8 1 2-1.5 5-1.5 8-1V4c-3-.5-6-.5-8 1Z" /><path d="M12 5v15" />
@@ -242,7 +242,7 @@ export function BookOpen3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Library2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Library({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 4h3v16H4zM9 4h3v16H9z" /><path d="M15 4.5 18 4l3 15.5-3 .5L15 4.5Z" />
@@ -258,7 +258,7 @@ export function Lecture({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Whiteboard2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Whiteboard({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="4" width="18" height="12" rx="2" /><path d="M12 16v4M8 20h8M7 8l2 4 2-6 2 4" />
@@ -266,7 +266,7 @@ export function Whiteboard2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Presentation2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Presentation({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="3" width="18" height="12" rx="1.5" /><path d="M12 15v4M8 20l4-3 4 3M7 11l2-2 2 1 3-4" />

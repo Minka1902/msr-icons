@@ -282,7 +282,7 @@ export function TruckAlt({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Van2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Van({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M2 7a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v9H2V7Z" /><path d="M15 9h3l3 3.5V16h-6V9Z" /><circle cx="6" cy="17" r="1.8" /><circle cx="17" cy="17" r="1.8" />
@@ -354,7 +354,7 @@ export function Ship2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Sailboat2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Sailboat({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 18h18l-2 3H5l-2-3Z" /><path d="M12 3v12M12 3 4 15h8M14 6l5 9h-5" />
@@ -370,7 +370,7 @@ export function Anchor2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Fuel2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Fuel({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="4" y="3" width="10" height="18" rx="2" /><path d="M4 9h10M14 7l3 3v6a2 2 0 0 0 2 2 2 2 0 0 0 2-2v-6l-3-3M7 6h4" />
@@ -402,7 +402,7 @@ export function RoadIcon({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Bridge2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Bridge({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 8h18M5 8v12M19 8v12M3 14h18M9 14v6M15 14v6" /><path d="M5 8a14 14 0 0 1 14 0" />
@@ -418,7 +418,7 @@ export function ParkingMeter({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Airplane2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Airplane({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5Z" />

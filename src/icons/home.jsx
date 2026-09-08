@@ -133,7 +133,7 @@ export function HouseAlt({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Building3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Building({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="5" y="3" width="14" height="18" rx="1" /><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3" />
@@ -157,7 +157,7 @@ export function Office2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Factory3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Factory({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 21V11l5 3V11l5 3V8l3 2V5h2v16H3Z" /><path d="M7 17h2M13 17h2M18 17h.01" />
@@ -165,7 +165,7 @@ export function Factory3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Warehouse2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Warehouse({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 21V9l9-5 9 5v12" /><path d="M6 21v-8h12v8M6 14h12M9 21v-4M15 21v-4" />
@@ -173,7 +173,7 @@ export function Warehouse2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Hotel2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Hotel({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="3" width="18" height="18" rx="1" /><path d="M7 7h2M11 7h2M15 7h2M7 11h2M11 11h2M15 11h2M9 21v-4h6v4" /><path d="M12 3v.01" />
@@ -189,7 +189,7 @@ export function Cabin({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Castle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Castle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 21V8h2V5h2v3h2V5h4v3h2V5h2v3h2v13H4Z" /><path d="M10 21v-4h4v4M8 12h8" />
@@ -213,7 +213,7 @@ export function Door2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function DoorOpen2({ fillColor = '#000', isColored = true, ...rest }) {
+export function DoorOpen({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M13 4 6 6v15M6 21h12M13 4h5v17M13 21V4" /><path d="M11 12h.01" />
@@ -229,7 +229,7 @@ export function Window2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Stairs2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Stairs({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 20h4v-4h4v-4h4V8h4V4" /><path d="M3 20v-4h4v-4h4v-4h4V4" />
@@ -237,7 +237,7 @@ export function Stairs2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Elevator2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Elevator({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="4" y="3" width="16" height="18" rx="1" /><path d="M12 3v18M8 9l-1.5 2h3zM16 9l1.5 2h-3z" />
@@ -269,7 +269,7 @@ export function Bed3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Bathtub2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Bathtub({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3Z" /><path d="M5 12V6a2 2 0 0 1 4 0M6 19l-1 2M18 19l1 2M9 6h.01" />
@@ -277,7 +277,7 @@ export function Bathtub2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Shower2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Shower({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 12V7a3 3 0 0 1 6 0M4 12h16" /><path d="M9 12V5a2 2 0 0 1 4 0v1" /><path d="M8 16v1M12 16v2M16 16v1M10 19v1M14 19v1" />
@@ -285,7 +285,7 @@ export function Shower2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Toilet2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Toilet({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M6 4h2v5M6 4a2 2 0 0 0-2 2v3a4 4 0 0 0 4 4h4l-1 4h-4M5 21h6l1-4" /><path d="M8 9h6V5a1 1 0 0 0-1-1h-1" />

@@ -1,7 +1,7 @@
 import { BaseIcon } from './BaseIcon';
 
 // Media / Player
-export function PlayCircle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function PlayCircle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><path d="M10 8.5 16 12l-6 3.5v-7Z" />
@@ -9,7 +9,7 @@ export function PlayCircle2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function PauseCircle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function PauseCircle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><path d="M10 9v6M14 9v6" />
@@ -17,7 +17,7 @@ export function PauseCircle2({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function StopCircle2({ fillColor = '#000', isColored = true, ...rest }) {
+export function StopCircle({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><rect x="9" y="9" width="6" height="6" rx="1" />
@@ -41,7 +41,7 @@ export function SkipBackward({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function FastForward2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FastForward({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 6l8 6-8 6V6Z" /><path d="M13 6l8 6-8 6V6Z" />
@@ -97,15 +97,16 @@ export function VolumeLow2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function VolumeMute2({ fillColor = '#000', isColored = true, ...rest }) {
+export function VolumeMute({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M4 9v6h3l5 4V5L7 9H4Z" />
+            <path data-part="speaker" d="M4 9v6h3l5 4V5L7 9H4Z" />
+            <path data-part="slash" d="m3 3 18 18" />
         </BaseIcon>
     );
 }
 
-export function VolumeX2({ fillColor = '#000', isColored = true, ...rest }) {
+export function VolumeX({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 9v6h3l5 4V5L7 9H4Z" /><path d="m16 9 5 6M21 9l-5 6" />
@@ -153,7 +154,7 @@ export function MicrophoneOff({ fillColor = '#000', isColored = true, ...rest })
     );
 }
 
-export function Podcast2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Podcast({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="9" r="3" /><path d="M7 9a5 5 0 0 1 10 0M5 9a7 7 0 0 1 14 0" /><path d="M10.5 14h3l-.5 7h-2l-.5-7Z" />
@@ -224,12 +225,3 @@ export function Live({ fillColor = '#000', isColored = true, ...rest }) {
         </BaseIcon>
     );
 }
-
-export function RecordIcon({ fillColor = '#000', isColored = true, ...rest }) {
-    return (
-        <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4" />
-        </BaseIcon>
-    );
-}
-

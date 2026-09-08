@@ -73,7 +73,7 @@ export function Infinity2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Percentage2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Percentage({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="7" cy="7" r="2.5" /><circle cx="17" cy="17" r="2.5" /><path d="m6 18 12-12" />
@@ -89,7 +89,7 @@ export function Hashtag2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Asterisk2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Asterisk({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 4v16M5 8l14 8M19 8 5 16" />
@@ -113,7 +113,7 @@ export function CopyrightAlt({ fillColor = '#000', isColored = true, ...rest }) 
     );
 }
 
-export function Trademark2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Trademark({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 7h6M6 7v8M12 15V7l3 5 3-5v8" />
@@ -132,8 +132,8 @@ export function RegisteredMark({ fillColor = '#000', isColored = true, ...rest }
 export function SectionSign({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M15.5 8.2c0-1.9-1.6-3.2-3.6-3.2-2.1 0-3.7 1.2-3.7 3 0 1.7 1.4 2.6 3.4 3.4l2 .8c2 .8 3.4 1.7 3.4 3.4 0 1.8-1.6 3-3.7 3" />
-            <path d="M8.5 15.8c0 1.9 1.6 3.2 3.6 3.2M12 12.8l-2-.8C8.4 11.2 7 10.3 7 8.6c0-1.8 1.6-3 3.7-3" />
+            <path data-part="upper" d="M14.8 7.4c0-1.4-1.2-2.4-2.9-2.4S9 6 9 7.4c0 1 .6 1.7 1.8 2.2l4 1.6c1.3.5 1.9 1.3 1.9 2.4 0 1.4-1.2 2.4-2.9 2.4" />
+            <path data-part="lower" d="M9.2 16.6c0 1.4 1.2 2.4 2.9 2.4s2.9-1 2.9-2.4c0-1-.6-1.7-1.8-2.2l-4-1.6C7.9 12.3 7.3 11.5 7.3 10.4c0-1.4 1.2-2.4 2.9-2.4" />
         </BaseIcon>
     );
 }
@@ -202,7 +202,7 @@ export function SquareRoot({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Pi2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Pi({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 7h16M8 7v11M16 7v9a2 2 0 0 0 3 1" />
@@ -210,7 +210,7 @@ export function Pi2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Sigma2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Sigma({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M17 4H6l6 8-6 8h11" />

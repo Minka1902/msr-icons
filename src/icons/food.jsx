@@ -270,7 +270,7 @@ export function Burger2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Sandwich2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Sandwich({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 8 12 4l9 4-9 4-9-4Z" /><path d="M3 8v3l9 4 9-4V8M5 14l7 3 7-3" /><path d="M6 9.5l2 1M14 11l2-1" />
@@ -278,7 +278,7 @@ export function Sandwich2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Taco2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Taco({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 16a9 9 0 0 1 18 0H3Z" /><path d="M3 16a9 4 0 0 0 18 0" /><path d="M8 13l1-2M12 12v-2M16 13l-1-2" />
@@ -326,7 +326,7 @@ export function Cake2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Donut2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Donut({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3" /><path d="M7 7l1 1M16 6l-1 1M18 11l-1 .5M9 17l.5 1" />
@@ -334,7 +334,7 @@ export function Donut2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Cookie3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Cookie({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="9" /><path d="M9 9h.01M15 8h.01M16 13h.01M9 15h.01M12 12h.01" />
@@ -350,7 +350,7 @@ export function Bread2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Egg2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Egg({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3c3.5 0 6 5 6 9a6 6 0 0 1-12 0c0-4 2.5-9 6-9Z" />
@@ -358,7 +358,7 @@ export function Egg2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Cheese2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Cheese({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 18 12 8h9v10H3Z" /><path d="M3 18a9 3 0 0 0 18 0" /><circle cx="9" cy="14" r="1" /><circle cx="15" cy="13" r="1" />
@@ -374,7 +374,7 @@ export function Apple2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Banana2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Banana({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 7c0 8 6 12 14 12 0-1-1-2-3-2-6 0-9-4-9-10 0-1-2-1-2 0Z" /><path d="M15 19c2 0 3-1 3-2" />
@@ -382,7 +382,7 @@ export function Banana2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Carrot2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Carrot({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M5 19 14 10a4 4 0 0 0-4-4L3 17l2 2Z" /><path d="M14 10c1-1 2-1 3 0M14 7c0-2 1-3 3-3M11 6c0-2 1-3 3-3M8 10l3 3" />
@@ -398,7 +398,7 @@ export function ChiliPepper({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Utensils2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Utensils({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M5 3v7a2 2 0 0 0 4 0V3M7 10v11M16 3c-1.5 0-2.5 2-2.5 4.5S15 12 16 12v9" />

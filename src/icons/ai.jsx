@@ -161,7 +161,7 @@ export function FlowChart({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Sitemap2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Sitemap({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="9" y="3" width="6" height="4" rx="1" /><rect x="3" y="16" width="5" height="4" rx="1" /><rect x="9.5" y="16" width="5" height="4" rx="1" /><rect x="16" y="16" width="5" height="4" rx="1" /><path d="M12 7v3M5.5 16v-2h13v2M12 14v2" />

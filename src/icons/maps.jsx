@@ -33,7 +33,7 @@ export function MapTrifold({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Navigation3({ fillColor = '#000', isColored = true, ...rest }) {
+export function Navigation({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M3 11 21 4l-7 18-2.5-7.5L3 11Z" />
@@ -89,7 +89,7 @@ export function Milestone({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Crosshair2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Crosshair({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="8" /><path d="M12 2v4M12 18v4M2 12h4M18 12h4" /><circle cx="12" cy="12" r="2" />
@@ -97,7 +97,7 @@ export function Crosshair2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Target2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Target({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="4.5" /><circle cx="12" cy="12" r="1" />
@@ -129,7 +129,7 @@ export function Altitude({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Distance2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Distance({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 7v10M20 7v10M4 12h16" /><path d="m7 9-3 3 3 3M17 9l3 3-3 3" />

@@ -4,7 +4,9 @@ import { BaseIcon } from './BaseIcon';
 export function CodeBracket({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
-            <path d="M9 6 3 12l6 6" />
+            <path data-part="left" d="m8 6-6 6 6 6" />
+            <path data-part="right" d="m16 6 6 6-6 6" />
+            <path data-part="slash" d="m13.5 4-3 16" />
         </BaseIcon>
     );
 }
@@ -60,7 +62,7 @@ export function TerminalSquare({ fillColor = '#000', isColored = true, ...rest }
     );
 }
 
-export function Console2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Console({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="2" y="5" width="20" height="14" rx="2" />
@@ -178,7 +180,7 @@ export function ClassIcon({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Module2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Module({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M12 3 4 7v10l8 4 8-4V7zM4 7l8 4 8-4M12 11v10" />

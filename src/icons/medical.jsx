@@ -219,7 +219,7 @@ export function Pill2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Capsule2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Capsule({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="4" y="9" width="16" height="6" rx="3" /><path d="M12 9v6" /><path d="M7 11h.01M9 13h.01" />
@@ -235,7 +235,7 @@ export function Bandage2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function FirstAid2({ fillColor = '#000', isColored = true, ...rest }) {
+export function FirstAid({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <rect x="3" y="6" width="18" height="13" rx="2" /><path d="M9 6V4h6v2" /><path d="M12 10v5M9.5 12.5h5" />
@@ -291,7 +291,7 @@ export function Lungs2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Bone2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Bone({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M7 17a2.5 2.5 0 1 1-1.8-4.2L13 5a2.5 2.5 0 1 1 4 .8 2.5 2.5 0 1 1-.8 4L8 18a2.5 2.5 0 1 1-1-1Z" />
@@ -299,7 +299,7 @@ export function Bone2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Virus2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Virus({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <circle cx="12" cy="12" r="5" /><path d="M12 7V3M12 21v-4M7 12H3M21 12h-4M8.5 8.5 6 6M18 18l-2.5-2.5M15.5 8.5 18 6M6 18l2.5-2.5" /><path d="M12 3v.01M12 21v-.01M3 12h.01M21 12h-.01" />
@@ -307,7 +307,7 @@ export function Virus2({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Bacteria2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Bacteria({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M5 19c2-2 2-4 1-5M19 5c-2 2-2 4-1 5" /><ellipse cx="12" cy="12" rx="5" ry="3" transform="rotate(-45 12 12)" /><path d="M9 9h.01M12 12h.01M15 15h.01M10 13h.01M14 11h.01" />
@@ -331,7 +331,7 @@ export function Dna3({ fillColor = '#000', isColored = true, ...rest }) {
     );
 }
 
-export function Mask2({ fillColor = '#000', isColored = true, ...rest }) {
+export function Mask({ fillColor = '#000', isColored = true, ...rest }) {
     return (
         <BaseIcon fillColor={fillColor} isColored={isColored} {...rest}>
             <path d="M4 8c2-1 5-1 8-1s6 0 8 1c0 6-3 10-8 10S4 14 4 8Z" /><path d="M4 10c-1.5 0-2-1-2-2M20 10c1.5 0 2-1 2-2M9 12a4 4 0 0 0 6 0" />

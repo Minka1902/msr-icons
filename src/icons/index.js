@@ -29,3 +29,4 @@ export * from './transport';
 export * from './ui';
 export * from './users';
 export * from './weather';
+export * from './aliases';
